@@ -50,6 +50,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.dependency             "yoga", "#{package["version"]}.React"
+    ss.compiler_flags       = folly_compiler_flags
     ss.source_files         = "React/**/*.{c,h,m,mm,S,cpp}"
     ss.exclude_files        = "**/__tests__/*",
                               "IntegrationTests/*",
