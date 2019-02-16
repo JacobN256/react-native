@@ -34,6 +34,7 @@ Pod::Spec.new do |spec|
                       'folly/memory/detail/MallocImpl.cpp'
   # workaround for https://github.com/facebook/react-native/issues/14326
   spec.preserve_paths = 'folly/*.h',
+                        'folly/concurrency/*.h',
                         'folly/container/*.h',
                         'folly/container/detail/*.h',
                         'folly/detail/*.h',
@@ -42,7 +43,9 @@ Pod::Spec.new do |spec|
                         'folly/lang/*.h',
                         'folly/memory/*.h',
                         'folly/memory/detail/*.h',
-                        'folly/portability/*.h'
+                        'folly/portability/*.h',
+                        'folly/synchronization/*.h',
+                        'folly/system/*.h'
   spec.libraries           = "stdc++"
   spec.pod_target_xcconfig = { "USE_HEADERMAP" => "NO",
                                "CLANG_CXX_LANGUAGE_STANDARD" => "c++14",
