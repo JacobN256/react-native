@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
     ss.exclude_files        = "**/tests/*"
     ss.header_dir           = "React"
     ss.framework            = "JavaScriptCore"
-    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/ReactCommon\"" }
+    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/ReactCommon\", \"$(PODS_ROOT)/Folly\"" }
   end
 
   s.subspec "tvOS" do |ss|
@@ -236,9 +236,12 @@ Pod::Spec.new do |s|
       sss.dependency             "Folly", folly_version
       sss.compiler_flags       = folly_compiler_flags
       sss.source_files         = "ReactCommon/fabric/imagemanager/*.{cpp,h}", 
-                                 "ReactCommon/fabric/imagemanager/platform/ios/*.{cpp,h}"
+                                 "ReactCommon/fabric/imagemanager/platform/ios/*.{cpp,h,mm}"
       sss.exclude_files        = "**/tests/*"
       sss.header_dir           = "react/imagemanager"
+      sss.frameworks           = "CoreGraphics", 
+                                 "UIKit", 
+                                 "Foundation"
       sss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
     end
 
