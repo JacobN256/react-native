@@ -1010,6 +1010,8 @@
 		66CD94B61F1045E700CB3C7C /* RCTMaskedViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CD94AF1F1045E700CB3C7C /* RCTMaskedViewManager.h */; };
 		66CD94B71F1045E700CB3C7C /* RCTMaskedViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CD94B01F1045E700CB3C7C /* RCTMaskedViewManager.m */; };
 		66CD94B81F1045E700CB3C7C /* RCTMaskedViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CD94B01F1045E700CB3C7C /* RCTMaskedViewManager.m */; };
+		6870B319221D6E5600E5581F /* RCTRedBoxManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6870B317221D6E5600E5581F /* RCTRedBoxManager.h */; };
+		6870B31A221D6E5600E5581F /* RCTRedBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6870B318221D6E5600E5581F /* RCTRedBoxManager.m */; };
 		68EFE4EE1CF6EB3900A1DE13 /* RCTBundleURLProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EFE4ED1CF6EB3900A1DE13 /* RCTBundleURLProvider.m */; };
 		830A229E1A66C68A008503DA /* RCTRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830A229D1A66C68A008503DA /* RCTRootView.m */; };
 		83281384217EB70900574D55 /* MallocImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83281383217EB70800574D55 /* MallocImpl.cpp */; };
@@ -2162,6 +2164,8 @@
 		66CD94AE1F1045E700CB3C7C /* RCTMaskedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedView.m; sourceTree = "<group>"; };
 		66CD94AF1F1045E700CB3C7C /* RCTMaskedViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMaskedViewManager.h; sourceTree = "<group>"; };
 		66CD94B01F1045E700CB3C7C /* RCTMaskedViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedViewManager.m; sourceTree = "<group>"; };
+		6870B317221D6E5600E5581F /* RCTRedBoxManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTRedBoxManager.h; sourceTree = "<group>"; };
+		6870B318221D6E5600E5581F /* RCTRedBoxManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTRedBoxManager.m; sourceTree = "<group>"; };
 		68EFE4EC1CF6EB3000A1DE13 /* RCTBundleURLProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTBundleURLProvider.h; sourceTree = "<group>"; };
 		68EFE4ED1CF6EB3900A1DE13 /* RCTBundleURLProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBundleURLProvider.m; sourceTree = "<group>"; };
 		6A15FB0C1BDF663500531DFB /* RCTRootViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRootViewInternal.h; sourceTree = "<group>"; };
@@ -2529,6 +2533,8 @@
 				5960C1B41F0804A00066FD5B /* RCTLayoutAnimationGroup.m */,
 				13F17A831B8493E5007D4C75 /* RCTRedBox.h */,
 				13F17A841B8493E5007D4C75 /* RCTRedBox.m */,
+				6870B317221D6E5600E5581F /* RCTRedBoxManager.h */,
+				6870B318221D6E5600E5581F /* RCTRedBoxManager.m */,
 				FEFAAC9D1FDB89B40057BBE0 /* RCTRedBoxExtraDataViewController.h */,
 				FEFAAC9C1FDB89B40057BBE0 /* RCTRedBoxExtraDataViewController.m */,
 				000E6CE91AB0E97F000CDF4D /* RCTSourceCode.h */,
@@ -3476,6 +3482,7 @@
 				3D80DA551DF820620028D040 /* RCTKeyboardObserver.h in Headers */,
 				3D80DA561DF820620028D040 /* RCTRedBox.h in Headers */,
 				AC6B69E421B1467C00B2B68A /* YGValue.h in Headers */,
+				6870B319221D6E5600E5581F /* RCTRedBoxManager.h in Headers */,
 				3D80DA571DF820620028D040 /* RCTSourceCode.h in Headers */,
 				EBF21BBC1FC498270052F4D5 /* InspectorInterfaces.h in Headers */,
 				AC52CEDE21FB3FF9003C6BEC /* instrumentation.h in Headers */,
@@ -4441,6 +4448,7 @@
 				597633361F4E021D005BE8A4 /* RCTShadowView+Internal.m in Sources */,
 				13723B501A82FD3C00F88898 /* RCTStatusBarManager.m in Sources */,
 				000E6CEB1AB0E980000CDF4D /* RCTSourceCode.m in Sources */,
+				6870B31A221D6E5600E5581F /* RCTRedBoxManager.m in Sources */,
 				001BFCD01D8381DE008E587E /* RCTMultipartStreamReader.m in Sources */,
 				14C2CA761B3AC64F00E6CBB2 /* RCTFrameUpdate.m in Sources */,
 				594F0A341FD23228007FBE96 /* RCTSurfaceHostingView.mm in Sources */,

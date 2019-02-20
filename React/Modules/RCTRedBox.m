@@ -13,6 +13,7 @@
 #import "RCTErrorInfo.h"
 #import "RCTEventDispatcher.h"
 #import "RCTJSStackFrame.h"
+#import "RCTRedBoxManager.h"
 #import "RCTRedBoxExtraDataViewController.h"
 #import "RCTUtils.h"
 
@@ -392,6 +393,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
     RCTRedBoxWindow *_window;
     NSMutableArray<id<RCTErrorCustomizer>> *_errorCustomizers;
     RCTRedBoxExtraDataViewController *_extraDataViewController;
+    RCTRedBoxManager *_manager;
 }
 
 @synthesize bridge = _bridge;
@@ -484,7 +486,13 @@ RCT_EXPORT_MODULE()
             self->_extraDataViewController = [RCTRedBoxExtraDataViewController new];
             self->_extraDataViewController.actionDelegate = self;
         }
-        [self->_bridge.eventDispatcher sendDeviceEventWithName:@"collectRedBoxExtraData" body:nil];
+      
+        if (!self->_manager) {
+          self->_manager = [[RCTRedBoxManager alloc] init];
+          self->_manager.bridge = self.bridge;
+        }
+      
+        [self->_manager collectRedBoxExtraData];
 
         if (!self->_window) {
             self->_window = [[RCTRedBoxWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
