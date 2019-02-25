@@ -79,17 +79,16 @@
 {
   _textStorage = textStorage;
   _contentFrame = contentFrame;
-
-  // FIXME: Optimize this.
-  for (UIView *view in _descendantViews) {
+  
+  [_descendantViews enumerateObjectsUsingBlock:^(UIView * _Nonnull view, NSUInteger __unused idx, BOOL * _Nonnull __unused stop) {
     [view removeFromSuperview];
-  }
+  }];
 
   _descendantViews = descendantViews;
 
-  for (UIView *view in descendantViews) {
+  [descendantViews enumerateObjectsUsingBlock:^(UIView * _Nonnull view, NSUInteger __unused idx, BOOL * _Nonnull __unused stop) {
     [self addSubview:view];
-  }
+  }];
 
   [self setNeedsDisplay];
 }
