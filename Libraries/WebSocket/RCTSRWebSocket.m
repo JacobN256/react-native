@@ -645,8 +645,6 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
 - (void)send:(id)data;
 {
   RCTAssert(self.readyState != RCTSR_CONNECTING, @"Invalid State: Cannot call send: until connection is open");
-  // TODO: maybe not copy this for performance
-  data = [data copy];
   dispatch_async(_workQueue, ^{
     if ([data isKindOfClass:[NSString class]]) {
       [self _sendFrameWithOpcode:RCTSROpCodeTextFrame data:[(NSString *)data dataUsingEncoding:NSUTF8StringEncoding]];
@@ -663,8 +661,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
 - (void)sendPing:(NSData *)data;
 {
   RCTAssert(self.readyState == RCTSR_OPEN, @"Invalid State: Cannot call send: until connection is open");
-  // TODO: maybe not copy this for performance
-  data = [data copy] ?: [NSData data]; // It's okay for a ping to be empty
+  data = data ?: [NSData data]; // It's okay for a ping to be empty
   dispatch_async(_workQueue, ^{
     [self _sendFrameWithOpcode:RCTSROpCodePing data:data];
   });
@@ -858,7 +855,7 @@ static inline BOOL closeCodeIsValid(int closeCode)
       if (frame_header.fin) {
         [self _handleFrameWithData:_currentFrameData opCode:frame_header.opcode];
       } else {
-        // TODO: add assert that opcode is not a control;
+        assert(!isControlFrame);
         [self _readFrameContinue];
       }
     }
@@ -871,7 +868,7 @@ static inline BOOL closeCodeIsValid(int closeCode)
         if (frame_header.fin) {
           [socket _handleFrameWithData:socket->_currentFrameData opCode:frame_header.opcode];
         } else {
-          // TODO: add assert that opcode is not a control;
+          assert(!isControlFrame);
           [socket _readFrameContinue];
         }
 
@@ -1167,8 +1164,6 @@ static const char CRLFCRLFBytes[] = {'\r', '\n', '\r', '\n'};
         // Validate UTF8 stuff.
         size_t currentDataSize = _currentFrameData.length;
         if (_currentFrameOpcode == RCTSROpCodeTextFrame && currentDataSize > 0) {
-          // TODO: Optimize this.  Don't really have to copy all the data each time
-
           size_t scanSize = currentDataSize - _currentStringScanPosition;
 
           NSData *scan_data = [_currentFrameData subdataWithRange:NSMakeRange(_currentStringScanPosition, scanSize)];
