@@ -208,12 +208,12 @@ class WebView extends React.Component {
      * settings for `UIScrollViewDecelerationRateNormal` and
      * `UIScrollViewDecelerationRateFast` respectively:
      *
-     *   - normal: 0.998
-     *   - fast: 0.99 (the default for iOS web view)
+     *   - normal: 0.998 (the default for iOS web view)
+     *   - fast: 0.99
      * @platform ios
      */
     decelerationRate: PropTypes.oneOfType([
-      PropTypes.oneOf(['fast', 'normal']),
+      PropTypes.oneOf(['normal', 'fast']),
       PropTypes.number,
     ]),
     /**
