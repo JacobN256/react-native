@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef SHADOWNODE_H
+#define SHADOWNODE_H
 #include <memory>
 #include <string>
 #include <vector>
@@ -183,3 +184,4 @@ class ShadowNode : public virtual Sealable,
 
 } // namespace react
 } // namespace facebook
+#endif

@@ -784,7 +784,6 @@
 		3DCE53291FEAB23100613583 /* RCTDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 133CAE8D1B8E5CFD00F6AD92 /* RCTDatePicker.m */; };
 		3DCE532A1FEAB23100613583 /* RCTDatePickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C571C01AA56C1900CDF9C8 /* RCTDatePickerManager.h */; };
 		3DCE532B1FEAB23100613583 /* RCTDatePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C571BF1AA56C1900CDF9C8 /* RCTDatePickerManager.m */; };
-		3DE4F8681DF85D8E00B9E5A0 /* YGEnums.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 130A77031DF767AF001F9587 /* YGEnums.h */; };
 		3DE4F8691DF85D8E00B9E5A0 /* YGMacros.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 130A77041DF767AF001F9587 /* YGMacros.h */; };
 		3DE4F86A1DF85D8E00B9E5A0 /* Yoga.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 130A77081DF767AF001F9587 /* Yoga.h */; };
 		3DFE0D161DF8574D00459392 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 130A77031DF767AF001F9587 /* YGEnums.h */; };
@@ -1010,6 +1009,327 @@
 		66CD94B61F1045E700CB3C7C /* RCTMaskedViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CD94AF1F1045E700CB3C7C /* RCTMaskedViewManager.h */; };
 		66CD94B71F1045E700CB3C7C /* RCTMaskedViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CD94B01F1045E700CB3C7C /* RCTMaskedViewManager.m */; };
 		66CD94B81F1045E700CB3C7C /* RCTMaskedViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CD94B01F1045E700CB3C7C /* RCTMaskedViewManager.m */; };
+		6802A956222F15A400C6002B /* RCTComponentViewFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A906222F15A400C6002B /* RCTComponentViewFactory.mm */; };
+		6802A957222F15A400C6002B /* RCTInsertMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A909222F15A400C6002B /* RCTInsertMountItem.mm */; };
+		6802A958222F15A400C6002B /* RCTRemoveMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A90B222F15A400C6002B /* RCTRemoveMountItem.mm */; };
+		6802A959222F15A400C6002B /* RCTUpdateStateMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A90C222F15A400C6002B /* RCTUpdateStateMountItem.mm */; };
+		6802A95A222F15A400C6002B /* RCTUpdateLocalDataMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A90D222F15A400C6002B /* RCTUpdateLocalDataMountItem.mm */; };
+		6802A95B222F15A400C6002B /* RCTUpdatePropsMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A912222F15A400C6002B /* RCTUpdatePropsMountItem.mm */; };
+		6802A95C222F15A400C6002B /* RCTCreateMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A913222F15A400C6002B /* RCTCreateMountItem.mm */; };
+		6802A95D222F15A400C6002B /* RCTDeleteMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A914222F15A400C6002B /* RCTDeleteMountItem.mm */; };
+		6802A95E222F15A400C6002B /* RCTUpdateEventEmitterMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A916222F15A400C6002B /* RCTUpdateEventEmitterMountItem.mm */; };
+		6802A95F222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A917222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.mm */; };
+		6802A960222F15A400C6002B /* RCTMountingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A91C222F15A400C6002B /* RCTMountingManager.mm */; };
+		6802A961222F15A400C6002B /* RCTEnhancedScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A91F222F15A400C6002B /* RCTEnhancedScrollView.mm */; };
+		6802A962222F15A400C6002B /* RCTScrollViewComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A921222F15A400C6002B /* RCTScrollViewComponentView.mm */; };
+		6802A964222F15A400C6002B /* RCTImageComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A927222F15A400C6002B /* RCTImageComponentView.mm */; };
+		6802A966222F15A400C6002B /* RCTViewComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A92E222F15A400C6002B /* RCTViewComponentView.mm */; };
+		6802A968222F15A400C6002B /* RCTRootComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A934222F15A400C6002B /* RCTRootComponentView.mm */; };
+		6802A969222F15A400C6002B /* RCTParagraphComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A936222F15A400C6002B /* RCTParagraphComponentView.mm */; };
+		6802A96A222F15A400C6002B /* RCTComponentViewRegistry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A938222F15A400C6002B /* RCTComponentViewRegistry.mm */; };
+		6802A96B222F15A400C6002B /* UIView+ComponentViewProtocol.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A939222F15A400C6002B /* UIView+ComponentViewProtocol.mm */; };
+		6802A96C222F15A400C6002B /* RCTSurfacePresenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A93D222F15A400C6002B /* RCTSurfacePresenter.mm */; };
+		6802A96D222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A93F222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.mm */; };
+		6802A96E222F15A400C6002B /* RCTFabricSurface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A940222F15A400C6002B /* RCTFabricSurface.mm */; };
+		6802A96F222F15A400C6002B /* RCTFabricSurfaceHostingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A944222F15A400C6002B /* RCTFabricSurfaceHostingView.mm */; };
+		6802A970222F15A400C6002B /* RuntimeEventBeat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A946222F15A400C6002B /* RuntimeEventBeat.mm */; };
+		6802A971222F15A400C6002B /* MainQueueExecutor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A947222F15A400C6002B /* MainQueueExecutor.mm */; };
+		6802A972222F15A400C6002B /* MainRunLoopEventBeat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A948222F15A400C6002B /* MainRunLoopEventBeat.mm */; };
+		6802A973222F15A400C6002B /* RCTImageResponseObserverProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A950222F15A400C6002B /* RCTImageResponseObserverProxy.mm */; };
+		6802A974222F15A400C6002B /* RCTSurfaceRegistry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A951222F15A400C6002B /* RCTSurfaceRegistry.mm */; };
+		6802A975222F15A400C6002B /* RCTSurfaceTouchHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A953222F15A400C6002B /* RCTSurfaceTouchHandler.mm */; };
+		6802A976222F15A400C6002B /* RCTScheduler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A955222F15A400C6002B /* RCTScheduler.mm */; };
+		6802AAD5222F165400C6002B /* ImageResponseObserverCoordinator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A988222F165300C6002B /* ImageResponseObserverCoordinator.cpp */; };
+		6802AAD6222F165400C6002B /* ImageManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A98C222F165300C6002B /* ImageManager.mm */; };
+		6802AAD7222F165400C6002B /* RCTImageManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802A98E222F165300C6002B /* RCTImageManager.mm */; };
+		6802AAD8222F165400C6002B /* ImageRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A98F222F165300C6002B /* ImageRequest.cpp */; };
+		6802AADC222F165400C6002B /* ImageResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A99C222F165300C6002B /* ImageResponse.cpp */; };
+		6802AADD222F165400C6002B /* LayoutableShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9A2222F165300C6002B /* LayoutableShadowNode.cpp */; };
+		6802AADE222F165400C6002B /* LayoutConstraints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9A7222F165300C6002B /* LayoutConstraints.cpp */; };
+		6802AADF222F165400C6002B /* ShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9AA222F165300C6002B /* ShadowNode.cpp */; };
+		6802AAE0222F165400C6002B /* Props.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9AB222F165300C6002B /* Props.cpp */; };
+		6802AAE1222F165400C6002B /* ShadowNodeFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9AD222F165300C6002B /* ShadowNodeFragment.cpp */; };
+		6802AAE5222F165400C6002B /* StateCoordinator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9B7222F165300C6002B /* StateCoordinator.cpp */; };
+		6802AAE6222F165400C6002B /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9B9222F165300C6002B /* State.cpp */; };
+		6802AAE7222F165400C6002B /* StateUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9BC222F165300C6002B /* StateUpdate.cpp */; };
+		6802AAE8222F165400C6002B /* StateTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9BE222F165300C6002B /* StateTarget.cpp */; };
+		6802AAE9222F165400C6002B /* RawValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9C3222F165300C6002B /* RawValue.cpp */; };
+		6802AAEA222F165400C6002B /* RawProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9C5222F165300C6002B /* RawProps.cpp */; };
+		6802AAEB222F165400C6002B /* Sealable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9C8222F165300C6002B /* Sealable.cpp */; };
+		6802AAEC222F165400C6002B /* EventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9CE222F165300C6002B /* EventEmitter.cpp */; };
+		6802AAED222F165400C6002B /* EventQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9D0222F165300C6002B /* EventQueue.cpp */; };
+		6802AAEE222F165400C6002B /* RawEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9D1222F165300C6002B /* RawEvent.cpp */; };
+		6802AAEF222F165400C6002B /* BatchedEventQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9D2222F165300C6002B /* BatchedEventQueue.cpp */; };
+		6802AAF0222F165400C6002B /* EventBeatBasedExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9D3222F165300C6002B /* EventBeatBasedExecutor.cpp */; };
+		6802AAF1222F165400C6002B /* UnbatchedEventQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9D5222F165300C6002B /* UnbatchedEventQueue.cpp */; };
+		6802AAF2222F165400C6002B /* EventDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9DA222F165300C6002B /* EventDispatcher.cpp */; };
+		6802AAF3222F165400C6002B /* EventTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9DC222F165300C6002B /* EventTarget.cpp */; };
+		6802AAF4222F165400C6002B /* EventBeat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9DE222F165300C6002B /* EventBeat.cpp */; };
+		6802AAF9222F165400C6002B /* TextAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9F0222F165300C6002B /* TextAttributes.cpp */; };
+		6802AAFD222F165400C6002B /* ParagraphAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9F7222F165300C6002B /* ParagraphAttributes.cpp */; };
+		6802AAFE222F165400C6002B /* AttributedString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9F9222F165300C6002B /* AttributedString.cpp */; };
+		6802AAFF222F165400C6002B /* RCTFontUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA00222F165300C6002B /* RCTFontUtils.mm */; };
+		6802AB00222F165400C6002B /* RCTTextLayoutManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA03222F165300C6002B /* RCTTextLayoutManager.mm */; };
+		6802AB01222F165400C6002B /* NSTextStorage+FontScaling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA04222F165300C6002B /* NSTextStorage+FontScaling.m */; };
+		6802AB02222F165400C6002B /* RCTAttributedTextUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA05222F165300C6002B /* RCTAttributedTextUtils.mm */; };
+		6802AB03222F165400C6002B /* TextLayoutManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA0A222F165300C6002B /* TextLayoutManager.mm */; };
+		6802AB06222F165400C6002B /* ScrollViewLocalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA14222F165300C6002B /* ScrollViewLocalData.cpp */; };
+		6802AB07222F165400C6002B /* ScrollViewProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA16222F165300C6002B /* ScrollViewProps.cpp */; };
+		6802AB09222F165400C6002B /* ScrollViewEventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA1A222F165300C6002B /* ScrollViewEventEmitter.cpp */; };
+		6802AB0A222F165400C6002B /* ScrollViewShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA1B222F165300C6002B /* ScrollViewShadowNode.cpp */; };
+		6802AB0D222F165400C6002B /* SliderMeasurementsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA28222F165300C6002B /* SliderMeasurementsManager.cpp */; };
+		6802AB12222F165400C6002B /* ImageShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA39222F165300C6002B /* ImageShadowNode.cpp */; };
+		6802AB14222F165400C6002B /* ImageEventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA3C222F165300C6002B /* ImageEventEmitter.cpp */; };
+		6802AB15222F165400C6002B /* ImageProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA41222F165300C6002B /* ImageProps.cpp */; };
+		6802AB16222F165400C6002B /* ImageLocalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA42222F165300C6002B /* ImageLocalData.cpp */; };
+		6802AB1A222F165400C6002B /* YogaStylableProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA55222F165300C6002B /* YogaStylableProps.cpp */; };
+		6802AB1B222F165400C6002B /* YogaLayoutableShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA56222F165300C6002B /* YogaLayoutableShadowNode.cpp */; };
+		6802AB1C222F165400C6002B /* ViewShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA59222F165300C6002B /* ViewShadowNode.cpp */; };
+		6802AB1D222F165400C6002B /* ViewEventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA5A222F165300C6002B /* ViewEventEmitter.cpp */; };
+		6802AB1F222F165400C6002B /* TouchEventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA60222F165300C6002B /* TouchEventEmitter.cpp */; };
+		6802AB20222F165400C6002B /* ViewProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA61222F165300C6002B /* ViewProps.cpp */; };
+		6802AB21222F165400C6002B /* AccessibilityProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA65222F165300C6002B /* AccessibilityProps.cpp */; };
+		6802AB22222F165400C6002B /* AccessibleShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA69222F165300C6002B /* AccessibleShadowNode.cpp */; };
+		6802AB23222F165400C6002B /* RootShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA6D222F165300C6002B /* RootShadowNode.cpp */; };
+		6802AB24222F165400C6002B /* RootProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA6E222F165300C6002B /* RootProps.cpp */; };
+		6802AB26222F165400C6002B /* BaseTextShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA77222F165300C6002B /* BaseTextShadowNode.cpp */; };
+		6802AB27222F165400C6002B /* BaseTextProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA78222F165300C6002B /* BaseTextProps.cpp */; };
+		6802AB28222F165400C6002B /* ParagraphLocalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA7E222F165300C6002B /* ParagraphLocalData.cpp */; };
+		6802AB29222F165400C6002B /* ParagraphShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA81222F165300C6002B /* ParagraphShadowNode.cpp */; };
+		6802AB2A222F165400C6002B /* ParagraphProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA83222F165300C6002B /* ParagraphProps.cpp */; };
+		6802AB2D222F165400C6002B /* TextShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA8C222F165300C6002B /* TextShadowNode.cpp */; };
+		6802AB2E222F165400C6002B /* TextProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA8E222F165300C6002B /* TextProps.cpp */; };
+		6802AB2F222F165400C6002B /* RawTextProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA90222F165300C6002B /* RawTextProps.cpp */; };
+		6802AB30222F165400C6002B /* RawTextShadowNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA93222F165300C6002B /* RawTextShadowNode.cpp */; };
+		6802AB31222F165400C6002B /* SampleComponentDescriptorFactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AA96222F165300C6002B /* SampleComponentDescriptorFactor.cpp */; };
+		6802AB33222F165400C6002B /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAA5222F165400C6002B /* Color.cpp */; };
+		6802AB36222F165400C6002B /* DebugStringConvertible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAB0222F165400C6002B /* DebugStringConvertible.cpp */; };
+		6802AB38222F165400C6002B /* DebugStringConvertibleItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAB7222F165400C6002B /* DebugStringConvertibleItem.cpp */; };
+		6802AB39222F165400C6002B /* ShadowTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AABB222F165400C6002B /* ShadowTree.cpp */; };
+		6802AB3C222F165400C6002B /* UIManagerBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAC3222F165400C6002B /* UIManagerBinding.cpp */; };
+		6802AB3D222F165400C6002B /* Scheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAC6222F165400C6002B /* Scheduler.cpp */; };
+		6802AB3E222F165400C6002B /* UIManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AACB222F165400C6002B /* UIManager.cpp */; };
+		6802AB3F222F165400C6002B /* ShadowTreeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AACC222F165400C6002B /* ShadowTreeRegistry.cpp */; };
+		6802AB40222F165400C6002B /* ComponentDescriptorRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAD0222F165400C6002B /* ComponentDescriptorRegistry.cpp */; };
+		6802AB41222F165400C6002B /* UITemplateProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AAD1222F165400C6002B /* UITemplateProcessor.cpp */; };
+		6802AB42222F168500C6002B /* conversions.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA15222F165300C6002B /* conversions.h */; };
+		6802AB43222F168500C6002B /* ScrollViewEventEmitter.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA17222F165300C6002B /* ScrollViewEventEmitter.h */; };
+		6802AB44222F168500C6002B /* ScrollViewLocalData.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA1C222F165300C6002B /* ScrollViewLocalData.h */; };
+		6802AB45222F168500C6002B /* ScrollViewShadowNode.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA1E222F165300C6002B /* ScrollViewShadowNode.h */; };
+		6802AB46222F168500C6002B /* ScrollViewComponentDescriptor.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA1F222F165300C6002B /* ScrollViewComponentDescriptor.h */; };
+		6802AB47222F168500C6002B /* primitives.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA20222F165300C6002B /* primitives.h */; };
+		6802AB48222F168500C6002B /* ScrollViewProps.h in Copy components/scrollview */ = {isa = PBXBuildFile; fileRef = 6802AA21222F165300C6002B /* ScrollViewProps.h */; };
+		6802AB4A222F170B00C6002B /* RCTImageResponseObserverProxy.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A900222F15A400C6002B /* RCTImageResponseObserverProxy.h */; };
+		6802AB4B222F170B00C6002B /* RCTSurfaceRegistry.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A901222F15A400C6002B /* RCTSurfaceRegistry.h */; };
+		6802AB4C222F170B00C6002B /* UIView+ComponentViewProtocol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A903222F15A400C6002B /* UIView+ComponentViewProtocol.h */; };
+		6802AB4D222F170B00C6002B /* RCTMountingManager.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A904222F15A400C6002B /* RCTMountingManager.h */; };
+		6802AB4E222F170B00C6002B /* RCTMountingManagerDelegate.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A905222F15A400C6002B /* RCTMountingManagerDelegate.h */; };
+		6802AB4F222F170B00C6002B /* RCTInsertMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A908222F15A400C6002B /* RCTInsertMountItem.h */; };
+		6802AB50222F170B00C6002B /* RCTRemoveMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A90A222F15A400C6002B /* RCTRemoveMountItem.h */; };
+		6802AB51222F170B00C6002B /* RCTUpdateLayoutMetricsMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A90E222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.h */; };
+		6802AB52222F170B00C6002B /* RCTUpdateEventEmitterMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A90F222F15A400C6002B /* RCTUpdateEventEmitterMountItem.h */; };
+		6802AB53222F170B00C6002B /* RCTMountItemProtocol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A910222F15A400C6002B /* RCTMountItemProtocol.h */; };
+		6802AB54222F170B00C6002B /* RCTUpdateLocalDataMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A911222F15A400C6002B /* RCTUpdateLocalDataMountItem.h */; };
+		6802AB55222F170B00C6002B /* RCTUpdateStateMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A915222F15A400C6002B /* RCTUpdateStateMountItem.h */; };
+		6802AB56222F170B00C6002B /* RCTDeleteMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A918222F15A400C6002B /* RCTDeleteMountItem.h */; };
+		6802AB57222F170B00C6002B /* RCTCreateMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A919222F15A400C6002B /* RCTCreateMountItem.h */; };
+		6802AB58222F170B00C6002B /* RCTUpdatePropsMountItem.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A91A222F15A400C6002B /* RCTUpdatePropsMountItem.h */; };
+		6802AB59222F170B00C6002B /* RCTComponentViewProtocol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A91B222F15A400C6002B /* RCTComponentViewProtocol.h */; };
+		6802AB5A222F170B00C6002B /* RCTEnhancedScrollView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A920222F15A400C6002B /* RCTEnhancedScrollView.h */; };
+		6802AB5B222F170B00C6002B /* RCTScrollViewComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A922222F15A400C6002B /* RCTScrollViewComponentView.h */; };
+		6802AB5C222F170B00C6002B /* RCTSliderComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A924222F15A400C6002B /* RCTSliderComponentView.h */; };
+		6802AB5D222F170B00C6002B /* RCTImageComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A928222F15A400C6002B /* RCTImageComponentView.h */; };
+		6802AB5E222F170B00C6002B /* RCTActivityIndicatorViewComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A92A222F15A400C6002B /* RCTActivityIndicatorViewComponentView.h */; };
+		6802AB5F222F170B00C6002B /* RCTViewComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A92D222F15A400C6002B /* RCTViewComponentView.h */; };
+		6802AB60222F170B00C6002B /* RCTSwitchComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A931222F15A400C6002B /* RCTSwitchComponentView.h */; };
+		6802AB61222F170B00C6002B /* RCTRootComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A933222F15A400C6002B /* RCTRootComponentView.h */; };
+		6802AB62222F170B00C6002B /* RCTParagraphComponentView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A937222F15A400C6002B /* RCTParagraphComponentView.h */; };
+		6802AB63222F170B00C6002B /* RCTComponentViewFactory.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A93A222F15A400C6002B /* RCTComponentViewFactory.h */; };
+		6802AB64222F170B00C6002B /* RCTComponentViewRegistry.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A93B222F15A400C6002B /* RCTComponentViewRegistry.h */; };
+		6802AB65222F170B00C6002B /* RCTPrimitives.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A93C222F15A400C6002B /* RCTPrimitives.h */; };
+		6802AB66222F170B00C6002B /* RCTFabricSurfaceHostingView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A941222F15A400C6002B /* RCTFabricSurfaceHostingView.h */; };
+		6802AB67222F170B00C6002B /* RCTFabricSurface.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A942222F15A400C6002B /* RCTFabricSurface.h */; };
+		6802AB68222F170B00C6002B /* RCTFabricSurfaceHostingProxyRootView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A943222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.h */; };
+		6802AB69222F170B00C6002B /* RuntimeEventBeat.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A949222F15A400C6002B /* RuntimeEventBeat.h */; };
+		6802AB6A222F170B00C6002B /* MainRunLoopEventBeat.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A94A222F15A400C6002B /* MainRunLoopEventBeat.h */; };
+		6802AB6B222F170B00C6002B /* MainQueueExecutor.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A94B222F15A400C6002B /* MainQueueExecutor.h */; };
+		6802AB6C222F170B00C6002B /* RCTImageResponseDelegate.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A94C222F15A400C6002B /* RCTImageResponseDelegate.h */; };
+		6802AB6D222F170B00C6002B /* RCTTouchableComponentViewProtocol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A94D222F15A400C6002B /* RCTTouchableComponentViewProtocol.h */; };
+		6802AB6E222F170B00C6002B /* RCTConversions.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A94E222F15A400C6002B /* RCTConversions.h */; };
+		6802AB6F222F170B00C6002B /* RCTSurfacePresenter.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A94F222F15A400C6002B /* RCTSurfacePresenter.h */; };
+		6802AB70222F170B00C6002B /* RCTScheduler.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A952222F15A400C6002B /* RCTScheduler.h */; };
+		6802AB71222F170B00C6002B /* RCTSurfaceTouchHandler.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802A954222F15A400C6002B /* RCTSurfaceTouchHandler.h */; };
+		6802AB73222F177900C6002B /* BaseTextProps.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA79222F165300C6002B /* BaseTextProps.h */; };
+		6802AB74222F177900C6002B /* BaseTextShadowNode.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA7A222F165300C6002B /* BaseTextShadowNode.h */; };
+		6802AB75222F177900C6002B /* conversions.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA7C222F165300C6002B /* conversions.h */; };
+		6802AB76222F177900C6002B /* ParagraphShadowNode.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA7D222F165300C6002B /* ParagraphShadowNode.h */; };
+		6802AB77222F177900C6002B /* ParagraphMeasurementCache.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA7F222F165300C6002B /* ParagraphMeasurementCache.h */; };
+		6802AB78222F177900C6002B /* ParagraphLocalData.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA80222F165300C6002B /* ParagraphLocalData.h */; };
+		6802AB79222F177900C6002B /* ParagraphProps.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA82222F165300C6002B /* ParagraphProps.h */; };
+		6802AB7A222F177900C6002B /* ParagraphComponentDescriptor.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA84222F165300C6002B /* ParagraphComponentDescriptor.h */; };
+		6802AB7B222F177900C6002B /* TextComponentDescriptor.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA8A222F165300C6002B /* TextComponentDescriptor.h */; };
+		6802AB7C222F177900C6002B /* TextShadowNode.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA8B222F165300C6002B /* TextShadowNode.h */; };
+		6802AB7D222F177900C6002B /* TextProps.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA8D222F165300C6002B /* TextProps.h */; };
+		6802AB7E222F177900C6002B /* RawTextProps.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA91222F165300C6002B /* RawTextProps.h */; };
+		6802AB7F222F177900C6002B /* RawTextComponentDescriptor.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA92222F165300C6002B /* RawTextComponentDescriptor.h */; };
+		6802AB80222F177900C6002B /* RawTextShadowNode.h in Copy components/text */ = {isa = PBXBuildFile; fileRef = 6802AA94222F165300C6002B /* RawTextShadowNode.h */; };
+		6802AB83222F17C400C6002B /* TouchEventEmitter.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA50222F165300C6002B /* TouchEventEmitter.h */; };
+		6802AB84222F17C400C6002B /* ViewComponentDescriptor.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA51222F165300C6002B /* ViewComponentDescriptor.h */; };
+		6802AB85222F17C400C6002B /* conversions.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA52222F165300C6002B /* conversions.h */; };
+		6802AB86222F17C400C6002B /* YogaStylableProps.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA54222F165300C6002B /* YogaStylableProps.h */; };
+		6802AB87222F17C400C6002B /* YogaLayoutableShadowNode.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA57222F165300C6002B /* YogaLayoutableShadowNode.h */; };
+		6802AB88222F17C400C6002B /* propsConversions.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA58222F165300C6002B /* propsConversions.h */; };
+		6802AB89222F17C400C6002B /* ConcreteViewShadowNode.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA5B222F165300C6002B /* ConcreteViewShadowNode.h */; };
+		6802AB8A222F17C400C6002B /* ViewProps.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA5E222F165300C6002B /* ViewProps.h */; };
+		6802AB8B222F17C400C6002B /* primitives.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA62222F165300C6002B /* primitives.h */; };
+		6802AB8C222F17C400C6002B /* accessibilityPropsConversions.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA64222F165300C6002B /* accessibilityPropsConversions.h */; };
+		6802AB8D222F17C400C6002B /* AccessibilityProps.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA66222F165300C6002B /* AccessibilityProps.h */; };
+		6802AB8E222F17C400C6002B /* AccessibleShadowNode.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA67222F165300C6002B /* AccessibleShadowNode.h */; };
+		6802AB8F222F17C400C6002B /* AccessibilityPrimitives.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA68222F165300C6002B /* AccessibilityPrimitives.h */; };
+		6802AB90222F17C400C6002B /* ViewEventEmitter.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA6A222F165300C6002B /* ViewEventEmitter.h */; };
+		6802AB91222F17C400C6002B /* ViewShadowNode.h in Copy components/view */ = {isa = PBXBuildFile; fileRef = 6802AA6B222F165300C6002B /* ViewShadowNode.h */; };
+		6802AB92222F180600C6002B /* RCTImagePrimitivesConversions.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A98B222F165300C6002B /* RCTImagePrimitivesConversions.h */; };
+		6802AB93222F180600C6002B /* RCTImageManager.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A98D222F165300C6002B /* RCTImageManager.h */; };
+		6802AB94222F180600C6002B /* ImageRequest.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A993222F165300C6002B /* ImageRequest.h */; };
+		6802AB95222F180600C6002B /* ImageResponseObserverCoordinator.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A996222F165300C6002B /* ImageResponseObserverCoordinator.h */; };
+		6802AB96222F180600C6002B /* ImageManager.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A998222F165300C6002B /* ImageManager.h */; };
+		6802AB97222F180600C6002B /* primitives.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A999222F165300C6002B /* primitives.h */; };
+		6802AB98222F180600C6002B /* ImageResponse.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A99A222F165300C6002B /* ImageResponse.h */; };
+		6802AB99222F180600C6002B /* ImageResponseObserver.h in Copy imagemanager */ = {isa = PBXBuildFile; fileRef = 6802A99B222F165300C6002B /* ImageResponseObserver.h */; };
+		6802AB9B222F185A00C6002B /* conversions.h in Copy attributedstring */ = {isa = PBXBuildFile; fileRef = 6802A9F1222F165300C6002B /* conversions.h */; };
+		6802AB9C222F185A00C6002B /* TextAttributes.h in Copy attributedstring */ = {isa = PBXBuildFile; fileRef = 6802A9F2222F165300C6002B /* TextAttributes.h */; };
+		6802AB9D222F185A00C6002B /* AttributedString.h in Copy attributedstring */ = {isa = PBXBuildFile; fileRef = 6802A9FA222F165300C6002B /* AttributedString.h */; };
+		6802AB9E222F185A00C6002B /* ParagraphAttributes.h in Copy attributedstring */ = {isa = PBXBuildFile; fileRef = 6802A9FB222F165300C6002B /* ParagraphAttributes.h */; };
+		6802AB9F222F185A00C6002B /* primitives.h in Copy attributedstring */ = {isa = PBXBuildFile; fileRef = 6802A9FC222F165300C6002B /* primitives.h */; };
+		6802ABA1222F18B300C6002B /* conversions.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A99E222F165300C6002B /* conversions.h */; };
+		6802ABA2222F18B300C6002B /* propsConversions.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A99F222F165300C6002B /* propsConversions.h */; };
+		6802ABA3222F18B300C6002B /* LayoutMetrics.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9A1222F165300C6002B /* LayoutMetrics.h */; };
+		6802ABA4222F18B300C6002B /* LayoutConstraints.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9A3222F165300C6002B /* LayoutConstraints.h */; };
+		6802ABA5222F18B300C6002B /* LayoutPrimitives.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9A4222F165300C6002B /* LayoutPrimitives.h */; };
+		6802ABA6222F18B300C6002B /* LayoutContext.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9A5222F165300C6002B /* LayoutContext.h */; };
+		6802ABA7222F18B300C6002B /* LayoutableShadowNode.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9A6222F165300C6002B /* LayoutableShadowNode.h */; };
+		6802ABA8222F18B300C6002B /* Props.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9A9222F165300C6002B /* Props.h */; };
+		6802ABA9222F18B300C6002B /* ShadowNodeFragment.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9AC222F165300C6002B /* ShadowNodeFragment.h */; };
+		6802ABAA222F18B300C6002B /* ShadowNode.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9AE222F165300C6002B /* ShadowNode.h */; };
+		6802ABAB222F18B300C6002B /* ConcreteShadowNode.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9AF222F165300C6002B /* ConcreteShadowNode.h */; };
+		6802ABAC222F18B300C6002B /* LocalData.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9B0222F165300C6002B /* LocalData.h */; };
+		6802ABAD222F18B300C6002B /* StateData.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9B8222F165300C6002B /* StateData.h */; };
+		6802ABAE222F18B300C6002B /* StateCoordinator.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9BA222F165300C6002B /* StateCoordinator.h */; };
+		6802ABAF222F18B300C6002B /* StateTarget.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9BB222F165300C6002B /* StateTarget.h */; };
+		6802ABB0222F18B300C6002B /* StatePipe.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9BD222F165300C6002B /* StatePipe.h */; };
+		6802ABB1222F18B300C6002B /* ConcreteState.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9BF222F165300C6002B /* ConcreteState.h */; };
+		6802ABB2222F18B300C6002B /* State.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9C0222F165300C6002B /* State.h */; };
+		6802ABB3222F18B300C6002B /* StateUpdate.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9C1222F165300C6002B /* StateUpdate.h */; };
+		6802ABB4222F18B300C6002B /* RawValue.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9C4222F165300C6002B /* RawValue.h */; };
+		6802ABB5222F18B300C6002B /* Sealable.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9C6222F165300C6002B /* Sealable.h */; };
+		6802ABB6222F18B300C6002B /* RawProps.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9C7222F165300C6002B /* RawProps.h */; };
+		6802ABB7222F18B300C6002B /* ReactPrimitives.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9C9222F165300C6002B /* ReactPrimitives.h */; };
+		6802ABB8222F18B300C6002B /* UnbatchedEventQueue.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9CC222F165300C6002B /* UnbatchedEventQueue.h */; };
+		6802ABB9222F18B300C6002B /* EventHandler.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9CD222F165300C6002B /* EventHandler.h */; };
+		6802ABBA222F18B300C6002B /* EventQueue.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9CF222F165300C6002B /* EventQueue.h */; };
+		6802ABBB222F18B300C6002B /* ValueFactory.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9D4222F165300C6002B /* ValueFactory.h */; };
+		6802ABBC222F18B300C6002B /* BatchedEventQueue.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9D6222F165300C6002B /* BatchedEventQueue.h */; };
+		6802ABBD222F18B300C6002B /* EventTarget.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9D7222F165300C6002B /* EventTarget.h */; };
+		6802ABBE222F18B300C6002B /* EventPriority.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9D8222F165300C6002B /* EventPriority.h */; };
+		6802ABBF222F18B300C6002B /* EventBeatBasedExecutor.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9D9222F165300C6002B /* EventBeatBasedExecutor.h */; };
+		6802ABC0222F18B300C6002B /* EventBeat.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9DB222F165300C6002B /* EventBeat.h */; };
+		6802ABC1222F18B300C6002B /* EventEmitter.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9DD222F165300C6002B /* EventEmitter.h */; };
+		6802ABC2222F18B300C6002B /* EventDispatcher.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9DF222F165300C6002B /* EventDispatcher.h */; };
+		6802ABC3222F18B300C6002B /* RawEvent.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9E0222F165300C6002B /* RawEvent.h */; };
+		6802ABC4222F18B300C6002B /* EventPipe.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9E1222F165300C6002B /* EventPipe.h */; };
+		6802ABC5222F18B300C6002B /* ComponentDescriptor.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9E3222F165300C6002B /* ComponentDescriptor.h */; };
+		6802ABC6222F18B300C6002B /* ConcreteComponentDescriptor.h in Copy core */ = {isa = PBXBuildFile; fileRef = 6802A9E4222F165300C6002B /* ConcreteComponentDescriptor.h */; };
+		6802ABCB222F19D800C6002B /* conversions.h in Copy graphics */ = {isa = PBXBuildFile; fileRef = 6802AA9F222F165300C6002B /* conversions.h */; };
+		6802ABCC222F19D800C6002B /* ColorComponents.h in Copy graphics */ = {isa = PBXBuildFile; fileRef = 6802AAA0222F165300C6002B /* ColorComponents.h */; };
+		6802ABCD222F19D800C6002B /* Float.h in Copy graphics */ = {isa = PBXBuildFile; fileRef = 6802AAA3222F165300C6002B /* Float.h */; };
+		6802ABCE222F19D800C6002B /* Color.h in Copy graphics */ = {isa = PBXBuildFile; fileRef = 6802AAA4222F165300C6002B /* Color.h */; };
+		6802ABCF222F19D800C6002B /* Geometry.h in Copy graphics */ = {isa = PBXBuildFile; fileRef = 6802AAAD222F165400C6002B /* Geometry.h */; };
+		6802ABEE222F1CA700C6002B /* map.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802ABE8222F1C9900C6002B /* map.h */; };
+		6802ABEF222F1CA700C6002B /* better.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802ABE9222F1C9900C6002B /* better.h */; };
+		6802ABF0222F1CA700C6002B /* optional.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802ABEA222F1C9900C6002B /* optional.h */; };
+		6802ABF1222F1CA700C6002B /* mutex.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802ABEC222F1C9900C6002B /* mutex.h */; };
+		6802ABF2222F1CA700C6002B /* set.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802ABED222F1C9900C6002B /* set.h */; };
+		6802ABF6222F1D1500C6002B /* debugStringConvertibleUtils.h in Copy debug */ = {isa = PBXBuildFile; fileRef = 6802AAAF222F165400C6002B /* debugStringConvertibleUtils.h */; };
+		6802ABF7222F1D1500C6002B /* DebugStringConvertibleItem.h in Copy debug */ = {isa = PBXBuildFile; fileRef = 6802AAB1222F165400C6002B /* DebugStringConvertibleItem.h */; };
+		6802ABF8222F1D1500C6002B /* SystraceSection.h in Copy debug */ = {isa = PBXBuildFile; fileRef = 6802AAB4222F165400C6002B /* SystraceSection.h */; };
+		6802ABF9222F1D1500C6002B /* DebugStringConvertible.h in Copy debug */ = {isa = PBXBuildFile; fileRef = 6802AAB6222F165400C6002B /* DebugStringConvertible.h */; };
+		6802ABFA222F1DEF00C6002B /* YGNode.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 53EC85DE1FDEC75A0051B2B5 /* YGNode.h */; };
+		6802ABFC222F1E2000C6002B /* ComponentDescriptorFactory.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AAC5222F165400C6002B /* ComponentDescriptorFactory.h */; };
+		6802ABFD222F1E2000C6002B /* ComponentDescriptorRegistry.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AABF222F165400C6002B /* ComponentDescriptorRegistry.h */; };
+		6802ABFE222F1E2000C6002B /* ContextContainer.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AAC9222F165400C6002B /* ContextContainer.h */; };
+		6802ABFF222F1E2000C6002B /* primitives.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AACE222F165400C6002B /* primitives.h */; };
+		6802AC00222F1E2000C6002B /* Scheduler.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AABD222F165400C6002B /* Scheduler.h */; };
+		6802AC01222F1E2000C6002B /* SchedulerDelegate.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AAC8222F165400C6002B /* SchedulerDelegate.h */; };
+		6802AC02222F1E2000C6002B /* ShadowTree.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AAC7222F165400C6002B /* ShadowTree.h */; };
+		6802AC03222F1E2000C6002B /* ShadowTreeDelegate.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AABA222F165400C6002B /* ShadowTreeDelegate.h */; };
+		6802AC04222F1E2000C6002B /* ShadowTreeRegistry.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AABE222F165400C6002B /* ShadowTreeRegistry.h */; };
+		6802AC05222F1E2000C6002B /* TimeUtils.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AAC4222F165400C6002B /* TimeUtils.h */; };
+		6802AC06222F1E2000C6002B /* UIManager.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AACD222F165400C6002B /* UIManager.h */; };
+		6802AC07222F1E2000C6002B /* UIManagerBinding.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AAB9222F165400C6002B /* UIManagerBinding.h */; };
+		6802AC08222F1E2000C6002B /* UIManagerDelegate.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AACF222F165400C6002B /* UIManagerDelegate.h */; };
+		6802AC09222F1E2000C6002B /* UITemplateProcessor.h in Copy uimanager */ = {isa = PBXBuildFile; fileRef = 6802AABC222F165400C6002B /* UITemplateProcessor.h */; };
+		6802AC0B222F1EDF00C6002B /* ImageLocalData.h in Copy components/image */ = {isa = PBXBuildFile; fileRef = 6802AA37222F165300C6002B /* ImageLocalData.h */; };
+		6802AC0C222F1EDF00C6002B /* conversions.h in Copy components/image */ = {isa = PBXBuildFile; fileRef = 6802AA38222F165300C6002B /* conversions.h */; };
+		6802AC0D222F1EDF00C6002B /* ImageEventEmitter.h in Copy components/image */ = {isa = PBXBuildFile; fileRef = 6802AA3D222F165300C6002B /* ImageEventEmitter.h */; };
+		6802AC0E222F1EDF00C6002B /* ImageProps.h in Copy components/image */ = {isa = PBXBuildFile; fileRef = 6802AA3E222F165300C6002B /* ImageProps.h */; };
+		6802AC0F222F1EDF00C6002B /* ImageComponentDescriptor.h in Copy components/image */ = {isa = PBXBuildFile; fileRef = 6802AA40222F165300C6002B /* ImageComponentDescriptor.h */; };
+		6802AC10222F1EDF00C6002B /* ImageShadowNode.h in Copy components/image */ = {isa = PBXBuildFile; fileRef = 6802AA43222F165300C6002B /* ImageShadowNode.h */; };
+		6802AC1C222F1FCE00C6002B /* ReactNativeConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC1A222F1FCD00C6002B /* ReactNativeConfig.cpp */; };
+		6802AC1D222F1FD200C6002B /* ReactNativeConfig.h in Copy config */ = {isa = PBXBuildFile; fileRef = 6802AC19222F1FCD00C6002B /* ReactNativeConfig.h */; };
+		6802AC1F222F207D00C6002B /* SliderMeasurementsManager.h in Copy components/slider */ = {isa = PBXBuildFile; fileRef = 6802AA27222F165300C6002B /* SliderMeasurementsManager.h */; };
+		6802AC20222F207D00C6002B /* SliderComponentDescriptor.h in Copy components/slider */ = {isa = PBXBuildFile; fileRef = 6802AA2F222F165300C6002B /* SliderComponentDescriptor.h */; };
+		6802AC23222F207D00C6002B /* SliderLocalData.h in Copy components/slider */ = {isa = PBXBuildFile; fileRef = 6802AA34222F165300C6002B /* SliderLocalData.h */; };
+		6802AC24222F207D00C6002B /* SliderShadowNode.h in Copy components/slider */ = {isa = PBXBuildFile; fileRef = 6802AA35222F165300C6002B /* SliderShadowNode.h */; };
+		6802AC25222F232700C6002B /* YGEnums.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 130A77031DF767AF001F9587 /* YGEnums.h */; };
+		6802AC26222F232B00C6002B /* YGStyle.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 5352C5712038FF8D00A3B97E /* YGStyle.h */; };
+		6802AC28222F247B00C6002B /* RootShadowNode.h in Copy components/root */ = {isa = PBXBuildFile; fileRef = 6802AA71222F165300C6002B /* RootShadowNode.h */; };
+		6802AC29222F247B00C6002B /* RootComponentDescriptor.h in Copy components/root */ = {isa = PBXBuildFile; fileRef = 6802AA72222F165300C6002B /* RootComponentDescriptor.h */; };
+		6802AC2A222F247B00C6002B /* RootProps.h in Copy components/root */ = {isa = PBXBuildFile; fileRef = 6802AA74222F165300C6002B /* RootProps.h */; };
+		6802AC33222F24F500C6002B /* SharedFunction.h in Copy utils */ = {isa = PBXBuildFile; fileRef = 6802AC2E222F24D000C6002B /* SharedFunction.h */; };
+		6802AC34222F24F500C6002B /* SimpleThreadSafeCache.h in Copy utils */ = {isa = PBXBuildFile; fileRef = 6802AC2F222F24D000C6002B /* SimpleThreadSafeCache.h */; };
+		6802AC35222F24F500C6002B /* FloatComparison.h in Copy utils */ = {isa = PBXBuildFile; fileRef = 6802AC31222F24D000C6002B /* FloatComparison.h */; };
+		6802AC36222F26DB00C6002B /* RCTFollyConvert.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 1304439F1E3FEAA900D93A67 /* RCTFollyConvert.h */; };
+		6802AC39222F289E00C6002B /* RCTSurfaceView+Internal.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 599FAA331FB274970058CCF6 /* RCTSurfaceView+Internal.h */; };
+		6802AC3B222F298700C6002B /* RCTTextPrimitivesConversions.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA01222F165300C6002B /* RCTTextPrimitivesConversions.h */; };
+		6802AC3C222F298700C6002B /* RCTFontUtils.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA02222F165300C6002B /* RCTFontUtils.h */; };
+		6802AC3D222F298700C6002B /* TextLayoutManager.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA06222F165300C6002B /* TextLayoutManager.h */; };
+		6802AC3E222F298700C6002B /* RCTTextLayoutManager.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA07222F165300C6002B /* RCTTextLayoutManager.h */; };
+		6802AC3F222F298700C6002B /* RCTFontProperties.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA08222F165300C6002B /* RCTFontProperties.h */; };
+		6802AC40222F298700C6002B /* RCTAttributedTextUtils.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA09222F165300C6002B /* RCTAttributedTextUtils.h */; };
+		6802AC41222F298700C6002B /* NSTextStorage+FontScaling.h in Copy textlayoutmanager */ = {isa = PBXBuildFile; fileRef = 6802AA0B222F165300C6002B /* NSTextStorage+FontScaling.h */; };
+		6802AC43222F2B0C00C6002B /* conversions.h in Copy components/activityindicator */ = {isa = PBXBuildFile; fileRef = 6802AA45222F165300C6002B /* conversions.h */; };
+		6802AC4A222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6802AC48222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.h */; };
+		6802AC4C222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC49222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.mm */; };
+		6802AC4D222F2C1100C6002B /* RCTSurfaceHostingProxyRootView.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6802AC48222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.h */; };
+		6802AC53222F353700C6002B /* SharedMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC50222F352F00C6002B /* SharedMutex.cpp */; };
+		6802AC54222F353700C6002B /* SharedMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC50222F352F00C6002B /* SharedMutex.cpp */; };
+		6802AC56222F365A00C6002B /* Futex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC55222F365A00C6002B /* Futex.cpp */; };
+		6802AC57222F365A00C6002B /* Futex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC55222F365A00C6002B /* Futex.cpp */; };
+		6802AC59222F371300C6002B /* ParkingLot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC58222F371300C6002B /* ParkingLot.cpp */; };
+		6802AC5A222F371300C6002B /* ParkingLot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC58222F371300C6002B /* ParkingLot.cpp */; };
+		6802AC5C222F374200C6002B /* SafeAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC5B222F374200C6002B /* SafeAssert.cpp */; };
+		6802AC5D222F374200C6002B /* SafeAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC5B222F374200C6002B /* SafeAssert.cpp */; };
+		6802AC5F222F377800C6002B /* FileUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC5E222F377800C6002B /* FileUtil.cpp */; };
+		6802AC60222F377800C6002B /* FileUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC5E222F377800C6002B /* FileUtil.cpp */; };
+		6802AC62222F389800C6002B /* SysStat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC61222F389800C6002B /* SysStat.cpp */; };
+		6802AC63222F389800C6002B /* SysStat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC61222F389800C6002B /* SysStat.cpp */; };
+		6802AC65222F38A100C6002B /* SysFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC64222F38A100C6002B /* SysFile.cpp */; };
+		6802AC66222F38A100C6002B /* SysFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC64222F38A100C6002B /* SysFile.cpp */; };
+		6802AC68222F38AE00C6002B /* Stdlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC67222F38AD00C6002B /* Stdlib.cpp */; };
+		6802AC69222F38AE00C6002B /* Stdlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC67222F38AD00C6002B /* Stdlib.cpp */; };
+		6802AC6B222F38BF00C6002B /* Sockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC6A222F38BE00C6002B /* Sockets.cpp */; };
+		6802AC6C222F38BF00C6002B /* Sockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC6A222F38BE00C6002B /* Sockets.cpp */; };
+		6802AC6E222F38D200C6002B /* Fcntl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC6D222F38D200C6002B /* Fcntl.cpp */; };
+		6802AC6F222F38D200C6002B /* Fcntl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC6D222F38D200C6002B /* Fcntl.cpp */; };
+		6802AC73222F3B1900C6002B /* CacheLocality.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC72222F3B1800C6002B /* CacheLocality.cpp */; };
+		6802AC74222F3B1900C6002B /* CacheLocality.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802AC72222F3B1800C6002B /* CacheLocality.cpp */; };
+		6802AC79222F3EA300C6002B /* FileUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 6802AC78222F3EA300C6002B /* FileUtil.h */; };
+		6802B10C223026CD00C6002B /* Differentiator.h in Copy mounting */ = {isa = PBXBuildFile; fileRef = 6802A9EA222F165300C6002B /* Differentiator.h */; };
+		6802B10D223026CD00C6002B /* ShadowView.h in Copy mounting */ = {isa = PBXBuildFile; fileRef = 6802A9EB222F165300C6002B /* ShadowView.h */; };
+		6802B10E223026CD00C6002B /* ShadowViewMutation.h in Copy mounting */ = {isa = PBXBuildFile; fileRef = 6802A9ED222F165300C6002B /* ShadowViewMutation.h */; };
+		6802B10F223026E100C6002B /* ShadowViewMutation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9E6222F165300C6002B /* ShadowViewMutation.cpp */; };
+		6802B110223026E100C6002B /* ShadowView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9E7222F165300C6002B /* ShadowView.cpp */; };
+		6802B111223026E100C6002B /* Differentiator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6802A9EE222F165300C6002B /* Differentiator.cpp */; };
 		68EFE4EE1CF6EB3900A1DE13 /* RCTBundleURLProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EFE4ED1CF6EB3900A1DE13 /* RCTBundleURLProvider.m */; };
 		830A229E1A66C68A008503DA /* RCTRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830A229D1A66C68A008503DA /* RCTRootView.m */; };
 		83281384217EB70900574D55 /* MallocImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83281383217EB70800574D55 /* MallocImpl.cpp */; };
@@ -1217,6 +1537,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3D3C04B91DE3340900C268FA;
 			remoteInfo = yoga;
+		};
+		6802ABD2222F1A0F00C6002B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		6802ABD8222F1AF900C6002B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 139D7ECD1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		6802ABF3222F1CEA00C6002B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6802ABDD222F1C8300C6002B;
+			remoteInfo = better;
+		};
+		6802AC15222F1F5A00C6002B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D3C04B91DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		6802AC2B222F24A300C6002B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDEBC6BA214B3E7000DD5AC8;
+			remoteInfo = jsi;
 		};
 		ED296F7D214C957300B7C4FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1557,6 +1912,8 @@
 			dstPath = include/React;
 			dstSubfolderSpec = 16;
 			files = (
+				6802AC4D222F2C1100C6002B /* RCTSurfaceHostingProxyRootView.h in Copy Headers */,
+				6802AC36222F26DB00C6002B /* RCTFollyConvert.h in Copy Headers */,
 				39C50FF92046EACF00CEE534 /* RCTVersion.h in Copy Headers */,
 				591F78DE202ADB8F004A668C /* RCTLayout.h in Copy Headers */,
 				59EDBCBD1FDF4E43003573DE /* RCTScrollableProtocol.h in Copy Headers */,
@@ -1679,6 +2036,7 @@
 				3D80D9971DF6FA890028D040 /* RCTWebViewManager.h in Copy Headers */,
 				3D80D9981DF6FA890028D040 /* RCTWrapperViewController.h in Copy Headers */,
 				3D80D99A1DF6FA890028D040 /* UIView+React.h in Copy Headers */,
+				6802AC39222F289E00C6002B /* RCTSurfaceView+Internal.h in Copy Headers */,
 			);
 			name = "Copy Headers";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1689,10 +2047,12 @@
 			dstPath = include/yoga;
 			dstSubfolderSpec = 16;
 			files = (
+				6802AC26222F232B00C6002B /* YGStyle.h in Copy Headers */,
+				6802AC25222F232700C6002B /* YGEnums.h in Copy Headers */,
+				6802ABFA222F1DEF00C6002B /* YGNode.h in Copy Headers */,
 				AC90464121C91DB8005B24B3 /* YGConfig.h in Copy Headers */,
 				AC6B69E621B146A500B2B68A /* YGValue.h in Copy Headers */,
 				AC8360D321B0263000FC46B9 /* YGMarker.h in Copy Headers */,
-				3DE4F8681DF85D8E00B9E5A0 /* YGEnums.h in Copy Headers */,
 				3DE4F8691DF85D8E00B9E5A0 /* YGMacros.h in Copy Headers */,
 				3DE4F86A1DF85D8E00B9E5A0 /* Yoga.h in Copy Headers */,
 			);
@@ -1727,6 +2087,388 @@
 				3DA981BE1E5B0E34004F2374 /* SystraceSection.h in Copy Headers */,
 			);
 			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802A8F4222F157900C6002B /* Copy components/scrollview */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/scrollview;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AB42222F168500C6002B /* conversions.h in Copy components/scrollview */,
+				6802AB43222F168500C6002B /* ScrollViewEventEmitter.h in Copy components/scrollview */,
+				6802AB44222F168500C6002B /* ScrollViewLocalData.h in Copy components/scrollview */,
+				6802AB45222F168500C6002B /* ScrollViewShadowNode.h in Copy components/scrollview */,
+				6802AB46222F168500C6002B /* ScrollViewComponentDescriptor.h in Copy components/scrollview */,
+				6802AB47222F168500C6002B /* primitives.h in Copy components/scrollview */,
+				6802AB48222F168500C6002B /* ScrollViewProps.h in Copy components/scrollview */,
+			);
+			name = "Copy components/scrollview";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AB49222F169F00C6002B /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/React;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AB4A222F170B00C6002B /* RCTImageResponseObserverProxy.h in Copy Headers */,
+				6802AB4B222F170B00C6002B /* RCTSurfaceRegistry.h in Copy Headers */,
+				6802AB4C222F170B00C6002B /* UIView+ComponentViewProtocol.h in Copy Headers */,
+				6802AB4D222F170B00C6002B /* RCTMountingManager.h in Copy Headers */,
+				6802AB4E222F170B00C6002B /* RCTMountingManagerDelegate.h in Copy Headers */,
+				6802AB4F222F170B00C6002B /* RCTInsertMountItem.h in Copy Headers */,
+				6802AB50222F170B00C6002B /* RCTRemoveMountItem.h in Copy Headers */,
+				6802AB51222F170B00C6002B /* RCTUpdateLayoutMetricsMountItem.h in Copy Headers */,
+				6802AB52222F170B00C6002B /* RCTUpdateEventEmitterMountItem.h in Copy Headers */,
+				6802AB53222F170B00C6002B /* RCTMountItemProtocol.h in Copy Headers */,
+				6802AB54222F170B00C6002B /* RCTUpdateLocalDataMountItem.h in Copy Headers */,
+				6802AB55222F170B00C6002B /* RCTUpdateStateMountItem.h in Copy Headers */,
+				6802AB56222F170B00C6002B /* RCTDeleteMountItem.h in Copy Headers */,
+				6802AB57222F170B00C6002B /* RCTCreateMountItem.h in Copy Headers */,
+				6802AB58222F170B00C6002B /* RCTUpdatePropsMountItem.h in Copy Headers */,
+				6802AB59222F170B00C6002B /* RCTComponentViewProtocol.h in Copy Headers */,
+				6802AB5A222F170B00C6002B /* RCTEnhancedScrollView.h in Copy Headers */,
+				6802AB5B222F170B00C6002B /* RCTScrollViewComponentView.h in Copy Headers */,
+				6802AB5C222F170B00C6002B /* RCTSliderComponentView.h in Copy Headers */,
+				6802AB5D222F170B00C6002B /* RCTImageComponentView.h in Copy Headers */,
+				6802AB5E222F170B00C6002B /* RCTActivityIndicatorViewComponentView.h in Copy Headers */,
+				6802AB5F222F170B00C6002B /* RCTViewComponentView.h in Copy Headers */,
+				6802AB60222F170B00C6002B /* RCTSwitchComponentView.h in Copy Headers */,
+				6802AB61222F170B00C6002B /* RCTRootComponentView.h in Copy Headers */,
+				6802AB62222F170B00C6002B /* RCTParagraphComponentView.h in Copy Headers */,
+				6802AB63222F170B00C6002B /* RCTComponentViewFactory.h in Copy Headers */,
+				6802AB64222F170B00C6002B /* RCTComponentViewRegistry.h in Copy Headers */,
+				6802AB65222F170B00C6002B /* RCTPrimitives.h in Copy Headers */,
+				6802AB66222F170B00C6002B /* RCTFabricSurfaceHostingView.h in Copy Headers */,
+				6802AB67222F170B00C6002B /* RCTFabricSurface.h in Copy Headers */,
+				6802AB68222F170B00C6002B /* RCTFabricSurfaceHostingProxyRootView.h in Copy Headers */,
+				6802AB69222F170B00C6002B /* RuntimeEventBeat.h in Copy Headers */,
+				6802AB6A222F170B00C6002B /* MainRunLoopEventBeat.h in Copy Headers */,
+				6802AB6B222F170B00C6002B /* MainQueueExecutor.h in Copy Headers */,
+				6802AB6C222F170B00C6002B /* RCTImageResponseDelegate.h in Copy Headers */,
+				6802AB6D222F170B00C6002B /* RCTTouchableComponentViewProtocol.h in Copy Headers */,
+				6802AB6E222F170B00C6002B /* RCTConversions.h in Copy Headers */,
+				6802AB6F222F170B00C6002B /* RCTSurfacePresenter.h in Copy Headers */,
+				6802AB70222F170B00C6002B /* RCTScheduler.h in Copy Headers */,
+				6802AB71222F170B00C6002B /* RCTSurfaceTouchHandler.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AB72222F172300C6002B /* Copy components/text */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/text;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AB73222F177900C6002B /* BaseTextProps.h in Copy components/text */,
+				6802AB74222F177900C6002B /* BaseTextShadowNode.h in Copy components/text */,
+				6802AB75222F177900C6002B /* conversions.h in Copy components/text */,
+				6802AB76222F177900C6002B /* ParagraphShadowNode.h in Copy components/text */,
+				6802AB77222F177900C6002B /* ParagraphMeasurementCache.h in Copy components/text */,
+				6802AB78222F177900C6002B /* ParagraphLocalData.h in Copy components/text */,
+				6802AB79222F177900C6002B /* ParagraphProps.h in Copy components/text */,
+				6802AB7A222F177900C6002B /* ParagraphComponentDescriptor.h in Copy components/text */,
+				6802AB7B222F177900C6002B /* TextComponentDescriptor.h in Copy components/text */,
+				6802AB7C222F177900C6002B /* TextShadowNode.h in Copy components/text */,
+				6802AB7D222F177900C6002B /* TextProps.h in Copy components/text */,
+				6802AB7E222F177900C6002B /* RawTextProps.h in Copy components/text */,
+				6802AB7F222F177900C6002B /* RawTextComponentDescriptor.h in Copy components/text */,
+				6802AB80222F177900C6002B /* RawTextShadowNode.h in Copy components/text */,
+			);
+			name = "Copy components/text";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AB81222F178300C6002B /* Copy imagemanager */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/imagemanager;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AB92222F180600C6002B /* RCTImagePrimitivesConversions.h in Copy imagemanager */,
+				6802AB93222F180600C6002B /* RCTImageManager.h in Copy imagemanager */,
+				6802AB94222F180600C6002B /* ImageRequest.h in Copy imagemanager */,
+				6802AB95222F180600C6002B /* ImageResponseObserverCoordinator.h in Copy imagemanager */,
+				6802AB96222F180600C6002B /* ImageManager.h in Copy imagemanager */,
+				6802AB97222F180600C6002B /* primitives.h in Copy imagemanager */,
+				6802AB98222F180600C6002B /* ImageResponse.h in Copy imagemanager */,
+				6802AB99222F180600C6002B /* ImageResponseObserver.h in Copy imagemanager */,
+			);
+			name = "Copy imagemanager";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AB82222F179200C6002B /* Copy components/view */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/view;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AB83222F17C400C6002B /* TouchEventEmitter.h in Copy components/view */,
+				6802AB84222F17C400C6002B /* ViewComponentDescriptor.h in Copy components/view */,
+				6802AB85222F17C400C6002B /* conversions.h in Copy components/view */,
+				6802AB86222F17C400C6002B /* YogaStylableProps.h in Copy components/view */,
+				6802AB87222F17C400C6002B /* YogaLayoutableShadowNode.h in Copy components/view */,
+				6802AB88222F17C400C6002B /* propsConversions.h in Copy components/view */,
+				6802AB89222F17C400C6002B /* ConcreteViewShadowNode.h in Copy components/view */,
+				6802AB8A222F17C400C6002B /* ViewProps.h in Copy components/view */,
+				6802AB8B222F17C400C6002B /* primitives.h in Copy components/view */,
+				6802AB8C222F17C400C6002B /* accessibilityPropsConversions.h in Copy components/view */,
+				6802AB8D222F17C400C6002B /* AccessibilityProps.h in Copy components/view */,
+				6802AB8E222F17C400C6002B /* AccessibleShadowNode.h in Copy components/view */,
+				6802AB8F222F17C400C6002B /* AccessibilityPrimitives.h in Copy components/view */,
+				6802AB90222F17C400C6002B /* ViewEventEmitter.h in Copy components/view */,
+				6802AB91222F17C400C6002B /* ViewShadowNode.h in Copy components/view */,
+			);
+			name = "Copy components/view";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AB9A222F181F00C6002B /* Copy attributedstring */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/attributedstring;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AB9B222F185A00C6002B /* conversions.h in Copy attributedstring */,
+				6802AB9C222F185A00C6002B /* TextAttributes.h in Copy attributedstring */,
+				6802AB9D222F185A00C6002B /* AttributedString.h in Copy attributedstring */,
+				6802AB9E222F185A00C6002B /* ParagraphAttributes.h in Copy attributedstring */,
+				6802AB9F222F185A00C6002B /* primitives.h in Copy attributedstring */,
+			);
+			name = "Copy attributedstring";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802ABA0222F187600C6002B /* Copy core */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/core;
+			dstSubfolderSpec = 16;
+			files = (
+				6802ABA1222F18B300C6002B /* conversions.h in Copy core */,
+				6802ABA2222F18B300C6002B /* propsConversions.h in Copy core */,
+				6802ABA3222F18B300C6002B /* LayoutMetrics.h in Copy core */,
+				6802ABA4222F18B300C6002B /* LayoutConstraints.h in Copy core */,
+				6802ABA5222F18B300C6002B /* LayoutPrimitives.h in Copy core */,
+				6802ABA6222F18B300C6002B /* LayoutContext.h in Copy core */,
+				6802ABA7222F18B300C6002B /* LayoutableShadowNode.h in Copy core */,
+				6802ABA8222F18B300C6002B /* Props.h in Copy core */,
+				6802ABA9222F18B300C6002B /* ShadowNodeFragment.h in Copy core */,
+				6802ABAA222F18B300C6002B /* ShadowNode.h in Copy core */,
+				6802ABAB222F18B300C6002B /* ConcreteShadowNode.h in Copy core */,
+				6802ABAC222F18B300C6002B /* LocalData.h in Copy core */,
+				6802ABAD222F18B300C6002B /* StateData.h in Copy core */,
+				6802ABAE222F18B300C6002B /* StateCoordinator.h in Copy core */,
+				6802ABAF222F18B300C6002B /* StateTarget.h in Copy core */,
+				6802ABB0222F18B300C6002B /* StatePipe.h in Copy core */,
+				6802ABB1222F18B300C6002B /* ConcreteState.h in Copy core */,
+				6802ABB2222F18B300C6002B /* State.h in Copy core */,
+				6802ABB3222F18B300C6002B /* StateUpdate.h in Copy core */,
+				6802ABB4222F18B300C6002B /* RawValue.h in Copy core */,
+				6802ABB5222F18B300C6002B /* Sealable.h in Copy core */,
+				6802ABB6222F18B300C6002B /* RawProps.h in Copy core */,
+				6802ABB7222F18B300C6002B /* ReactPrimitives.h in Copy core */,
+				6802ABB8222F18B300C6002B /* UnbatchedEventQueue.h in Copy core */,
+				6802ABB9222F18B300C6002B /* EventHandler.h in Copy core */,
+				6802ABBA222F18B300C6002B /* EventQueue.h in Copy core */,
+				6802ABBB222F18B300C6002B /* ValueFactory.h in Copy core */,
+				6802ABBC222F18B300C6002B /* BatchedEventQueue.h in Copy core */,
+				6802ABBD222F18B300C6002B /* EventTarget.h in Copy core */,
+				6802ABBE222F18B300C6002B /* EventPriority.h in Copy core */,
+				6802ABBF222F18B300C6002B /* EventBeatBasedExecutor.h in Copy core */,
+				6802ABC0222F18B300C6002B /* EventBeat.h in Copy core */,
+				6802ABC1222F18B300C6002B /* EventEmitter.h in Copy core */,
+				6802ABC2222F18B300C6002B /* EventDispatcher.h in Copy core */,
+				6802ABC3222F18B300C6002B /* RawEvent.h in Copy core */,
+				6802ABC4222F18B300C6002B /* EventPipe.h in Copy core */,
+				6802ABC5222F18B300C6002B /* ComponentDescriptor.h in Copy core */,
+				6802ABC6222F18B300C6002B /* ConcreteComponentDescriptor.h in Copy core */,
+			);
+			name = "Copy core";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802ABCA222F19AB00C6002B /* Copy graphics */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/graphics;
+			dstSubfolderSpec = 16;
+			files = (
+				6802ABCB222F19D800C6002B /* conversions.h in Copy graphics */,
+				6802ABCC222F19D800C6002B /* ColorComponents.h in Copy graphics */,
+				6802ABCD222F19D800C6002B /* Float.h in Copy graphics */,
+				6802ABCE222F19D800C6002B /* Color.h in Copy graphics */,
+				6802ABCF222F19D800C6002B /* Geometry.h in Copy graphics */,
+			);
+			name = "Copy graphics";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802ABDC222F1C8300C6002B /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/better;
+			dstSubfolderSpec = 16;
+			files = (
+				6802ABEE222F1CA700C6002B /* map.h in Copy Headers */,
+				6802ABEF222F1CA700C6002B /* better.h in Copy Headers */,
+				6802ABF0222F1CA700C6002B /* optional.h in Copy Headers */,
+				6802ABF1222F1CA700C6002B /* mutex.h in Copy Headers */,
+				6802ABF2222F1CA700C6002B /* set.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802ABF5222F1CF700C6002B /* Copy debug */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/debug;
+			dstSubfolderSpec = 16;
+			files = (
+				6802ABF6222F1D1500C6002B /* debugStringConvertibleUtils.h in Copy debug */,
+				6802ABF7222F1D1500C6002B /* DebugStringConvertibleItem.h in Copy debug */,
+				6802ABF8222F1D1500C6002B /* SystraceSection.h in Copy debug */,
+				6802ABF9222F1D1500C6002B /* DebugStringConvertible.h in Copy debug */,
+			);
+			name = "Copy debug";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802ABFB222F1DFA00C6002B /* Copy uimanager */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/uimanager;
+			dstSubfolderSpec = 16;
+			files = (
+				6802ABFC222F1E2000C6002B /* ComponentDescriptorFactory.h in Copy uimanager */,
+				6802ABFD222F1E2000C6002B /* ComponentDescriptorRegistry.h in Copy uimanager */,
+				6802ABFE222F1E2000C6002B /* ContextContainer.h in Copy uimanager */,
+				6802ABFF222F1E2000C6002B /* primitives.h in Copy uimanager */,
+				6802AC00222F1E2000C6002B /* Scheduler.h in Copy uimanager */,
+				6802AC01222F1E2000C6002B /* SchedulerDelegate.h in Copy uimanager */,
+				6802AC02222F1E2000C6002B /* ShadowTree.h in Copy uimanager */,
+				6802AC03222F1E2000C6002B /* ShadowTreeDelegate.h in Copy uimanager */,
+				6802AC04222F1E2000C6002B /* ShadowTreeRegistry.h in Copy uimanager */,
+				6802AC05222F1E2000C6002B /* TimeUtils.h in Copy uimanager */,
+				6802AC06222F1E2000C6002B /* UIManager.h in Copy uimanager */,
+				6802AC07222F1E2000C6002B /* UIManagerBinding.h in Copy uimanager */,
+				6802AC08222F1E2000C6002B /* UIManagerDelegate.h in Copy uimanager */,
+				6802AC09222F1E2000C6002B /* UITemplateProcessor.h in Copy uimanager */,
+			);
+			name = "Copy uimanager";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC0A222F1EB400C6002B /* Copy components/image */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/image;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC0B222F1EDF00C6002B /* ImageLocalData.h in Copy components/image */,
+				6802AC0C222F1EDF00C6002B /* conversions.h in Copy components/image */,
+				6802AC0D222F1EDF00C6002B /* ImageEventEmitter.h in Copy components/image */,
+				6802AC0E222F1EDF00C6002B /* ImageProps.h in Copy components/image */,
+				6802AC0F222F1EDF00C6002B /* ImageComponentDescriptor.h in Copy components/image */,
+				6802AC10222F1EDF00C6002B /* ImageShadowNode.h in Copy components/image */,
+			);
+			name = "Copy components/image";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC17222F1FAA00C6002B /* Copy config */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/config;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC1D222F1FD200C6002B /* ReactNativeConfig.h in Copy config */,
+			);
+			name = "Copy config";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC1E222F205000C6002B /* Copy components/slider */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/slider;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC1F222F207D00C6002B /* SliderMeasurementsManager.h in Copy components/slider */,
+				6802AC20222F207D00C6002B /* SliderComponentDescriptor.h in Copy components/slider */,
+				6802AC23222F207D00C6002B /* SliderLocalData.h in Copy components/slider */,
+				6802AC24222F207D00C6002B /* SliderShadowNode.h in Copy components/slider */,
+			);
+			name = "Copy components/slider";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC27222F244E00C6002B /* Copy components/root */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/root;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC28222F247B00C6002B /* RootShadowNode.h in Copy components/root */,
+				6802AC29222F247B00C6002B /* RootComponentDescriptor.h in Copy components/root */,
+				6802AC2A222F247B00C6002B /* RootProps.h in Copy components/root */,
+			);
+			name = "Copy components/root";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC32222F24DD00C6002B /* Copy utils */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/utils;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC33222F24F500C6002B /* SharedFunction.h in Copy utils */,
+				6802AC34222F24F500C6002B /* SimpleThreadSafeCache.h in Copy utils */,
+				6802AC35222F24F500C6002B /* FloatComparison.h in Copy utils */,
+			);
+			name = "Copy utils";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC3A222F296100C6002B /* Copy textlayoutmanager */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/textlayoutmanager;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC3B222F298700C6002B /* RCTTextPrimitivesConversions.h in Copy textlayoutmanager */,
+				6802AC3C222F298700C6002B /* RCTFontUtils.h in Copy textlayoutmanager */,
+				6802AC3D222F298700C6002B /* TextLayoutManager.h in Copy textlayoutmanager */,
+				6802AC3E222F298700C6002B /* RCTTextLayoutManager.h in Copy textlayoutmanager */,
+				6802AC3F222F298700C6002B /* RCTFontProperties.h in Copy textlayoutmanager */,
+				6802AC40222F298700C6002B /* RCTAttributedTextUtils.h in Copy textlayoutmanager */,
+				6802AC41222F298700C6002B /* NSTextStorage+FontScaling.h in Copy textlayoutmanager */,
+			);
+			name = "Copy textlayoutmanager";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802AC42222F2AEA00C6002B /* Copy components/activityindicator */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/components/activityindicator;
+			dstSubfolderSpec = 16;
+			files = (
+				6802AC43222F2B0C00C6002B /* conversions.h in Copy components/activityindicator */,
+			);
+			name = "Copy components/activityindicator";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802B0D2222F41C400C6002B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/event2;
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802B10B223026B100C6002B /* Copy mounting */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/react/mounting;
+			dstSubfolderSpec = 7;
+			files = (
+				6802B10C223026CD00C6002B /* Differentiator.h in Copy mounting */,
+				6802B10D223026CD00C6002B /* ShadowView.h in Copy mounting */,
+				6802B10E223026CD00C6002B /* ShadowViewMutation.h in Copy mounting */,
+			);
+			name = "Copy mounting";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EBF21BCB1FC498900052F4D5 /* Copy Headers */ = {
@@ -2162,6 +2904,335 @@
 		66CD94AE1F1045E700CB3C7C /* RCTMaskedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedView.m; sourceTree = "<group>"; };
 		66CD94AF1F1045E700CB3C7C /* RCTMaskedViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMaskedViewManager.h; sourceTree = "<group>"; };
 		66CD94B01F1045E700CB3C7C /* RCTMaskedViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedViewManager.m; sourceTree = "<group>"; };
+		6802A8F6222F157900C6002B /* libFabric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFabric.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6802A900222F15A400C6002B /* RCTImageResponseObserverProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTImageResponseObserverProxy.h; sourceTree = "<group>"; };
+		6802A901222F15A400C6002B /* RCTSurfaceRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceRegistry.h; sourceTree = "<group>"; };
+		6802A903222F15A400C6002B /* UIView+ComponentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ComponentViewProtocol.h"; sourceTree = "<group>"; };
+		6802A904222F15A400C6002B /* RCTMountingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMountingManager.h; sourceTree = "<group>"; };
+		6802A905222F15A400C6002B /* RCTMountingManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMountingManagerDelegate.h; sourceTree = "<group>"; };
+		6802A906222F15A400C6002B /* RCTComponentViewFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTComponentViewFactory.mm; sourceTree = "<group>"; };
+		6802A908222F15A400C6002B /* RCTInsertMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTInsertMountItem.h; sourceTree = "<group>"; };
+		6802A909222F15A400C6002B /* RCTInsertMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTInsertMountItem.mm; sourceTree = "<group>"; };
+		6802A90A222F15A400C6002B /* RCTRemoveMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRemoveMountItem.h; sourceTree = "<group>"; };
+		6802A90B222F15A400C6002B /* RCTRemoveMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTRemoveMountItem.mm; sourceTree = "<group>"; };
+		6802A90C222F15A400C6002B /* RCTUpdateStateMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTUpdateStateMountItem.mm; sourceTree = "<group>"; };
+		6802A90D222F15A400C6002B /* RCTUpdateLocalDataMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTUpdateLocalDataMountItem.mm; sourceTree = "<group>"; };
+		6802A90E222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTUpdateLayoutMetricsMountItem.h; sourceTree = "<group>"; };
+		6802A90F222F15A400C6002B /* RCTUpdateEventEmitterMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTUpdateEventEmitterMountItem.h; sourceTree = "<group>"; };
+		6802A910222F15A400C6002B /* RCTMountItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMountItemProtocol.h; sourceTree = "<group>"; };
+		6802A911222F15A400C6002B /* RCTUpdateLocalDataMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTUpdateLocalDataMountItem.h; sourceTree = "<group>"; };
+		6802A912222F15A400C6002B /* RCTUpdatePropsMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTUpdatePropsMountItem.mm; sourceTree = "<group>"; };
+		6802A913222F15A400C6002B /* RCTCreateMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTCreateMountItem.mm; sourceTree = "<group>"; };
+		6802A914222F15A400C6002B /* RCTDeleteMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTDeleteMountItem.mm; sourceTree = "<group>"; };
+		6802A915222F15A400C6002B /* RCTUpdateStateMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTUpdateStateMountItem.h; sourceTree = "<group>"; };
+		6802A916222F15A400C6002B /* RCTUpdateEventEmitterMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTUpdateEventEmitterMountItem.mm; sourceTree = "<group>"; };
+		6802A917222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTUpdateLayoutMetricsMountItem.mm; sourceTree = "<group>"; };
+		6802A918222F15A400C6002B /* RCTDeleteMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTDeleteMountItem.h; sourceTree = "<group>"; };
+		6802A919222F15A400C6002B /* RCTCreateMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTCreateMountItem.h; sourceTree = "<group>"; };
+		6802A91A222F15A400C6002B /* RCTUpdatePropsMountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTUpdatePropsMountItem.h; sourceTree = "<group>"; };
+		6802A91B222F15A400C6002B /* RCTComponentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponentViewProtocol.h; sourceTree = "<group>"; };
+		6802A91C222F15A400C6002B /* RCTMountingManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTMountingManager.mm; sourceTree = "<group>"; };
+		6802A91F222F15A400C6002B /* RCTEnhancedScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTEnhancedScrollView.mm; sourceTree = "<group>"; };
+		6802A920222F15A400C6002B /* RCTEnhancedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTEnhancedScrollView.h; sourceTree = "<group>"; };
+		6802A921222F15A400C6002B /* RCTScrollViewComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTScrollViewComponentView.mm; sourceTree = "<group>"; };
+		6802A922222F15A400C6002B /* RCTScrollViewComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTScrollViewComponentView.h; sourceTree = "<group>"; };
+		6802A924222F15A400C6002B /* RCTSliderComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSliderComponentView.h; sourceTree = "<group>"; };
+		6802A925222F15A400C6002B /* RCTSliderComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTSliderComponentView.mm; sourceTree = "<group>"; };
+		6802A927222F15A400C6002B /* RCTImageComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTImageComponentView.mm; sourceTree = "<group>"; };
+		6802A928222F15A400C6002B /* RCTImageComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTImageComponentView.h; sourceTree = "<group>"; };
+		6802A92A222F15A400C6002B /* RCTActivityIndicatorViewComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTActivityIndicatorViewComponentView.h; sourceTree = "<group>"; };
+		6802A92B222F15A400C6002B /* RCTActivityIndicatorViewComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTActivityIndicatorViewComponentView.mm; sourceTree = "<group>"; };
+		6802A92D222F15A400C6002B /* RCTViewComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTViewComponentView.h; sourceTree = "<group>"; };
+		6802A92E222F15A400C6002B /* RCTViewComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTViewComponentView.mm; sourceTree = "<group>"; };
+		6802A930222F15A400C6002B /* RCTSwitchComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTSwitchComponentView.mm; sourceTree = "<group>"; };
+		6802A931222F15A400C6002B /* RCTSwitchComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSwitchComponentView.h; sourceTree = "<group>"; };
+		6802A933222F15A400C6002B /* RCTRootComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRootComponentView.h; sourceTree = "<group>"; };
+		6802A934222F15A400C6002B /* RCTRootComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTRootComponentView.mm; sourceTree = "<group>"; };
+		6802A936222F15A400C6002B /* RCTParagraphComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTParagraphComponentView.mm; sourceTree = "<group>"; };
+		6802A937222F15A400C6002B /* RCTParagraphComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTParagraphComponentView.h; sourceTree = "<group>"; };
+		6802A938222F15A400C6002B /* RCTComponentViewRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTComponentViewRegistry.mm; sourceTree = "<group>"; };
+		6802A939222F15A400C6002B /* UIView+ComponentViewProtocol.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIView+ComponentViewProtocol.mm"; sourceTree = "<group>"; };
+		6802A93A222F15A400C6002B /* RCTComponentViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponentViewFactory.h; sourceTree = "<group>"; };
+		6802A93B222F15A400C6002B /* RCTComponentViewRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponentViewRegistry.h; sourceTree = "<group>"; };
+		6802A93C222F15A400C6002B /* RCTPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTPrimitives.h; sourceTree = "<group>"; };
+		6802A93D222F15A400C6002B /* RCTSurfacePresenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTSurfacePresenter.mm; sourceTree = "<group>"; };
+		6802A93F222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTFabricSurfaceHostingProxyRootView.mm; sourceTree = "<group>"; };
+		6802A940222F15A400C6002B /* RCTFabricSurface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTFabricSurface.mm; sourceTree = "<group>"; };
+		6802A941222F15A400C6002B /* RCTFabricSurfaceHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFabricSurfaceHostingView.h; sourceTree = "<group>"; };
+		6802A942222F15A400C6002B /* RCTFabricSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFabricSurface.h; sourceTree = "<group>"; };
+		6802A943222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFabricSurfaceHostingProxyRootView.h; sourceTree = "<group>"; };
+		6802A944222F15A400C6002B /* RCTFabricSurfaceHostingView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTFabricSurfaceHostingView.mm; sourceTree = "<group>"; };
+		6802A946222F15A400C6002B /* RuntimeEventBeat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RuntimeEventBeat.mm; sourceTree = "<group>"; };
+		6802A947222F15A400C6002B /* MainQueueExecutor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainQueueExecutor.mm; sourceTree = "<group>"; };
+		6802A948222F15A400C6002B /* MainRunLoopEventBeat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainRunLoopEventBeat.mm; sourceTree = "<group>"; };
+		6802A949222F15A400C6002B /* RuntimeEventBeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeEventBeat.h; sourceTree = "<group>"; };
+		6802A94A222F15A400C6002B /* MainRunLoopEventBeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRunLoopEventBeat.h; sourceTree = "<group>"; };
+		6802A94B222F15A400C6002B /* MainQueueExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainQueueExecutor.h; sourceTree = "<group>"; };
+		6802A94C222F15A400C6002B /* RCTImageResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTImageResponseDelegate.h; sourceTree = "<group>"; };
+		6802A94D222F15A400C6002B /* RCTTouchableComponentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTouchableComponentViewProtocol.h; sourceTree = "<group>"; };
+		6802A94E222F15A400C6002B /* RCTConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTConversions.h; sourceTree = "<group>"; };
+		6802A94F222F15A400C6002B /* RCTSurfacePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSurfacePresenter.h; sourceTree = "<group>"; };
+		6802A950222F15A400C6002B /* RCTImageResponseObserverProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTImageResponseObserverProxy.mm; sourceTree = "<group>"; };
+		6802A951222F15A400C6002B /* RCTSurfaceRegistry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTSurfaceRegistry.mm; sourceTree = "<group>"; };
+		6802A952222F15A400C6002B /* RCTScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTScheduler.h; sourceTree = "<group>"; };
+		6802A953222F15A400C6002B /* RCTSurfaceTouchHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTSurfaceTouchHandler.mm; sourceTree = "<group>"; };
+		6802A954222F15A400C6002B /* RCTSurfaceTouchHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceTouchHandler.h; sourceTree = "<group>"; };
+		6802A955222F15A400C6002B /* RCTScheduler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTScheduler.mm; sourceTree = "<group>"; };
+		6802A988222F165300C6002B /* ImageResponseObserverCoordinator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageResponseObserverCoordinator.cpp; sourceTree = "<group>"; };
+		6802A98B222F165300C6002B /* RCTImagePrimitivesConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTImagePrimitivesConversions.h; sourceTree = "<group>"; };
+		6802A98C222F165300C6002B /* ImageManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageManager.mm; sourceTree = "<group>"; };
+		6802A98D222F165300C6002B /* RCTImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTImageManager.h; sourceTree = "<group>"; };
+		6802A98E222F165300C6002B /* RCTImageManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTImageManager.mm; sourceTree = "<group>"; };
+		6802A98F222F165300C6002B /* ImageRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageRequest.cpp; sourceTree = "<group>"; };
+		6802A993222F165300C6002B /* ImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRequest.h; sourceTree = "<group>"; };
+		6802A996222F165300C6002B /* ImageResponseObserverCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResponseObserverCoordinator.h; sourceTree = "<group>"; };
+		6802A997222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802A998222F165300C6002B /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		6802A999222F165300C6002B /* primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives.h; sourceTree = "<group>"; };
+		6802A99A222F165300C6002B /* ImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResponse.h; sourceTree = "<group>"; };
+		6802A99B222F165300C6002B /* ImageResponseObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResponseObserver.h; sourceTree = "<group>"; };
+		6802A99C222F165300C6002B /* ImageResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageResponse.cpp; sourceTree = "<group>"; };
+		6802A99E222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802A99F222F165300C6002B /* propsConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = propsConversions.h; sourceTree = "<group>"; };
+		6802A9A1222F165300C6002B /* LayoutMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutMetrics.h; sourceTree = "<group>"; };
+		6802A9A2222F165300C6002B /* LayoutableShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutableShadowNode.cpp; sourceTree = "<group>"; };
+		6802A9A3222F165300C6002B /* LayoutConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraints.h; sourceTree = "<group>"; };
+		6802A9A4222F165300C6002B /* LayoutPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutPrimitives.h; sourceTree = "<group>"; };
+		6802A9A5222F165300C6002B /* LayoutContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutContext.h; sourceTree = "<group>"; };
+		6802A9A6222F165300C6002B /* LayoutableShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutableShadowNode.h; sourceTree = "<group>"; };
+		6802A9A7222F165300C6002B /* LayoutConstraints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutConstraints.cpp; sourceTree = "<group>"; };
+		6802A9A9222F165300C6002B /* Props.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Props.h; sourceTree = "<group>"; };
+		6802A9AA222F165300C6002B /* ShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowNode.cpp; sourceTree = "<group>"; };
+		6802A9AB222F165300C6002B /* Props.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Props.cpp; sourceTree = "<group>"; };
+		6802A9AC222F165300C6002B /* ShadowNodeFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowNodeFragment.h; sourceTree = "<group>"; };
+		6802A9AD222F165300C6002B /* ShadowNodeFragment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowNodeFragment.cpp; sourceTree = "<group>"; };
+		6802A9AE222F165300C6002B /* ShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowNode.h; sourceTree = "<group>"; };
+		6802A9AF222F165300C6002B /* ConcreteShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteShadowNode.h; sourceTree = "<group>"; };
+		6802A9B0222F165300C6002B /* LocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
+		6802A9B7222F165300C6002B /* StateCoordinator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateCoordinator.cpp; sourceTree = "<group>"; };
+		6802A9B8222F165300C6002B /* StateData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateData.h; sourceTree = "<group>"; };
+		6802A9B9222F165300C6002B /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		6802A9BA222F165300C6002B /* StateCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateCoordinator.h; sourceTree = "<group>"; };
+		6802A9BB222F165300C6002B /* StateTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTarget.h; sourceTree = "<group>"; };
+		6802A9BC222F165300C6002B /* StateUpdate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateUpdate.cpp; sourceTree = "<group>"; };
+		6802A9BD222F165300C6002B /* StatePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePipe.h; sourceTree = "<group>"; };
+		6802A9BE222F165300C6002B /* StateTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateTarget.cpp; sourceTree = "<group>"; };
+		6802A9BF222F165300C6002B /* ConcreteState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteState.h; sourceTree = "<group>"; };
+		6802A9C0222F165300C6002B /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		6802A9C1222F165300C6002B /* StateUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateUpdate.h; sourceTree = "<group>"; };
+		6802A9C3222F165300C6002B /* RawValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RawValue.cpp; sourceTree = "<group>"; };
+		6802A9C4222F165300C6002B /* RawValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawValue.h; sourceTree = "<group>"; };
+		6802A9C5222F165300C6002B /* RawProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RawProps.cpp; sourceTree = "<group>"; };
+		6802A9C6222F165300C6002B /* Sealable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sealable.h; sourceTree = "<group>"; };
+		6802A9C7222F165300C6002B /* RawProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawProps.h; sourceTree = "<group>"; };
+		6802A9C8222F165300C6002B /* Sealable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sealable.cpp; sourceTree = "<group>"; };
+		6802A9C9222F165300C6002B /* ReactPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactPrimitives.h; sourceTree = "<group>"; };
+		6802A9CA222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802A9CC222F165300C6002B /* UnbatchedEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnbatchedEventQueue.h; sourceTree = "<group>"; };
+		6802A9CD222F165300C6002B /* EventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventHandler.h; sourceTree = "<group>"; };
+		6802A9CE222F165300C6002B /* EventEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventEmitter.cpp; sourceTree = "<group>"; };
+		6802A9CF222F165300C6002B /* EventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventQueue.h; sourceTree = "<group>"; };
+		6802A9D0222F165300C6002B /* EventQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventQueue.cpp; sourceTree = "<group>"; };
+		6802A9D1222F165300C6002B /* RawEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RawEvent.cpp; sourceTree = "<group>"; };
+		6802A9D2222F165300C6002B /* BatchedEventQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BatchedEventQueue.cpp; sourceTree = "<group>"; };
+		6802A9D3222F165300C6002B /* EventBeatBasedExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventBeatBasedExecutor.cpp; sourceTree = "<group>"; };
+		6802A9D4222F165300C6002B /* ValueFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueFactory.h; sourceTree = "<group>"; };
+		6802A9D5222F165300C6002B /* UnbatchedEventQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnbatchedEventQueue.cpp; sourceTree = "<group>"; };
+		6802A9D6222F165300C6002B /* BatchedEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchedEventQueue.h; sourceTree = "<group>"; };
+		6802A9D7222F165300C6002B /* EventTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTarget.h; sourceTree = "<group>"; };
+		6802A9D8222F165300C6002B /* EventPriority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPriority.h; sourceTree = "<group>"; };
+		6802A9D9222F165300C6002B /* EventBeatBasedExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventBeatBasedExecutor.h; sourceTree = "<group>"; };
+		6802A9DA222F165300C6002B /* EventDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventDispatcher.cpp; sourceTree = "<group>"; };
+		6802A9DB222F165300C6002B /* EventBeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventBeat.h; sourceTree = "<group>"; };
+		6802A9DC222F165300C6002B /* EventTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventTarget.cpp; sourceTree = "<group>"; };
+		6802A9DD222F165300C6002B /* EventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventEmitter.h; sourceTree = "<group>"; };
+		6802A9DE222F165300C6002B /* EventBeat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventBeat.cpp; sourceTree = "<group>"; };
+		6802A9DF222F165300C6002B /* EventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDispatcher.h; sourceTree = "<group>"; };
+		6802A9E0222F165300C6002B /* RawEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawEvent.h; sourceTree = "<group>"; };
+		6802A9E1222F165300C6002B /* EventPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPipe.h; sourceTree = "<group>"; };
+		6802A9E3222F165300C6002B /* ComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentDescriptor.h; sourceTree = "<group>"; };
+		6802A9E4222F165300C6002B /* ConcreteComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteComponentDescriptor.h; sourceTree = "<group>"; };
+		6802A9E6222F165300C6002B /* ShadowViewMutation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowViewMutation.cpp; sourceTree = "<group>"; };
+		6802A9E7222F165300C6002B /* ShadowView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowView.cpp; sourceTree = "<group>"; };
+		6802A9EA222F165300C6002B /* Differentiator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Differentiator.h; sourceTree = "<group>"; };
+		6802A9EB222F165300C6002B /* ShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
+		6802A9EC222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802A9ED222F165300C6002B /* ShadowViewMutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowViewMutation.h; sourceTree = "<group>"; };
+		6802A9EE222F165300C6002B /* Differentiator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Differentiator.cpp; sourceTree = "<group>"; };
+		6802A9F0222F165300C6002B /* TextAttributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextAttributes.cpp; sourceTree = "<group>"; };
+		6802A9F1222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802A9F2222F165300C6002B /* TextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextAttributes.h; sourceTree = "<group>"; };
+		6802A9F7222F165300C6002B /* ParagraphAttributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParagraphAttributes.cpp; sourceTree = "<group>"; };
+		6802A9F8222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802A9F9222F165300C6002B /* AttributedString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttributedString.cpp; sourceTree = "<group>"; };
+		6802A9FA222F165300C6002B /* AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedString.h; sourceTree = "<group>"; };
+		6802A9FB222F165300C6002B /* ParagraphAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphAttributes.h; sourceTree = "<group>"; };
+		6802A9FC222F165300C6002B /* primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives.h; sourceTree = "<group>"; };
+		6802AA00222F165300C6002B /* RCTFontUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTFontUtils.mm; sourceTree = "<group>"; };
+		6802AA01222F165300C6002B /* RCTTextPrimitivesConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTextPrimitivesConversions.h; sourceTree = "<group>"; };
+		6802AA02222F165300C6002B /* RCTFontUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFontUtils.h; sourceTree = "<group>"; };
+		6802AA03222F165300C6002B /* RCTTextLayoutManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTTextLayoutManager.mm; sourceTree = "<group>"; };
+		6802AA04222F165300C6002B /* NSTextStorage+FontScaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextStorage+FontScaling.m"; sourceTree = "<group>"; };
+		6802AA05222F165300C6002B /* RCTAttributedTextUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTAttributedTextUtils.mm; sourceTree = "<group>"; };
+		6802AA06222F165300C6002B /* TextLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextLayoutManager.h; sourceTree = "<group>"; };
+		6802AA07222F165300C6002B /* RCTTextLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTextLayoutManager.h; sourceTree = "<group>"; };
+		6802AA08222F165300C6002B /* RCTFontProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFontProperties.h; sourceTree = "<group>"; };
+		6802AA09222F165300C6002B /* RCTAttributedTextUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTAttributedTextUtils.h; sourceTree = "<group>"; };
+		6802AA0A222F165300C6002B /* TextLayoutManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextLayoutManager.mm; sourceTree = "<group>"; };
+		6802AA0B222F165300C6002B /* NSTextStorage+FontScaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+FontScaling.h"; sourceTree = "<group>"; };
+		6802AA11222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA14222F165300C6002B /* ScrollViewLocalData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollViewLocalData.cpp; sourceTree = "<group>"; };
+		6802AA15222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802AA16222F165300C6002B /* ScrollViewProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollViewProps.cpp; sourceTree = "<group>"; };
+		6802AA17222F165300C6002B /* ScrollViewEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewEventEmitter.h; sourceTree = "<group>"; };
+		6802AA1A222F165300C6002B /* ScrollViewEventEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollViewEventEmitter.cpp; sourceTree = "<group>"; };
+		6802AA1B222F165300C6002B /* ScrollViewShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollViewShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA1C222F165300C6002B /* ScrollViewLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewLocalData.h; sourceTree = "<group>"; };
+		6802AA1D222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA1E222F165300C6002B /* ScrollViewShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewShadowNode.h; sourceTree = "<group>"; };
+		6802AA1F222F165300C6002B /* ScrollViewComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA20222F165300C6002B /* primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives.h; sourceTree = "<group>"; };
+		6802AA21222F165300C6002B /* ScrollViewProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewProps.h; sourceTree = "<group>"; };
+		6802AA23222F165300C6002B /* SliderLocalData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SliderLocalData.cpp; sourceTree = "<group>"; };
+		6802AA24222F165300C6002B /* SliderShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SliderShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA27222F165300C6002B /* SliderMeasurementsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderMeasurementsManager.h; sourceTree = "<group>"; };
+		6802AA28222F165300C6002B /* SliderMeasurementsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SliderMeasurementsManager.cpp; sourceTree = "<group>"; };
+		6802AA2F222F165300C6002B /* SliderComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA30222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA34222F165300C6002B /* SliderLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderLocalData.h; sourceTree = "<group>"; };
+		6802AA35222F165300C6002B /* SliderShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderShadowNode.h; sourceTree = "<group>"; };
+		6802AA37222F165300C6002B /* ImageLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLocalData.h; sourceTree = "<group>"; };
+		6802AA38222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802AA39222F165300C6002B /* ImageShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA3C222F165300C6002B /* ImageEventEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageEventEmitter.cpp; sourceTree = "<group>"; };
+		6802AA3D222F165300C6002B /* ImageEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEventEmitter.h; sourceTree = "<group>"; };
+		6802AA3E222F165300C6002B /* ImageProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProps.h; sourceTree = "<group>"; };
+		6802AA3F222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA40222F165300C6002B /* ImageComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA41222F165300C6002B /* ImageProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProps.cpp; sourceTree = "<group>"; };
+		6802AA42222F165300C6002B /* ImageLocalData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageLocalData.cpp; sourceTree = "<group>"; };
+		6802AA43222F165300C6002B /* ImageShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShadowNode.h; sourceTree = "<group>"; };
+		6802AA45222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802AA4B222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA50222F165300C6002B /* TouchEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventEmitter.h; sourceTree = "<group>"; };
+		6802AA51222F165300C6002B /* ViewComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA52222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802AA54222F165300C6002B /* YogaStylableProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YogaStylableProps.h; sourceTree = "<group>"; };
+		6802AA55222F165300C6002B /* YogaStylableProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YogaStylableProps.cpp; sourceTree = "<group>"; };
+		6802AA56222F165300C6002B /* YogaLayoutableShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YogaLayoutableShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA57222F165300C6002B /* YogaLayoutableShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YogaLayoutableShadowNode.h; sourceTree = "<group>"; };
+		6802AA58222F165300C6002B /* propsConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = propsConversions.h; sourceTree = "<group>"; };
+		6802AA59222F165300C6002B /* ViewShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ViewShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA5A222F165300C6002B /* ViewEventEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ViewEventEmitter.cpp; sourceTree = "<group>"; };
+		6802AA5B222F165300C6002B /* ConcreteViewShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteViewShadowNode.h; sourceTree = "<group>"; };
+		6802AA5E222F165300C6002B /* ViewProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewProps.h; sourceTree = "<group>"; };
+		6802AA5F222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA60222F165300C6002B /* TouchEventEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchEventEmitter.cpp; sourceTree = "<group>"; };
+		6802AA61222F165300C6002B /* ViewProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ViewProps.cpp; sourceTree = "<group>"; };
+		6802AA62222F165300C6002B /* primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives.h; sourceTree = "<group>"; };
+		6802AA64222F165300C6002B /* accessibilityPropsConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accessibilityPropsConversions.h; sourceTree = "<group>"; };
+		6802AA65222F165300C6002B /* AccessibilityProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AccessibilityProps.cpp; sourceTree = "<group>"; };
+		6802AA66222F165300C6002B /* AccessibilityProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibilityProps.h; sourceTree = "<group>"; };
+		6802AA67222F165300C6002B /* AccessibleShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibleShadowNode.h; sourceTree = "<group>"; };
+		6802AA68222F165300C6002B /* AccessibilityPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibilityPrimitives.h; sourceTree = "<group>"; };
+		6802AA69222F165300C6002B /* AccessibleShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AccessibleShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA6A222F165300C6002B /* ViewEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewEventEmitter.h; sourceTree = "<group>"; };
+		6802AA6B222F165300C6002B /* ViewShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewShadowNode.h; sourceTree = "<group>"; };
+		6802AA6D222F165300C6002B /* RootShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RootShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA6E222F165300C6002B /* RootProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RootProps.cpp; sourceTree = "<group>"; };
+		6802AA71222F165300C6002B /* RootShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootShadowNode.h; sourceTree = "<group>"; };
+		6802AA72222F165300C6002B /* RootComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA73222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA74222F165300C6002B /* RootProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootProps.h; sourceTree = "<group>"; };
+		6802AA77222F165300C6002B /* BaseTextShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseTextShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA78222F165300C6002B /* BaseTextProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseTextProps.cpp; sourceTree = "<group>"; };
+		6802AA79222F165300C6002B /* BaseTextProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextProps.h; sourceTree = "<group>"; };
+		6802AA7A222F165300C6002B /* BaseTextShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextShadowNode.h; sourceTree = "<group>"; };
+		6802AA7C222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802AA7D222F165300C6002B /* ParagraphShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphShadowNode.h; sourceTree = "<group>"; };
+		6802AA7E222F165300C6002B /* ParagraphLocalData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParagraphLocalData.cpp; sourceTree = "<group>"; };
+		6802AA7F222F165300C6002B /* ParagraphMeasurementCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphMeasurementCache.h; sourceTree = "<group>"; };
+		6802AA80222F165300C6002B /* ParagraphLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphLocalData.h; sourceTree = "<group>"; };
+		6802AA81222F165300C6002B /* ParagraphShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParagraphShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA82222F165300C6002B /* ParagraphProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphProps.h; sourceTree = "<group>"; };
+		6802AA83222F165300C6002B /* ParagraphProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParagraphProps.cpp; sourceTree = "<group>"; };
+		6802AA84222F165300C6002B /* ParagraphComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA88222F165300C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AA8A222F165300C6002B /* TextComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA8B222F165300C6002B /* TextShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextShadowNode.h; sourceTree = "<group>"; };
+		6802AA8C222F165300C6002B /* TextShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA8D222F165300C6002B /* TextProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextProps.h; sourceTree = "<group>"; };
+		6802AA8E222F165300C6002B /* TextProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextProps.cpp; sourceTree = "<group>"; };
+		6802AA90222F165300C6002B /* RawTextProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RawTextProps.cpp; sourceTree = "<group>"; };
+		6802AA91222F165300C6002B /* RawTextProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawTextProps.h; sourceTree = "<group>"; };
+		6802AA92222F165300C6002B /* RawTextComponentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawTextComponentDescriptor.h; sourceTree = "<group>"; };
+		6802AA93222F165300C6002B /* RawTextShadowNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RawTextShadowNode.cpp; sourceTree = "<group>"; };
+		6802AA94222F165300C6002B /* RawTextShadowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawTextShadowNode.h; sourceTree = "<group>"; };
+		6802AA96222F165300C6002B /* SampleComponentDescriptorFactor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleComponentDescriptorFactor.cpp; sourceTree = "<group>"; };
+		6802AA9F222F165300C6002B /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		6802AAA0222F165300C6002B /* ColorComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorComponents.h; sourceTree = "<group>"; };
+		6802AAA3222F165300C6002B /* Float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Float.h; sourceTree = "<group>"; };
+		6802AAA4222F165300C6002B /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		6802AAA5222F165400C6002B /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
+		6802AAAC222F165400C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AAAD222F165400C6002B /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		6802AAAF222F165400C6002B /* debugStringConvertibleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debugStringConvertibleUtils.h; sourceTree = "<group>"; };
+		6802AAB0222F165400C6002B /* DebugStringConvertible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugStringConvertible.cpp; sourceTree = "<group>"; };
+		6802AAB1222F165400C6002B /* DebugStringConvertibleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugStringConvertibleItem.h; sourceTree = "<group>"; };
+		6802AAB4222F165400C6002B /* SystraceSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystraceSection.h; sourceTree = "<group>"; };
+		6802AAB5222F165400C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AAB6222F165400C6002B /* DebugStringConvertible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugStringConvertible.h; sourceTree = "<group>"; };
+		6802AAB7222F165400C6002B /* DebugStringConvertibleItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugStringConvertibleItem.cpp; sourceTree = "<group>"; };
+		6802AAB9222F165400C6002B /* UIManagerBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManagerBinding.h; sourceTree = "<group>"; };
+		6802AABA222F165400C6002B /* ShadowTreeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowTreeDelegate.h; sourceTree = "<group>"; };
+		6802AABB222F165400C6002B /* ShadowTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowTree.cpp; sourceTree = "<group>"; };
+		6802AABC222F165400C6002B /* UITemplateProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITemplateProcessor.h; sourceTree = "<group>"; };
+		6802AABD222F165400C6002B /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
+		6802AABE222F165400C6002B /* ShadowTreeRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowTreeRegistry.h; sourceTree = "<group>"; };
+		6802AABF222F165400C6002B /* ComponentDescriptorRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentDescriptorRegistry.h; sourceTree = "<group>"; };
+		6802AAC3222F165400C6002B /* UIManagerBinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIManagerBinding.cpp; sourceTree = "<group>"; };
+		6802AAC4222F165400C6002B /* TimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtils.h; sourceTree = "<group>"; };
+		6802AAC5222F165400C6002B /* ComponentDescriptorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentDescriptorFactory.h; sourceTree = "<group>"; };
+		6802AAC6222F165400C6002B /* Scheduler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scheduler.cpp; sourceTree = "<group>"; };
+		6802AAC7222F165400C6002B /* ShadowTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowTree.h; sourceTree = "<group>"; };
+		6802AAC8222F165400C6002B /* SchedulerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerDelegate.h; sourceTree = "<group>"; };
+		6802AAC9222F165400C6002B /* ContextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextContainer.h; sourceTree = "<group>"; };
+		6802AACA222F165400C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AACB222F165400C6002B /* UIManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIManager.cpp; sourceTree = "<group>"; };
+		6802AACC222F165400C6002B /* ShadowTreeRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowTreeRegistry.cpp; sourceTree = "<group>"; };
+		6802AACD222F165400C6002B /* UIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManager.h; sourceTree = "<group>"; };
+		6802AACE222F165400C6002B /* primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives.h; sourceTree = "<group>"; };
+		6802AACF222F165400C6002B /* UIManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManagerDelegate.h; sourceTree = "<group>"; };
+		6802AAD0222F165400C6002B /* ComponentDescriptorRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDescriptorRegistry.cpp; sourceTree = "<group>"; };
+		6802AAD1222F165400C6002B /* UITemplateProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITemplateProcessor.cpp; sourceTree = "<group>"; };
+		6802ABDE222F1C8300C6002B /* libbetter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbetter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6802ABE8222F1C9900C6002B /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		6802ABE9222F1C9900C6002B /* better.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = better.h; sourceTree = "<group>"; };
+		6802ABEA222F1C9900C6002B /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optional.h; sourceTree = "<group>"; };
+		6802ABEB222F1C9900C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802ABEC222F1C9900C6002B /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		6802ABED222F1C9900C6002B /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
+		6802AC19222F1FCD00C6002B /* ReactNativeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeConfig.h; sourceTree = "<group>"; };
+		6802AC1A222F1FCD00C6002B /* ReactNativeConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReactNativeConfig.cpp; sourceTree = "<group>"; };
+		6802AC1B222F1FCD00C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AC2E222F24D000C6002B /* SharedFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedFunction.h; sourceTree = "<group>"; };
+		6802AC2F222F24D000C6002B /* SimpleThreadSafeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleThreadSafeCache.h; sourceTree = "<group>"; };
+		6802AC30222F24D000C6002B /* BUCK */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		6802AC31222F24D000C6002B /* FloatComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatComparison.h; sourceTree = "<group>"; };
+		6802AC48222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceHostingProxyRootView.h; sourceTree = "<group>"; };
+		6802AC49222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTSurfaceHostingProxyRootView.mm; sourceTree = "<group>"; };
+		6802AC50222F352F00C6002B /* SharedMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SharedMutex.cpp; path = folly/SharedMutex.cpp; sourceTree = "<group>"; };
+		6802AC55222F365A00C6002B /* Futex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Futex.cpp; path = folly/detail/Futex.cpp; sourceTree = "<group>"; };
+		6802AC58222F371300C6002B /* ParkingLot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParkingLot.cpp; path = folly/synchronization/ParkingLot.cpp; sourceTree = "<group>"; };
+		6802AC5B222F374200C6002B /* SafeAssert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SafeAssert.cpp; path = folly/lang/SafeAssert.cpp; sourceTree = "<group>"; };
+		6802AC5E222F377800C6002B /* FileUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileUtil.cpp; path = folly/FileUtil.cpp; sourceTree = "<group>"; };
+		6802AC61222F389800C6002B /* SysStat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SysStat.cpp; path = folly/portability/SysStat.cpp; sourceTree = "<group>"; };
+		6802AC64222F38A100C6002B /* SysFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SysFile.cpp; path = folly/portability/SysFile.cpp; sourceTree = "<group>"; };
+		6802AC67222F38AD00C6002B /* Stdlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Stdlib.cpp; path = folly/portability/Stdlib.cpp; sourceTree = "<group>"; };
+		6802AC6A222F38BE00C6002B /* Sockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sockets.cpp; path = folly/portability/Sockets.cpp; sourceTree = "<group>"; };
+		6802AC6D222F38D200C6002B /* Fcntl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Fcntl.cpp; path = folly/portability/Fcntl.cpp; sourceTree = "<group>"; };
+		6802AC72222F3B1800C6002B /* CacheLocality.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CacheLocality.cpp; path = folly/concurrency/CacheLocality.cpp; sourceTree = "<group>"; };
+		6802AC78222F3EA300C6002B /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileUtil.h; path = folly/FileUtil.h; sourceTree = "<group>"; };
 		68EFE4EC1CF6EB3000A1DE13 /* RCTBundleURLProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTBundleURLProvider.h; sourceTree = "<group>"; };
 		68EFE4ED1CF6EB3900A1DE13 /* RCTBundleURLProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBundleURLProvider.m; sourceTree = "<group>"; };
 		6A15FB0C1BDF663500531DFB /* RCTRootViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRootViewInternal.h; sourceTree = "<group>"; };
@@ -2297,6 +3368,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6802A8F3222F157900C6002B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED296FCE214C9CB400B7C4FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2340,32 +3418,32 @@
 		130A77021DF767AF001F9587 /* yoga */ = {
 			isa = PBXGroup;
 			children = (
-				ACC75C55221AA194002F24E8 /* log.h */,
-				ACC75C53221AA188002F24E8 /* log.cpp */,
-				AC4A6AF821FB4EA900FBEC39 /* YGMarker.cpp */,
-				AC52CEDD21FB3FF9003C6BEC /* instrumentation.h */,
 				AC90463D21C91CC2005B24B3 /* CompactValue.h */,
-				AC6B69E121B1467C00B2B68A /* YGValue.cpp */,
-				AC6B69E221B1467C00B2B68A /* YGValue.h */,
-				AC8360CC21B0256A00FC46B9 /* YGMarker.h */,
+				AC52CEDD21FB3FF9003C6BEC /* instrumentation.h */,
+				ACC75C53221AA188002F24E8 /* log.cpp */,
+				ACC75C55221AA194002F24E8 /* log.h */,
+				53756E372004FFF700FBBD99 /* Utils.cpp */,
+				53756E382004FFF700FBBD99 /* Utils.h */,
 				5CE2080020772F7C009A43B3 /* YGConfig.cpp */,
 				5CE2080120772F7C009A43B3 /* YGConfig.h */,
+				53CBF1861FB4FE80002CBB31 /* YGEnums.cpp */,
+				130A77031DF767AF001F9587 /* YGEnums.h */,
 				53DEF6E7205AE59C006A3890 /* YGFloatOptional.h */,
 				5343895E203905B6008E0CB3 /* YGLayout.cpp */,
 				5343895F203905B6008E0CB3 /* YGLayout.h */,
-				5352C5722038FF8D00A3B97E /* YGStyle.cpp */,
-				5352C5712038FF8D00A3B97E /* YGStyle.h */,
-				53756E372004FFF700FBBD99 /* Utils.cpp */,
-				53756E382004FFF700FBBD99 /* Utils.h */,
+				130A77041DF767AF001F9587 /* YGMacros.h */,
+				AC4A6AF821FB4EA900FBEC39 /* YGMarker.cpp */,
+				AC8360CC21B0256A00FC46B9 /* YGMarker.h */,
 				53EC85DF1FDEC75A0051B2B5 /* YGNode.cpp */,
 				53EC85DE1FDEC75A0051B2B5 /* YGNode.h */,
 				5376C5E11FC6DDB20083513D /* YGNodePrint.cpp */,
 				5376C5E01FC6DDB20083513D /* YGNodePrint.h */,
-				53CBF1861FB4FE80002CBB31 /* YGEnums.cpp */,
+				5352C5722038FF8D00A3B97E /* YGStyle.cpp */,
+				5352C5712038FF8D00A3B97E /* YGStyle.h */,
+				AC6B69E121B1467C00B2B68A /* YGValue.cpp */,
+				AC6B69E221B1467C00B2B68A /* YGValue.h */,
 				53CBF1851FB4FE80002CBB31 /* Yoga-internal.h */,
 				53CBF1871FB4FE80002CBB31 /* Yoga.cpp */,
-				130A77031DF767AF001F9587 /* YGEnums.h */,
-				130A77041DF767AF001F9587 /* YGMacros.h */,
 				130A77081DF767AF001F9587 /* Yoga.h */,
 			);
 			name = yoga;
@@ -2468,6 +3546,7 @@
 			children = (
 				833D02B9217EBCFA00A23750 /* Assume.cpp */,
 				139D849C1E273B5600323FB7 /* AtomicIntrusiveLinkedList.h */,
+				6802AC72222F3B1800C6002B /* CacheLocality.cpp */,
 				8328138C217EB75C00574D55 /* ColdClass.cpp */,
 				139D849F1E273B5600323FB7 /* Conv.cpp */,
 				139D84A01E273B5600323FB7 /* Conv.h */,
@@ -2478,7 +3557,11 @@
 				139D84A31E273B5600323FB7 /* dynamic.h */,
 				139D84A41E273B5600323FB7 /* Exception.h */,
 				83281395217EB78F00574D55 /* F14Table.cpp */,
+				6802AC5E222F377800C6002B /* FileUtil.cpp */,
+				6802AC78222F3EA300C6002B /* FileUtil.h */,
+				6802AC6D222F38D200C6002B /* Fcntl.cpp */,
 				833D02BC217EBD2600A23750 /* Format.cpp */,
+				6802AC55222F365A00C6002B /* Futex.cpp */,
 				83281389217EB74C00574D55 /* json_pointer.cpp */,
 				139D84A71E273B5600323FB7 /* json.cpp */,
 				139D84A81E273B5600323FB7 /* json.h */,
@@ -2486,10 +3569,17 @@
 				139D84A91E273B5600323FB7 /* Memory.h */,
 				139D84AA1E273B5600323FB7 /* MoveWrapper.h */,
 				139D84AB1E273B5600323FB7 /* Optional.h */,
+				6802AC58222F371300C6002B /* ParkingLot.cpp */,
+				6802AC5B222F374200C6002B /* SafeAssert.cpp */,
 				83281398217EB79D00574D55 /* ScopeGuard.cpp */,
 				139D84AC1E273B5600323FB7 /* ScopeGuard.h */,
+				6802AC50222F352F00C6002B /* SharedMutex.cpp */,
+				6802AC6A222F38BE00C6002B /* Sockets.cpp */,
 				83281392217EB77C00574D55 /* SpookyHashV2.cpp */,
+				6802AC67222F38AD00C6002B /* Stdlib.cpp */,
 				83281386217EB73400574D55 /* String.cpp */,
+				6802AC64222F38A100C6002B /* SysFile.cpp */,
+				6802AC61222F389800C6002B /* SysStat.cpp */,
 				13F887541E2971C500C3C7A1 /* Unicode.cpp */,
 			);
 			name = folly;
@@ -2665,6 +3755,10 @@
 		3D10A3C71DDF3CED004A0F9D /* ReactCommon */ = {
 			isa = PBXGroup;
 			children = (
+				6802AC2D222F24D000C6002B /* utils */,
+				6802AC18222F1FCD00C6002B /* config */,
+				6802ABE7222F1C9900C6002B /* better */,
+				6802A986222F165300C6002B /* fabric */,
 				EDEBC73C214B463000DD5AC8 /* jsiexecutor */,
 				EDEBC6D8214B3F6800DD5AC8 /* jsi */,
 				130A77021DF767AF001F9587 /* yoga */,
@@ -2772,6 +3866,8 @@
 		594F0A2E1FD23228007FBE96 /* SurfaceHostingView */ = {
 			isa = PBXGroup;
 			children = (
+				6802AC48222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.h */,
+				6802AC49222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.mm */,
 				594F0A2F1FD23228007FBE96 /* RCTSurfaceHostingView.h */,
 				594F0A301FD23228007FBE96 /* RCTSurfaceHostingView.mm */,
 				594F0A311FD23228007FBE96 /* RCTSurfaceSizeMeasureMode.h */,
@@ -2845,6 +3941,754 @@
 			name = Inspector;
 			sourceTree = "<group>";
 		};
+		6802A8FF222F15A400C6002B /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				6802A902222F15A400C6002B /* Mounting */,
+				6802A94E222F15A400C6002B /* RCTConversions.h */,
+				6802A94C222F15A400C6002B /* RCTImageResponseDelegate.h */,
+				6802A900222F15A400C6002B /* RCTImageResponseObserverProxy.h */,
+				6802A950222F15A400C6002B /* RCTImageResponseObserverProxy.mm */,
+				6802A93C222F15A400C6002B /* RCTPrimitives.h */,
+				6802A952222F15A400C6002B /* RCTScheduler.h */,
+				6802A955222F15A400C6002B /* RCTScheduler.mm */,
+				6802A94F222F15A400C6002B /* RCTSurfacePresenter.h */,
+				6802A93D222F15A400C6002B /* RCTSurfacePresenter.mm */,
+				6802A901222F15A400C6002B /* RCTSurfaceRegistry.h */,
+				6802A951222F15A400C6002B /* RCTSurfaceRegistry.mm */,
+				6802A954222F15A400C6002B /* RCTSurfaceTouchHandler.h */,
+				6802A953222F15A400C6002B /* RCTSurfaceTouchHandler.mm */,
+				6802A94D222F15A400C6002B /* RCTTouchableComponentViewProtocol.h */,
+				6802A93E222F15A400C6002B /* Surface */,
+				6802A945222F15A400C6002B /* Utils */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		6802A902222F15A400C6002B /* Mounting */ = {
+			isa = PBXGroup;
+			children = (
+				6802A903222F15A400C6002B /* UIView+ComponentViewProtocol.h */,
+				6802A904222F15A400C6002B /* RCTMountingManager.h */,
+				6802A905222F15A400C6002B /* RCTMountingManagerDelegate.h */,
+				6802A906222F15A400C6002B /* RCTComponentViewFactory.mm */,
+				6802A907222F15A400C6002B /* MountItems */,
+				6802A91B222F15A400C6002B /* RCTComponentViewProtocol.h */,
+				6802A91C222F15A400C6002B /* RCTMountingManager.mm */,
+				6802A91D222F15A400C6002B /* ComponentViews */,
+				6802A938222F15A400C6002B /* RCTComponentViewRegistry.mm */,
+				6802A939222F15A400C6002B /* UIView+ComponentViewProtocol.mm */,
+				6802A93A222F15A400C6002B /* RCTComponentViewFactory.h */,
+				6802A93B222F15A400C6002B /* RCTComponentViewRegistry.h */,
+			);
+			path = Mounting;
+			sourceTree = "<group>";
+		};
+		6802A907222F15A400C6002B /* MountItems */ = {
+			isa = PBXGroup;
+			children = (
+				6802A908222F15A400C6002B /* RCTInsertMountItem.h */,
+				6802A909222F15A400C6002B /* RCTInsertMountItem.mm */,
+				6802A90A222F15A400C6002B /* RCTRemoveMountItem.h */,
+				6802A90B222F15A400C6002B /* RCTRemoveMountItem.mm */,
+				6802A90C222F15A400C6002B /* RCTUpdateStateMountItem.mm */,
+				6802A90D222F15A400C6002B /* RCTUpdateLocalDataMountItem.mm */,
+				6802A90E222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.h */,
+				6802A90F222F15A400C6002B /* RCTUpdateEventEmitterMountItem.h */,
+				6802A910222F15A400C6002B /* RCTMountItemProtocol.h */,
+				6802A911222F15A400C6002B /* RCTUpdateLocalDataMountItem.h */,
+				6802A912222F15A400C6002B /* RCTUpdatePropsMountItem.mm */,
+				6802A913222F15A400C6002B /* RCTCreateMountItem.mm */,
+				6802A914222F15A400C6002B /* RCTDeleteMountItem.mm */,
+				6802A915222F15A400C6002B /* RCTUpdateStateMountItem.h */,
+				6802A916222F15A400C6002B /* RCTUpdateEventEmitterMountItem.mm */,
+				6802A917222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.mm */,
+				6802A918222F15A400C6002B /* RCTDeleteMountItem.h */,
+				6802A919222F15A400C6002B /* RCTCreateMountItem.h */,
+				6802A91A222F15A400C6002B /* RCTUpdatePropsMountItem.h */,
+			);
+			path = MountItems;
+			sourceTree = "<group>";
+		};
+		6802A91D222F15A400C6002B /* ComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				6802A91E222F15A400C6002B /* ScrollView */,
+				6802A923222F15A400C6002B /* Slider */,
+				6802A926222F15A400C6002B /* Image */,
+				6802A929222F15A400C6002B /* ActivityIndicator */,
+				6802A92C222F15A400C6002B /* View */,
+				6802A92F222F15A400C6002B /* Switch */,
+				6802A932222F15A400C6002B /* Root */,
+				6802A935222F15A400C6002B /* Text */,
+			);
+			path = ComponentViews;
+			sourceTree = "<group>";
+		};
+		6802A91E222F15A400C6002B /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				6802A91F222F15A400C6002B /* RCTEnhancedScrollView.mm */,
+				6802A920222F15A400C6002B /* RCTEnhancedScrollView.h */,
+				6802A921222F15A400C6002B /* RCTScrollViewComponentView.mm */,
+				6802A922222F15A400C6002B /* RCTScrollViewComponentView.h */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		6802A923222F15A400C6002B /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				6802A924222F15A400C6002B /* RCTSliderComponentView.h */,
+				6802A925222F15A400C6002B /* RCTSliderComponentView.mm */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		6802A926222F15A400C6002B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				6802A927222F15A400C6002B /* RCTImageComponentView.mm */,
+				6802A928222F15A400C6002B /* RCTImageComponentView.h */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		6802A929222F15A400C6002B /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6802A92A222F15A400C6002B /* RCTActivityIndicatorViewComponentView.h */,
+				6802A92B222F15A400C6002B /* RCTActivityIndicatorViewComponentView.mm */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		6802A92C222F15A400C6002B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6802A92D222F15A400C6002B /* RCTViewComponentView.h */,
+				6802A92E222F15A400C6002B /* RCTViewComponentView.mm */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6802A92F222F15A400C6002B /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				6802A930222F15A400C6002B /* RCTSwitchComponentView.mm */,
+				6802A931222F15A400C6002B /* RCTSwitchComponentView.h */,
+			);
+			path = Switch;
+			sourceTree = "<group>";
+		};
+		6802A932222F15A400C6002B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6802A933222F15A400C6002B /* RCTRootComponentView.h */,
+				6802A934222F15A400C6002B /* RCTRootComponentView.mm */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6802A935222F15A400C6002B /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				6802A936222F15A400C6002B /* RCTParagraphComponentView.mm */,
+				6802A937222F15A400C6002B /* RCTParagraphComponentView.h */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		6802A93E222F15A400C6002B /* Surface */ = {
+			isa = PBXGroup;
+			children = (
+				6802A93F222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.mm */,
+				6802A940222F15A400C6002B /* RCTFabricSurface.mm */,
+				6802A941222F15A400C6002B /* RCTFabricSurfaceHostingView.h */,
+				6802A942222F15A400C6002B /* RCTFabricSurface.h */,
+				6802A943222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.h */,
+				6802A944222F15A400C6002B /* RCTFabricSurfaceHostingView.mm */,
+			);
+			path = Surface;
+			sourceTree = "<group>";
+		};
+		6802A945222F15A400C6002B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6802A946222F15A400C6002B /* RuntimeEventBeat.mm */,
+				6802A947222F15A400C6002B /* MainQueueExecutor.mm */,
+				6802A948222F15A400C6002B /* MainRunLoopEventBeat.mm */,
+				6802A949222F15A400C6002B /* RuntimeEventBeat.h */,
+				6802A94A222F15A400C6002B /* MainRunLoopEventBeat.h */,
+				6802A94B222F15A400C6002B /* MainQueueExecutor.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6802A986222F165300C6002B /* fabric */ = {
+			isa = PBXGroup;
+			children = (
+				6802A987222F165300C6002B /* imagemanager */,
+				6802A99D222F165300C6002B /* core */,
+				6802A9E5222F165300C6002B /* mounting */,
+				6802A9EF222F165300C6002B /* attributedstring */,
+				6802A9FD222F165300C6002B /* textlayoutmanager */,
+				6802AA12222F165300C6002B /* components */,
+				6802AA95222F165300C6002B /* sample */,
+				6802AA9E222F165300C6002B /* graphics */,
+				6802AAAE222F165400C6002B /* debug */,
+				6802AAB8222F165400C6002B /* uimanager */,
+			);
+			path = fabric;
+			sourceTree = "<group>";
+		};
+		6802A987222F165300C6002B /* imagemanager */ = {
+			isa = PBXGroup;
+			children = (
+				6802A988222F165300C6002B /* ImageResponseObserverCoordinator.cpp */,
+				6802A989222F165300C6002B /* platform */,
+				6802A993222F165300C6002B /* ImageRequest.h */,
+				6802A996222F165300C6002B /* ImageResponseObserverCoordinator.h */,
+				6802A997222F165300C6002B /* BUCK */,
+				6802A998222F165300C6002B /* ImageManager.h */,
+				6802A999222F165300C6002B /* primitives.h */,
+				6802A99A222F165300C6002B /* ImageResponse.h */,
+				6802A99B222F165300C6002B /* ImageResponseObserver.h */,
+				6802A99C222F165300C6002B /* ImageResponse.cpp */,
+			);
+			path = imagemanager;
+			sourceTree = "<group>";
+		};
+		6802A989222F165300C6002B /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				6802A98A222F165300C6002B /* ios */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		6802A98A222F165300C6002B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6802A98B222F165300C6002B /* RCTImagePrimitivesConversions.h */,
+				6802A98C222F165300C6002B /* ImageManager.mm */,
+				6802A98D222F165300C6002B /* RCTImageManager.h */,
+				6802A98E222F165300C6002B /* RCTImageManager.mm */,
+				6802A98F222F165300C6002B /* ImageRequest.cpp */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6802A99D222F165300C6002B /* core */ = {
+			isa = PBXGroup;
+			children = (
+				6802A99E222F165300C6002B /* conversions.h */,
+				6802A99F222F165300C6002B /* propsConversions.h */,
+				6802A9A0222F165300C6002B /* layout */,
+				6802A9A8222F165300C6002B /* shadownode */,
+				6802A9B6222F165300C6002B /* state */,
+				6802A9C2222F165300C6002B /* primitives */,
+				6802A9CA222F165300C6002B /* BUCK */,
+				6802A9CB222F165300C6002B /* events */,
+				6802A9E2222F165300C6002B /* componentdescriptor */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		6802A9A0222F165300C6002B /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9A1222F165300C6002B /* LayoutMetrics.h */,
+				6802A9A2222F165300C6002B /* LayoutableShadowNode.cpp */,
+				6802A9A3222F165300C6002B /* LayoutConstraints.h */,
+				6802A9A4222F165300C6002B /* LayoutPrimitives.h */,
+				6802A9A5222F165300C6002B /* LayoutContext.h */,
+				6802A9A6222F165300C6002B /* LayoutableShadowNode.h */,
+				6802A9A7222F165300C6002B /* LayoutConstraints.cpp */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		6802A9A8222F165300C6002B /* shadownode */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9A9222F165300C6002B /* Props.h */,
+				6802A9AA222F165300C6002B /* ShadowNode.cpp */,
+				6802A9AB222F165300C6002B /* Props.cpp */,
+				6802A9AC222F165300C6002B /* ShadowNodeFragment.h */,
+				6802A9AD222F165300C6002B /* ShadowNodeFragment.cpp */,
+				6802A9AE222F165300C6002B /* ShadowNode.h */,
+				6802A9AF222F165300C6002B /* ConcreteShadowNode.h */,
+				6802A9B0222F165300C6002B /* LocalData.h */,
+			);
+			path = shadownode;
+			sourceTree = "<group>";
+		};
+		6802A9B6222F165300C6002B /* state */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9B7222F165300C6002B /* StateCoordinator.cpp */,
+				6802A9B8222F165300C6002B /* StateData.h */,
+				6802A9B9222F165300C6002B /* State.cpp */,
+				6802A9BA222F165300C6002B /* StateCoordinator.h */,
+				6802A9BB222F165300C6002B /* StateTarget.h */,
+				6802A9BC222F165300C6002B /* StateUpdate.cpp */,
+				6802A9BD222F165300C6002B /* StatePipe.h */,
+				6802A9BE222F165300C6002B /* StateTarget.cpp */,
+				6802A9BF222F165300C6002B /* ConcreteState.h */,
+				6802A9C0222F165300C6002B /* State.h */,
+				6802A9C1222F165300C6002B /* StateUpdate.h */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		6802A9C2222F165300C6002B /* primitives */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9C3222F165300C6002B /* RawValue.cpp */,
+				6802A9C4222F165300C6002B /* RawValue.h */,
+				6802A9C5222F165300C6002B /* RawProps.cpp */,
+				6802A9C6222F165300C6002B /* Sealable.h */,
+				6802A9C7222F165300C6002B /* RawProps.h */,
+				6802A9C8222F165300C6002B /* Sealable.cpp */,
+				6802A9C9222F165300C6002B /* ReactPrimitives.h */,
+			);
+			path = primitives;
+			sourceTree = "<group>";
+		};
+		6802A9CB222F165300C6002B /* events */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9CC222F165300C6002B /* UnbatchedEventQueue.h */,
+				6802A9CD222F165300C6002B /* EventHandler.h */,
+				6802A9CE222F165300C6002B /* EventEmitter.cpp */,
+				6802A9CF222F165300C6002B /* EventQueue.h */,
+				6802A9D0222F165300C6002B /* EventQueue.cpp */,
+				6802A9D1222F165300C6002B /* RawEvent.cpp */,
+				6802A9D2222F165300C6002B /* BatchedEventQueue.cpp */,
+				6802A9D3222F165300C6002B /* EventBeatBasedExecutor.cpp */,
+				6802A9D4222F165300C6002B /* ValueFactory.h */,
+				6802A9D5222F165300C6002B /* UnbatchedEventQueue.cpp */,
+				6802A9D6222F165300C6002B /* BatchedEventQueue.h */,
+				6802A9D7222F165300C6002B /* EventTarget.h */,
+				6802A9D8222F165300C6002B /* EventPriority.h */,
+				6802A9D9222F165300C6002B /* EventBeatBasedExecutor.h */,
+				6802A9DA222F165300C6002B /* EventDispatcher.cpp */,
+				6802A9DB222F165300C6002B /* EventBeat.h */,
+				6802A9DC222F165300C6002B /* EventTarget.cpp */,
+				6802A9DD222F165300C6002B /* EventEmitter.h */,
+				6802A9DE222F165300C6002B /* EventBeat.cpp */,
+				6802A9DF222F165300C6002B /* EventDispatcher.h */,
+				6802A9E0222F165300C6002B /* RawEvent.h */,
+				6802A9E1222F165300C6002B /* EventPipe.h */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		6802A9E2222F165300C6002B /* componentdescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9E3222F165300C6002B /* ComponentDescriptor.h */,
+				6802A9E4222F165300C6002B /* ConcreteComponentDescriptor.h */,
+			);
+			path = componentdescriptor;
+			sourceTree = "<group>";
+		};
+		6802A9E5222F165300C6002B /* mounting */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9E6222F165300C6002B /* ShadowViewMutation.cpp */,
+				6802A9E7222F165300C6002B /* ShadowView.cpp */,
+				6802A9EA222F165300C6002B /* Differentiator.h */,
+				6802A9EB222F165300C6002B /* ShadowView.h */,
+				6802A9EC222F165300C6002B /* BUCK */,
+				6802A9ED222F165300C6002B /* ShadowViewMutation.h */,
+				6802A9EE222F165300C6002B /* Differentiator.cpp */,
+			);
+			path = mounting;
+			sourceTree = "<group>";
+		};
+		6802A9EF222F165300C6002B /* attributedstring */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9F0222F165300C6002B /* TextAttributes.cpp */,
+				6802A9F1222F165300C6002B /* conversions.h */,
+				6802A9F2222F165300C6002B /* TextAttributes.h */,
+				6802A9F7222F165300C6002B /* ParagraphAttributes.cpp */,
+				6802A9F8222F165300C6002B /* BUCK */,
+				6802A9F9222F165300C6002B /* AttributedString.cpp */,
+				6802A9FA222F165300C6002B /* AttributedString.h */,
+				6802A9FB222F165300C6002B /* ParagraphAttributes.h */,
+				6802A9FC222F165300C6002B /* primitives.h */,
+			);
+			path = attributedstring;
+			sourceTree = "<group>";
+		};
+		6802A9FD222F165300C6002B /* textlayoutmanager */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9FE222F165300C6002B /* platform */,
+				6802AA11222F165300C6002B /* BUCK */,
+			);
+			path = textlayoutmanager;
+			sourceTree = "<group>";
+		};
+		6802A9FE222F165300C6002B /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				6802A9FF222F165300C6002B /* ios */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		6802A9FF222F165300C6002B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA00222F165300C6002B /* RCTFontUtils.mm */,
+				6802AA01222F165300C6002B /* RCTTextPrimitivesConversions.h */,
+				6802AA02222F165300C6002B /* RCTFontUtils.h */,
+				6802AA03222F165300C6002B /* RCTTextLayoutManager.mm */,
+				6802AA04222F165300C6002B /* NSTextStorage+FontScaling.m */,
+				6802AA05222F165300C6002B /* RCTAttributedTextUtils.mm */,
+				6802AA06222F165300C6002B /* TextLayoutManager.h */,
+				6802AA07222F165300C6002B /* RCTTextLayoutManager.h */,
+				6802AA08222F165300C6002B /* RCTFontProperties.h */,
+				6802AA09222F165300C6002B /* RCTAttributedTextUtils.h */,
+				6802AA0A222F165300C6002B /* TextLayoutManager.mm */,
+				6802AA0B222F165300C6002B /* NSTextStorage+FontScaling.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6802AA12222F165300C6002B /* components */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA13222F165300C6002B /* scrollview */,
+				6802AA22222F165300C6002B /* slider */,
+				6802AA36222F165300C6002B /* image */,
+				6802AA44222F165300C6002B /* activityindicator */,
+				6802AA4F222F165300C6002B /* view */,
+				6802AA6C222F165300C6002B /* root */,
+				6802AA75222F165300C6002B /* text */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		6802AA13222F165300C6002B /* scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA14222F165300C6002B /* ScrollViewLocalData.cpp */,
+				6802AA15222F165300C6002B /* conversions.h */,
+				6802AA16222F165300C6002B /* ScrollViewProps.cpp */,
+				6802AA17222F165300C6002B /* ScrollViewEventEmitter.h */,
+				6802AA1A222F165300C6002B /* ScrollViewEventEmitter.cpp */,
+				6802AA1B222F165300C6002B /* ScrollViewShadowNode.cpp */,
+				6802AA1C222F165300C6002B /* ScrollViewLocalData.h */,
+				6802AA1D222F165300C6002B /* BUCK */,
+				6802AA1E222F165300C6002B /* ScrollViewShadowNode.h */,
+				6802AA1F222F165300C6002B /* ScrollViewComponentDescriptor.h */,
+				6802AA20222F165300C6002B /* primitives.h */,
+				6802AA21222F165300C6002B /* ScrollViewProps.h */,
+			);
+			path = scrollview;
+			sourceTree = "<group>";
+		};
+		6802AA22222F165300C6002B /* slider */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA23222F165300C6002B /* SliderLocalData.cpp */,
+				6802AA24222F165300C6002B /* SliderShadowNode.cpp */,
+				6802AA25222F165300C6002B /* platform */,
+				6802AA2F222F165300C6002B /* SliderComponentDescriptor.h */,
+				6802AA30222F165300C6002B /* BUCK */,
+				6802AA34222F165300C6002B /* SliderLocalData.h */,
+				6802AA35222F165300C6002B /* SliderShadowNode.h */,
+			);
+			path = slider;
+			sourceTree = "<group>";
+		};
+		6802AA25222F165300C6002B /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA26222F165300C6002B /* ios */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		6802AA26222F165300C6002B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA27222F165300C6002B /* SliderMeasurementsManager.h */,
+				6802AA28222F165300C6002B /* SliderMeasurementsManager.cpp */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6802AA36222F165300C6002B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA37222F165300C6002B /* ImageLocalData.h */,
+				6802AA38222F165300C6002B /* conversions.h */,
+				6802AA39222F165300C6002B /* ImageShadowNode.cpp */,
+				6802AA3C222F165300C6002B /* ImageEventEmitter.cpp */,
+				6802AA3D222F165300C6002B /* ImageEventEmitter.h */,
+				6802AA3E222F165300C6002B /* ImageProps.h */,
+				6802AA3F222F165300C6002B /* BUCK */,
+				6802AA40222F165300C6002B /* ImageComponentDescriptor.h */,
+				6802AA41222F165300C6002B /* ImageProps.cpp */,
+				6802AA42222F165300C6002B /* ImageLocalData.cpp */,
+				6802AA43222F165300C6002B /* ImageShadowNode.h */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		6802AA44222F165300C6002B /* activityindicator */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA45222F165300C6002B /* conversions.h */,
+				6802AA4B222F165300C6002B /* BUCK */,
+			);
+			path = activityindicator;
+			sourceTree = "<group>";
+		};
+		6802AA4F222F165300C6002B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA50222F165300C6002B /* TouchEventEmitter.h */,
+				6802AA51222F165300C6002B /* ViewComponentDescriptor.h */,
+				6802AA52222F165300C6002B /* conversions.h */,
+				6802AA53222F165300C6002B /* yoga */,
+				6802AA58222F165300C6002B /* propsConversions.h */,
+				6802AA59222F165300C6002B /* ViewShadowNode.cpp */,
+				6802AA5A222F165300C6002B /* ViewEventEmitter.cpp */,
+				6802AA5B222F165300C6002B /* ConcreteViewShadowNode.h */,
+				6802AA5E222F165300C6002B /* ViewProps.h */,
+				6802AA5F222F165300C6002B /* BUCK */,
+				6802AA60222F165300C6002B /* TouchEventEmitter.cpp */,
+				6802AA61222F165300C6002B /* ViewProps.cpp */,
+				6802AA62222F165300C6002B /* primitives.h */,
+				6802AA63222F165300C6002B /* accessibility */,
+				6802AA6A222F165300C6002B /* ViewEventEmitter.h */,
+				6802AA6B222F165300C6002B /* ViewShadowNode.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6802AA53222F165300C6002B /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA54222F165300C6002B /* YogaStylableProps.h */,
+				6802AA55222F165300C6002B /* YogaStylableProps.cpp */,
+				6802AA56222F165300C6002B /* YogaLayoutableShadowNode.cpp */,
+				6802AA57222F165300C6002B /* YogaLayoutableShadowNode.h */,
+			);
+			path = yoga;
+			sourceTree = "<group>";
+		};
+		6802AA63222F165300C6002B /* accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA64222F165300C6002B /* accessibilityPropsConversions.h */,
+				6802AA65222F165300C6002B /* AccessibilityProps.cpp */,
+				6802AA66222F165300C6002B /* AccessibilityProps.h */,
+				6802AA67222F165300C6002B /* AccessibleShadowNode.h */,
+				6802AA68222F165300C6002B /* AccessibilityPrimitives.h */,
+				6802AA69222F165300C6002B /* AccessibleShadowNode.cpp */,
+			);
+			path = accessibility;
+			sourceTree = "<group>";
+		};
+		6802AA6C222F165300C6002B /* root */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA6D222F165300C6002B /* RootShadowNode.cpp */,
+				6802AA6E222F165300C6002B /* RootProps.cpp */,
+				6802AA71222F165300C6002B /* RootShadowNode.h */,
+				6802AA72222F165300C6002B /* RootComponentDescriptor.h */,
+				6802AA73222F165300C6002B /* BUCK */,
+				6802AA74222F165300C6002B /* RootProps.h */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		6802AA75222F165300C6002B /* text */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA76222F165300C6002B /* basetext */,
+				6802AA7B222F165300C6002B /* paragraph */,
+				6802AA88222F165300C6002B /* BUCK */,
+				6802AA89222F165300C6002B /* text */,
+				6802AA8F222F165300C6002B /* rawtext */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		6802AA76222F165300C6002B /* basetext */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA77222F165300C6002B /* BaseTextShadowNode.cpp */,
+				6802AA78222F165300C6002B /* BaseTextProps.cpp */,
+				6802AA79222F165300C6002B /* BaseTextProps.h */,
+				6802AA7A222F165300C6002B /* BaseTextShadowNode.h */,
+			);
+			path = basetext;
+			sourceTree = "<group>";
+		};
+		6802AA7B222F165300C6002B /* paragraph */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA7C222F165300C6002B /* conversions.h */,
+				6802AA7D222F165300C6002B /* ParagraphShadowNode.h */,
+				6802AA7E222F165300C6002B /* ParagraphLocalData.cpp */,
+				6802AA7F222F165300C6002B /* ParagraphMeasurementCache.h */,
+				6802AA80222F165300C6002B /* ParagraphLocalData.h */,
+				6802AA81222F165300C6002B /* ParagraphShadowNode.cpp */,
+				6802AA82222F165300C6002B /* ParagraphProps.h */,
+				6802AA83222F165300C6002B /* ParagraphProps.cpp */,
+				6802AA84222F165300C6002B /* ParagraphComponentDescriptor.h */,
+			);
+			path = paragraph;
+			sourceTree = "<group>";
+		};
+		6802AA89222F165300C6002B /* text */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA8A222F165300C6002B /* TextComponentDescriptor.h */,
+				6802AA8B222F165300C6002B /* TextShadowNode.h */,
+				6802AA8C222F165300C6002B /* TextShadowNode.cpp */,
+				6802AA8D222F165300C6002B /* TextProps.h */,
+				6802AA8E222F165300C6002B /* TextProps.cpp */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		6802AA8F222F165300C6002B /* rawtext */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA90222F165300C6002B /* RawTextProps.cpp */,
+				6802AA91222F165300C6002B /* RawTextProps.h */,
+				6802AA92222F165300C6002B /* RawTextComponentDescriptor.h */,
+				6802AA93222F165300C6002B /* RawTextShadowNode.cpp */,
+				6802AA94222F165300C6002B /* RawTextShadowNode.h */,
+			);
+			path = rawtext;
+			sourceTree = "<group>";
+		};
+		6802AA95222F165300C6002B /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA96222F165300C6002B /* SampleComponentDescriptorFactor.cpp */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		6802AA9E222F165300C6002B /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				6802AA9F222F165300C6002B /* conversions.h */,
+				6802AAA0222F165300C6002B /* ColorComponents.h */,
+				6802AAA1222F165300C6002B /* platform */,
+				6802AAAC222F165400C6002B /* BUCK */,
+				6802AAAD222F165400C6002B /* Geometry.h */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
+		6802AAA1222F165300C6002B /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				6802AAA2222F165300C6002B /* ios */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		6802AAA2222F165300C6002B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6802AAA3222F165300C6002B /* Float.h */,
+				6802AAA4222F165300C6002B /* Color.h */,
+				6802AAA5222F165400C6002B /* Color.cpp */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6802AAAE222F165400C6002B /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				6802AAAF222F165400C6002B /* debugStringConvertibleUtils.h */,
+				6802AAB0222F165400C6002B /* DebugStringConvertible.cpp */,
+				6802AAB1222F165400C6002B /* DebugStringConvertibleItem.h */,
+				6802AAB4222F165400C6002B /* SystraceSection.h */,
+				6802AAB5222F165400C6002B /* BUCK */,
+				6802AAB6222F165400C6002B /* DebugStringConvertible.h */,
+				6802AAB7222F165400C6002B /* DebugStringConvertibleItem.cpp */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		6802AAB8222F165400C6002B /* uimanager */ = {
+			isa = PBXGroup;
+			children = (
+				6802AACA222F165400C6002B /* BUCK */,
+				6802AAD0222F165400C6002B /* ComponentDescriptorRegistry.cpp */,
+				6802AAC6222F165400C6002B /* Scheduler.cpp */,
+				6802AABB222F165400C6002B /* ShadowTree.cpp */,
+				6802AACC222F165400C6002B /* ShadowTreeRegistry.cpp */,
+				6802AACB222F165400C6002B /* UIManager.cpp */,
+				6802AAC3222F165400C6002B /* UIManagerBinding.cpp */,
+				6802AAD1222F165400C6002B /* UITemplateProcessor.cpp */,
+				6802AAC5222F165400C6002B /* ComponentDescriptorFactory.h */,
+				6802AABF222F165400C6002B /* ComponentDescriptorRegistry.h */,
+				6802AAC9222F165400C6002B /* ContextContainer.h */,
+				6802AACE222F165400C6002B /* primitives.h */,
+				6802AABD222F165400C6002B /* Scheduler.h */,
+				6802AAC8222F165400C6002B /* SchedulerDelegate.h */,
+				6802AAC7222F165400C6002B /* ShadowTree.h */,
+				6802AABA222F165400C6002B /* ShadowTreeDelegate.h */,
+				6802AABE222F165400C6002B /* ShadowTreeRegistry.h */,
+				6802AAC4222F165400C6002B /* TimeUtils.h */,
+				6802AACD222F165400C6002B /* UIManager.h */,
+				6802AAB9222F165400C6002B /* UIManagerBinding.h */,
+				6802AACF222F165400C6002B /* UIManagerDelegate.h */,
+				6802AABC222F165400C6002B /* UITemplateProcessor.h */,
+			);
+			path = uimanager;
+			sourceTree = "<group>";
+		};
+		6802ABE7222F1C9900C6002B /* better */ = {
+			isa = PBXGroup;
+			children = (
+				6802ABE8222F1C9900C6002B /* map.h */,
+				6802ABE9222F1C9900C6002B /* better.h */,
+				6802ABEA222F1C9900C6002B /* optional.h */,
+				6802ABEB222F1C9900C6002B /* BUCK */,
+				6802ABEC222F1C9900C6002B /* mutex.h */,
+				6802ABED222F1C9900C6002B /* set.h */,
+			);
+			path = better;
+			sourceTree = "<group>";
+		};
+		6802AC18222F1FCD00C6002B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				6802AC19222F1FCD00C6002B /* ReactNativeConfig.h */,
+				6802AC1A222F1FCD00C6002B /* ReactNativeConfig.cpp */,
+				6802AC1B222F1FCD00C6002B /* BUCK */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		6802AC2D222F24D000C6002B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				6802AC2E222F24D000C6002B /* SharedFunction.h */,
+				6802AC2F222F24D000C6002B /* SimpleThreadSafeCache.h */,
+				6802AC30222F24D000C6002B /* BUCK */,
+				6802AC31222F24D000C6002B /* FloatComparison.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
@@ -2880,6 +4724,8 @@
 				EDEBC73B214B45A300DD5AC8 /* libjsiexecutor.a */,
 				ED296FB6214C9A0900B7C4FE /* libjsi-tvOS.a */,
 				ED296FEE214C9CF800B7C4FE /* libjsiexecutor-tvOS.a */,
+				6802A8F6222F157900C6002B /* libFabric.a */,
+				6802ABDE222F1C8300C6002B /* libbetter.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2892,6 +4738,7 @@
 				13134C7D1E296B2A00B9F3CB /* CxxModule */,
 				1304439E1E3FEA8B00D93A67 /* CxxUtils */,
 				3D7BFD0A1EA8E2D1008DFB7A /* DevSupport */,
+				6802A8FF222F15A400C6002B /* Fabric */,
 				657734881EE8352500A0E9EA /* Inspector */,
 				13B07FE01A69315300A75B9A /* Modules */,
 				1450FF7F1BCFF28A00208362 /* Profiler */,
@@ -3426,6 +5273,7 @@
 				3DCE53281FEAB23100613583 /* RCTDatePicker.h in Headers */,
 				50E98FEB21460B0D00CD9289 /* RCTWKWebView.h in Headers */,
 				3D80DA311DF820620028D040 /* RCTJavaScriptLoader.h in Headers */,
+				6802AC4A222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.h in Headers */,
 				130E3D881E6A082100ACE484 /* RCTDevSettings.h in Headers */,
 				3D80DA321DF820620028D040 /* RCTJSStackFrame.h in Headers */,
 				130443DC1E401AF400D93A67 /* RCTConvert+Transform.h in Headers */,
@@ -3596,6 +5444,7 @@
 				ED2970422150126E00B7C4FE /* Conv.h in Headers */,
 				ED2970432150126E00B7C4FE /* dynamic-inl.h in Headers */,
 				ED2970452150126E00B7C4FE /* dynamic.h in Headers */,
+				6802AC79222F3EA300C6002B /* FileUtil.h in Headers */,
 				ED2970462150126E00B7C4FE /* Exception.h in Headers */,
 				ED2970482150126E00B7C4FE /* json.h in Headers */,
 				ED2970492150126E00B7C4FE /* Memory.h in Headers */,
@@ -3652,6 +5501,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 139D7ED41E25DB7D00323FB7 /* Build configuration list for PBXNativeTarget "third-party" */;
 			buildPhases = (
+				6802B0D2222F41C400C6002B /* CopyFiles */,
 				139D7ECA1E25DB7D00323FB7 /* Sources */,
 			);
 			buildRules = (
@@ -3792,6 +5642,60 @@
 			name = "cxxreact-tvOS";
 			productName = "React-tvOS";
 			productReference = 3D3CD9321DE5FBEE00167DC4 /* libcxxreact.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6802A8F5222F157900C6002B /* Fabric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6802A8FC222F157900C6002B /* Build configuration list for PBXNativeTarget "Fabric" */;
+			buildPhases = (
+				6802AB49222F169F00C6002B /* Copy Headers */,
+				6802AB9A222F181F00C6002B /* Copy attributedstring */,
+				6802ABA0222F187600C6002B /* Copy core */,
+				6802AC42222F2AEA00C6002B /* Copy components/activityindicator */,
+				6802AC0A222F1EB400C6002B /* Copy components/image */,
+				6802AC27222F244E00C6002B /* Copy components/root */,
+				6802A8F4222F157900C6002B /* Copy components/scrollview */,
+				6802AC1E222F205000C6002B /* Copy components/slider */,
+				6802AB72222F172300C6002B /* Copy components/text */,
+				6802AB82222F179200C6002B /* Copy components/view */,
+				6802AC17222F1FAA00C6002B /* Copy config */,
+				6802ABF5222F1CF700C6002B /* Copy debug */,
+				6802ABCA222F19AB00C6002B /* Copy graphics */,
+				6802AB81222F178300C6002B /* Copy imagemanager */,
+				6802B10B223026B100C6002B /* Copy mounting */,
+				6802AC3A222F296100C6002B /* Copy textlayoutmanager */,
+				6802ABFB222F1DFA00C6002B /* Copy uimanager */,
+				6802AC32222F24DD00C6002B /* Copy utils */,
+				6802A8F2222F157900C6002B /* Sources */,
+				6802A8F3222F157900C6002B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6802AC2C222F24A300C6002B /* PBXTargetDependency */,
+				6802AC16222F1F5A00C6002B /* PBXTargetDependency */,
+				6802ABF4222F1CEA00C6002B /* PBXTargetDependency */,
+				6802ABD9222F1AF900C6002B /* PBXTargetDependency */,
+				6802ABD3222F1A0F00C6002B /* PBXTargetDependency */,
+			);
+			name = Fabric;
+			productName = Fabric;
+			productReference = 6802A8F6222F157900C6002B /* libFabric.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6802ABDD222F1C8300C6002B /* better */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6802ABE4222F1C8400C6002B /* Build configuration list for PBXNativeTarget "better" */;
+			buildPhases = (
+				6802ABDC222F1C8300C6002B /* Copy Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = better;
+			productName = better;
+			productReference = 6802ABDE222F1C8300C6002B /* libbetter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		83CBBA2D1A601D0E00E9B192 /* React */ = {
@@ -3951,6 +5855,14 @@
 					2D2A28121D9B038B00D4039D = {
 						CreatedOnToolsVersion = 8.0;
 					};
+					6802A8F5222F157900C6002B = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					6802ABDD222F1C8300C6002B = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
 					83CBBA2D1A601D0E00E9B192 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -3985,6 +5897,8 @@
 				EDEBC724214B45A300DD5AC8 /* jsiexecutor */,
 				ED296F98214C9A0900B7C4FE /* jsi-tvOS */,
 				ED296FD0214C9CF800B7C4FE /* jsiexecutor-tvOS */,
+				6802A8F5222F157900C6002B /* Fabric */,
+				6802ABDD222F1C8300C6002B /* better */,
 			);
 		};
 /* End PBXProject section */
@@ -4164,22 +6078,33 @@
 				139D84B01E273B5600323FB7 /* Conv.cpp in Sources */,
 				139D7F031E25DE1100323FB7 /* raw_logging.cc in Sources */,
 				83281387217EB73400574D55 /* String.cpp in Sources */,
+				6802AC62222F389800C6002B /* SysStat.cpp in Sources */,
 				139D7F041E25DE1100323FB7 /* signalhandler.cc in Sources */,
 				833D02BD217EBD2600A23750 /* Format.cpp in Sources */,
 				83281390217EB76C00574D55 /* Demangle.cpp in Sources */,
+				6802AC68222F38AE00C6002B /* Stdlib.cpp in Sources */,
+				6802AC56222F365A00C6002B /* Futex.cpp in Sources */,
 				833D02BA217EBCFA00A23750 /* Assume.cpp in Sources */,
+				6802AC53222F353700C6002B /* SharedMutex.cpp in Sources */,
 				139D84B11E273B5600323FB7 /* dynamic.cpp in Sources */,
 				139D7F061E25DE1100323FB7 /* utilities.cc in Sources */,
 				8328138D217EB75C00574D55 /* ColdClass.cpp in Sources */,
+				6802AC65222F38A100C6002B /* SysFile.cpp in Sources */,
 				139D7F051E25DE1100323FB7 /* symbolize.cc in Sources */,
 				139D7F071E25DE1100323FB7 /* vlog_is_on.cc in Sources */,
+				6802AC73222F3B1900C6002B /* CacheLocality.cpp in Sources */,
+				6802AC6E222F38D200C6002B /* Fcntl.cpp in Sources */,
 				13F8875A1E2971D400C3C7A1 /* Unicode.cpp in Sources */,
 				139D7F091E25DE3700323FB7 /* demangle.cc in Sources */,
 				83281399217EB79D00574D55 /* ScopeGuard.cpp in Sources */,
 				83281393217EB77D00574D55 /* SpookyHashV2.cpp in Sources */,
+				6802AC6B222F38BF00C6002B /* Sockets.cpp in Sources */,
 				13F887581E2971D400C3C7A1 /* Demangle.cpp in Sources */,
+				6802AC59222F371300C6002B /* ParkingLot.cpp in Sources */,
 				139D7F021E25DE1100323FB7 /* logging.cc in Sources */,
 				83281396217EB79000574D55 /* F14Table.cpp in Sources */,
+				6802AC5F222F377800C6002B /* FileUtil.cpp in Sources */,
+				6802AC5C222F374200C6002B /* SafeAssert.cpp in Sources */,
 				83281384217EB70900574D55 /* MallocImpl.cpp in Sources */,
 				8328138A217EB74C00574D55 /* json_pointer.cpp in Sources */,
 				139D84B31E273B5600323FB7 /* json.cpp in Sources */,
@@ -4321,22 +6246,33 @@
 				3D383D251EBD27B6005632C8 /* Conv.cpp in Sources */,
 				3D383D271EBD27B6005632C8 /* raw_logging.cc in Sources */,
 				83281388217EB73400574D55 /* String.cpp in Sources */,
+				6802AC63222F389800C6002B /* SysStat.cpp in Sources */,
 				3D383D281EBD27B6005632C8 /* signalhandler.cc in Sources */,
 				833D02BE217EBD2600A23750 /* Format.cpp in Sources */,
 				83281391217EB76C00574D55 /* Demangle.cpp in Sources */,
+				6802AC69222F38AE00C6002B /* Stdlib.cpp in Sources */,
+				6802AC57222F365A00C6002B /* Futex.cpp in Sources */,
 				833D02BB217EBCFA00A23750 /* Assume.cpp in Sources */,
+				6802AC54222F353700C6002B /* SharedMutex.cpp in Sources */,
 				3D383D291EBD27B6005632C8 /* dynamic.cpp in Sources */,
 				3D383D2A1EBD27B6005632C8 /* utilities.cc in Sources */,
 				8328138E217EB75C00574D55 /* ColdClass.cpp in Sources */,
+				6802AC66222F38A100C6002B /* SysFile.cpp in Sources */,
 				3D383D2D1EBD27B6005632C8 /* symbolize.cc in Sources */,
 				3D383D2E1EBD27B6005632C8 /* vlog_is_on.cc in Sources */,
+				6802AC74222F3B1900C6002B /* CacheLocality.cpp in Sources */,
+				6802AC6F222F38D200C6002B /* Fcntl.cpp in Sources */,
 				3D383D2F1EBD27B6005632C8 /* Unicode.cpp in Sources */,
 				3D383D301EBD27B6005632C8 /* demangle.cc in Sources */,
 				8328139A217EB79D00574D55 /* ScopeGuard.cpp in Sources */,
 				83281394217EB77D00574D55 /* SpookyHashV2.cpp in Sources */,
+				6802AC6C222F38BF00C6002B /* Sockets.cpp in Sources */,
 				3D383D311EBD27B6005632C8 /* Demangle.cpp in Sources */,
+				6802AC5A222F371300C6002B /* ParkingLot.cpp in Sources */,
 				3D383D331EBD27B6005632C8 /* logging.cc in Sources */,
 				83281397217EB79000574D55 /* F14Table.cpp in Sources */,
+				6802AC60222F377800C6002B /* FileUtil.cpp in Sources */,
+				6802AC5D222F374200C6002B /* SafeAssert.cpp in Sources */,
 				83281385217EB71200574D55 /* MallocImpl.cpp in Sources */,
 				8328138B217EB74C00574D55 /* json_pointer.cpp in Sources */,
 				3D383D341EBD27B6005632C8 /* json.cpp in Sources */,
@@ -4428,6 +6364,121 @@
 				13F887911E29726300C3C7A1 /* NativeToJsBridge.cpp in Sources */,
 				13F887821E29726300C3C7A1 /* CxxNativeModule.cpp in Sources */,
 				13F887931E29726300C3C7A1 /* SampleCxxModule.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6802A8F2222F157900C6002B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6802B10F223026E100C6002B /* ShadowViewMutation.cpp in Sources */,
+				6802B110223026E100C6002B /* ShadowView.cpp in Sources */,
+				6802B111223026E100C6002B /* Differentiator.cpp in Sources */,
+				6802A96F222F15A400C6002B /* RCTFabricSurfaceHostingView.mm in Sources */,
+				6802A96C222F15A400C6002B /* RCTSurfacePresenter.mm in Sources */,
+				6802AB07222F165400C6002B /* ScrollViewProps.cpp in Sources */,
+				6802AB36222F165400C6002B /* DebugStringConvertible.cpp in Sources */,
+				6802AB09222F165400C6002B /* ScrollViewEventEmitter.cpp in Sources */,
+				6802AB16222F165400C6002B /* ImageLocalData.cpp in Sources */,
+				6802A95C222F15A400C6002B /* RCTCreateMountItem.mm in Sources */,
+				6802A961222F15A400C6002B /* RCTEnhancedScrollView.mm in Sources */,
+				6802AB0A222F165400C6002B /* ScrollViewShadowNode.cpp in Sources */,
+				6802AB2D222F165400C6002B /* TextShadowNode.cpp in Sources */,
+				6802AB29222F165400C6002B /* ParagraphShadowNode.cpp in Sources */,
+				6802A956222F15A400C6002B /* RCTComponentViewFactory.mm in Sources */,
+				6802A964222F15A400C6002B /* RCTImageComponentView.mm in Sources */,
+				6802AAED222F165400C6002B /* EventQueue.cpp in Sources */,
+				6802AB31222F165400C6002B /* SampleComponentDescriptorFactor.cpp in Sources */,
+				6802AB1C222F165400C6002B /* ViewShadowNode.cpp in Sources */,
+				6802AAD6222F165400C6002B /* ImageManager.mm in Sources */,
+				6802A96B222F15A400C6002B /* UIView+ComponentViewProtocol.mm in Sources */,
+				6802AAF2222F165400C6002B /* EventDispatcher.cpp in Sources */,
+				6802AB40222F165400C6002B /* ComponentDescriptorRegistry.cpp in Sources */,
+				6802AAD8222F165400C6002B /* ImageRequest.cpp in Sources */,
+				6802A973222F15A400C6002B /* RCTImageResponseObserverProxy.mm in Sources */,
+				6802A959222F15A400C6002B /* RCTUpdateStateMountItem.mm in Sources */,
+				6802AAE8222F165400C6002B /* StateTarget.cpp in Sources */,
+				6802AAEF222F165400C6002B /* BatchedEventQueue.cpp in Sources */,
+				6802A971222F15A400C6002B /* MainQueueExecutor.mm in Sources */,
+				6802A95F222F15A400C6002B /* RCTUpdateLayoutMetricsMountItem.mm in Sources */,
+				6802A972222F15A400C6002B /* MainRunLoopEventBeat.mm in Sources */,
+				6802AAF0222F165400C6002B /* EventBeatBasedExecutor.cpp in Sources */,
+				6802AB14222F165400C6002B /* ImageEventEmitter.cpp in Sources */,
+				6802AB00222F165400C6002B /* RCTTextLayoutManager.mm in Sources */,
+				6802AAF4222F165400C6002B /* EventBeat.cpp in Sources */,
+				6802A95E222F15A400C6002B /* RCTUpdateEventEmitterMountItem.mm in Sources */,
+				6802AADC222F165400C6002B /* ImageResponse.cpp in Sources */,
+				6802AB3D222F165400C6002B /* Scheduler.cpp in Sources */,
+				6802AADF222F165400C6002B /* ShadowNode.cpp in Sources */,
+				6802A962222F15A400C6002B /* RCTScrollViewComponentView.mm in Sources */,
+				6802A969222F15A400C6002B /* RCTParagraphComponentView.mm in Sources */,
+				6802AAEA222F165400C6002B /* RawProps.cpp in Sources */,
+				6802AB41222F165400C6002B /* UITemplateProcessor.cpp in Sources */,
+				6802AB23222F165400C6002B /* RootShadowNode.cpp in Sources */,
+				6802AAE6222F165400C6002B /* State.cpp in Sources */,
+				6802AAE1222F165400C6002B /* ShadowNodeFragment.cpp in Sources */,
+				6802AC1C222F1FCE00C6002B /* ReactNativeConfig.cpp in Sources */,
+				6802AAEB222F165400C6002B /* Sealable.cpp in Sources */,
+				6802A96E222F15A400C6002B /* RCTFabricSurface.mm in Sources */,
+				6802AB06222F165400C6002B /* ScrollViewLocalData.cpp in Sources */,
+				6802AB39222F165400C6002B /* ShadowTree.cpp in Sources */,
+				6802AB3F222F165400C6002B /* ShadowTreeRegistry.cpp in Sources */,
+				6802A95D222F15A400C6002B /* RCTDeleteMountItem.mm in Sources */,
+				6802AB02222F165400C6002B /* RCTAttributedTextUtils.mm in Sources */,
+				6802A95B222F15A400C6002B /* RCTUpdatePropsMountItem.mm in Sources */,
+				6802AAFF222F165400C6002B /* RCTFontUtils.mm in Sources */,
+				6802AC4C222F2BFE00C6002B /* RCTSurfaceHostingProxyRootView.mm in Sources */,
+				6802A975222F15A400C6002B /* RCTSurfaceTouchHandler.mm in Sources */,
+				6802A976222F15A400C6002B /* RCTScheduler.mm in Sources */,
+				6802AB26222F165400C6002B /* BaseTextShadowNode.cpp in Sources */,
+				6802AAF9222F165400C6002B /* TextAttributes.cpp in Sources */,
+				6802AB30222F165400C6002B /* RawTextShadowNode.cpp in Sources */,
+				6802AAF3222F165400C6002B /* EventTarget.cpp in Sources */,
+				6802AB01222F165400C6002B /* NSTextStorage+FontScaling.m in Sources */,
+				6802A960222F15A400C6002B /* RCTMountingManager.mm in Sources */,
+				6802AB20222F165400C6002B /* ViewProps.cpp in Sources */,
+				6802AB2E222F165400C6002B /* TextProps.cpp in Sources */,
+				6802A968222F15A400C6002B /* RCTRootComponentView.mm in Sources */,
+				6802AB3E222F165400C6002B /* UIManager.cpp in Sources */,
+				6802AAFD222F165400C6002B /* ParagraphAttributes.cpp in Sources */,
+				6802AB1A222F165400C6002B /* YogaStylableProps.cpp in Sources */,
+				6802AAE9222F165400C6002B /* RawValue.cpp in Sources */,
+				6802AB21222F165400C6002B /* AccessibilityProps.cpp in Sources */,
+				6802A974222F15A400C6002B /* RCTSurfaceRegistry.mm in Sources */,
+				6802AB24222F165400C6002B /* RootProps.cpp in Sources */,
+				6802A95A222F15A400C6002B /* RCTUpdateLocalDataMountItem.mm in Sources */,
+				6802AADE222F165400C6002B /* LayoutConstraints.cpp in Sources */,
+				6802AB15222F165400C6002B /* ImageProps.cpp in Sources */,
+				6802AB2F222F165400C6002B /* RawTextProps.cpp in Sources */,
+				6802AADD222F165400C6002B /* LayoutableShadowNode.cpp in Sources */,
+				6802A96A222F15A400C6002B /* RCTComponentViewRegistry.mm in Sources */,
+				6802AB27222F165400C6002B /* BaseTextProps.cpp in Sources */,
+				6802AB22222F165400C6002B /* AccessibleShadowNode.cpp in Sources */,
+				6802AAF1222F165400C6002B /* UnbatchedEventQueue.cpp in Sources */,
+				6802AB1D222F165400C6002B /* ViewEventEmitter.cpp in Sources */,
+				6802AAEE222F165400C6002B /* RawEvent.cpp in Sources */,
+				6802AAD7222F165400C6002B /* RCTImageManager.mm in Sources */,
+				6802A966222F15A400C6002B /* RCTViewComponentView.mm in Sources */,
+				6802AAE0222F165400C6002B /* Props.cpp in Sources */,
+				6802AB38222F165400C6002B /* DebugStringConvertibleItem.cpp in Sources */,
+				6802AAFE222F165400C6002B /* AttributedString.cpp in Sources */,
+				6802A970222F15A400C6002B /* RuntimeEventBeat.mm in Sources */,
+				6802A96D222F15A400C6002B /* RCTFabricSurfaceHostingProxyRootView.mm in Sources */,
+				6802AB0D222F165400C6002B /* SliderMeasurementsManager.cpp in Sources */,
+				6802AAD5222F165400C6002B /* ImageResponseObserverCoordinator.cpp in Sources */,
+				6802AB2A222F165400C6002B /* ParagraphProps.cpp in Sources */,
+				6802AB03222F165400C6002B /* TextLayoutManager.mm in Sources */,
+				6802AB28222F165400C6002B /* ParagraphLocalData.cpp in Sources */,
+				6802AB12222F165400C6002B /* ImageShadowNode.cpp in Sources */,
+				6802AB1F222F165400C6002B /* TouchEventEmitter.cpp in Sources */,
+				6802AB33222F165400C6002B /* Color.cpp in Sources */,
+				6802AAE7222F165400C6002B /* StateUpdate.cpp in Sources */,
+				6802AB1B222F165400C6002B /* YogaLayoutableShadowNode.cpp in Sources */,
+				6802A957222F15A400C6002B /* RCTInsertMountItem.mm in Sources */,
+				6802AB3C222F165400C6002B /* UIManagerBinding.cpp in Sources */,
+				6802AAEC222F165400C6002B /* EventEmitter.cpp in Sources */,
+				6802AAE5222F165400C6002B /* StateCoordinator.cpp in Sources */,
+				6802A958222F15A400C6002B /* RCTRemoveMountItem.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4663,6 +6714,31 @@
 			target = 3D3C04B91DE3340900C268FA /* yoga */;
 			targetProxy = 53D123981FBF1E0C001B8A10 /* PBXContainerItemProxy */;
 		};
+		6802ABD3222F1A0F00C6002B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CBBA2D1A601D0E00E9B192 /* React */;
+			targetProxy = 6802ABD2222F1A0F00C6002B /* PBXContainerItemProxy */;
+		};
+		6802ABD9222F1AF900C6002B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 139D7ECD1E25DB7D00323FB7 /* third-party */;
+			targetProxy = 6802ABD8222F1AF900C6002B /* PBXContainerItemProxy */;
+		};
+		6802ABF4222F1CEA00C6002B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6802ABDD222F1C8300C6002B /* better */;
+			targetProxy = 6802ABF3222F1CEA00C6002B /* PBXContainerItemProxy */;
+		};
+		6802AC16222F1F5A00C6002B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D3C04B91DE3340900C268FA /* yoga */;
+			targetProxy = 6802AC15222F1F5A00C6002B /* PBXContainerItemProxy */;
+		};
+		6802AC2C222F24A300C6002B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDEBC6BA214B3E7000DD5AC8 /* jsi */;
+			targetProxy = 6802AC2B222F24A300C6002B /* PBXContainerItemProxy */;
+		};
 		ED296F7E214C957300B7C4FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EDEBC6BA214B3E7000DD5AC8 /* jsi */;
@@ -4796,6 +6872,13 @@
 					"$(SRCROOT)/../third-party/boost_1_63_0",
 					"$(SRCROOT)/../third-party/folly-2018.10.22.00",
 					"$(SRCROOT)/../third-party/glog-0.3.5/exported",
+					"$(SRCROOT)/../third-party/libevent-2.1.8-stable/libevent",
+				);
+				OTHER_CFLAGS = (
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_HAVE_PTHREAD=1",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -4821,6 +6904,13 @@
 					"$(SRCROOT)/../third-party/boost_1_63_0",
 					"$(SRCROOT)/../third-party/folly-2018.10.22.00",
 					"$(SRCROOT)/../third-party/glog-0.3.5/exported",
+					"$(SRCROOT)/../third-party/libevent-2.1.8-stable/libevent",
+				);
+				OTHER_CFLAGS = (
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_HAVE_PTHREAD=1",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -5093,6 +7183,130 @@
 				PRODUCT_NAME = cxxreact;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/cxxreact;
 				SDKROOT = appletvos;
+			};
+			name = Release;
+		};
+		6802A8FD222F157900C6002B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../third-party/folly-2018.10.22.00",
+					"$(SRCROOT)/../third-party/boost_1_63_0",
+					"$(SRCROOT)/../third-party/glog-0.3.5/src",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6802A8FE222F157900C6002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../third-party/folly-2018.10.22.00",
+					"$(SRCROOT)/../third-party/boost_1_63_0",
+					"$(SRCROOT)/../third-party/glog-0.3.5/src",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6802ABE5222F1C8400C6002B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6802ABE6222F1C8400C6002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -5594,6 +7808,24 @@
 			buildConfigurations = (
 				3D3CD9301DE5FBEE00167DC4 /* Debug */,
 				3D3CD9311DE5FBEE00167DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6802A8FC222F157900C6002B /* Build configuration list for PBXNativeTarget "Fabric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6802A8FD222F157900C6002B /* Debug */,
+				6802A8FE222F157900C6002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6802ABE4222F1C8400C6002B /* Build configuration list for PBXNativeTarget "better" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6802ABE5222F1C8400C6002B /* Debug */,
+				6802ABE6222F1C8400C6002B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

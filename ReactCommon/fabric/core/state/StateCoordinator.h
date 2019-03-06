@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef StateCoordinator_H
+#define StateCoordinator_H
 #include <better/mutex.h>
 #include <mutex>
 
@@ -14,37 +15,38 @@
 #include <react/core/StateTarget.h>
 
 namespace facebook {
-namespace react {
-
-class ShadowNode;
-
-/*
- * Coordinates a vision of the same state values between shadow nodes from
- * the same family.
- */
-class StateCoordinator {
- public:
-  using Shared = std::shared_ptr<const StateCoordinator>;
-
-  StateCoordinator(EventDispatcher::Weak eventDispatcher);
-
-  /*
-   * Dispatches a state update with given priority.
-   */
-  void dispatchRawState(StateUpdate &&stateUpdate, EventPriority priority)
+  namespace react {
+    
+    class ShadowNode;
+    
+    /*
+     * Coordinates a vision of the same state values between shadow nodes from
+     * the same family.
+     */
+    class StateCoordinator {
+    public:
+      using Shared = std::shared_ptr<const StateCoordinator>;
+      
+      StateCoordinator(EventDispatcher::Weak eventDispatcher);
+      
+      /*
+       * Dispatches a state update with given priority.
+       */
+      void dispatchRawState(StateUpdate &&stateUpdate, EventPriority priority)
       const;
-
-  /*
-   * Sets and gets a state target.
-   */
-  const StateTarget &getTarget() const;
-  void setTarget(StateTarget &&target) const;
-
- private:
-  EventDispatcher::Weak eventDispatcher_;
-  mutable StateTarget target_{}; // Protected by `mutex_`.
-  mutable better::shared_mutex mutex_;
-};
-
-} // namespace react
+      
+      /*
+       * Sets and gets a state target.
+       */
+      const StateTarget &getTarget() const;
+      void setTarget(StateTarget &&target) const;
+      
+    private:
+      EventDispatcher::Weak eventDispatcher_;
+      mutable StateTarget target_{}; // Protected by `mutex_`.
+      mutable better::shared_mutex mutex_;
+    };
+    
+  } // namespace react
 } // namespace facebook
+#endif

@@ -7,6 +7,8 @@
 
 #pragma once
 
+#ifndef StateTarget_H
+#define StateTarget_H
 #include <memory>
 
 namespace facebook {
@@ -55,3 +57,4 @@ class StateTarget {
 
 } // namespace react
 } // namespace facebook
+#endif

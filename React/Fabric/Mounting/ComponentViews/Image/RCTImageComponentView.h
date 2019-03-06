@@ -6,7 +6,7 @@
  */
 
 #import <React/RCTImageResponseDelegate.h>
-#import "RCTViewComponentView.h"
+#import <React/RCTViewComponentView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

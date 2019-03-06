@@ -5,7 +5,8 @@
  * file in the root directory of this source tree.
  */
 #pragma once
-
+#ifndef YGENUMS_H
+#define YGENUMS_H
 #include "YGMacros.h"
 
 #ifdef __cplusplus
@@ -148,3 +149,4 @@ YG_EXTERN_C_END
 
 #undef YG_ENUM_DECL
 #undef YG_ENUM_SEQ_DECL
+#endif

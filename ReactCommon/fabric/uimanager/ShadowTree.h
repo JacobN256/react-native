@@ -4,7 +4,8 @@
 // LICENSE file in the root directory of this source tree.
 
 #pragma once
-
+#ifndef SHADOWTREE_H
+#define SHADOWTREE_H
 #include <folly/SharedMutex.h>
 #include <memory>
 #include <shared_mutex>
@@ -92,3 +93,4 @@ class ShadowTree final {
 
 } // namespace react
 } // namespace facebook
+#endif

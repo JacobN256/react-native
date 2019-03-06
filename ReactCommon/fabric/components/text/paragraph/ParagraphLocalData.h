@@ -7,6 +7,8 @@
 
 #pragma once
 
+#ifndef PARAGRAPHLOCALDATA_H
+#define PARAGRAPHLOCALDATA_H
 #include <react/attributedstring/AttributedString.h>
 #include <react/core/LocalData.h>
 #include <react/textlayoutmanager/TextLayoutManager.h>
@@ -56,3 +58,4 @@ class ParagraphLocalData : public LocalData {
 
 } // namespace react
 } // namespace facebook
+#endif

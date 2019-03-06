@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef PARAGRAPHMEASUREMENTCACHE_H
+#define PARAGRAPHMEASUREMENTCACHE_H
 #include <react/attributedstring/AttributedString.h>
 #include <react/attributedstring/ParagraphAttributes.h>
 #include <react/core/LayoutConstraints.h>
@@ -25,3 +26,4 @@ using ParagraphMeasurementCache = SimpleThreadSafeCache<
 
 } // namespace react
 } // namespace facebook
+#endif

@@ -6,6 +6,8 @@
  */
 #pragma once
 
+#ifndef EVENTDISPATCHER_H
+#define EVENTDISPATCHER_H
 #include <array>
 #include <memory>
 
@@ -55,3 +57,4 @@ class EventDispatcher {
 
 } // namespace react
 } // namespace facebook
+#endif

@@ -5,6 +5,8 @@
 
 #pragma once
 
+#ifndef SHADOWVIEW_H
+#define SHADOWVIEW_H
 #include <folly/Hash.h>
 #include <react/core/EventEmitter.h>
 #include <react/core/LayoutMetrics.h>
@@ -82,3 +84,4 @@ struct hash<facebook::react::ShadowView> {
 };
 
 } // namespace std
+#endif

@@ -6,6 +6,8 @@
  */
 #pragma once
 
+#ifndef YGVALUE_H
+#define YGVALUE_H
 #include <math.h>
 #include "YGEnums.h"
 #include "YGMacros.h"
@@ -80,4 +82,5 @@ inline YGValue operator"" _percent(unsigned long long value) {
 } // namespace yoga
 } // namespace facebook
 
+#endif
 #endif

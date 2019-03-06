@@ -9,15 +9,15 @@
 
 #import <objc/runtime.h>
 
-#import "RCTAssert.h"
-#import "RCTBridge.h"
-#import "RCTLog.h"
-#import "RCTPerformanceLogger.h"
-#import "RCTProfile.h"
+#import <React/RCTAssert.h>
+#import <React/RCTBridge.h>
+#import <React/RCTLog.h>
+#import <React/RCTPerformanceLogger.h>
+#import <React/RCTProfile.h>
 #import "RCTRootContentView.h"
-#import "RCTRootViewDelegate.h"
-#import "RCTSurface.h"
-#import "UIView+React.h"
+#import <React/RCTRootViewDelegate.h>
+#import <React/RCTSurface.h>
+#import <React/UIView+React.h>
 
 static RCTSurfaceSizeMeasureMode convertToSurfaceSizeMeasureMode(RCTRootViewSizeFlexibility sizeFlexibility) {
   switch (sizeFlexibility) {

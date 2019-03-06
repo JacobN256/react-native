@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef BaseText_H
+#define BaseText_H
 #include <react/attributedstring/AttributedString.h>
 #include <react/attributedstring/TextAttributes.h>
 
@@ -29,3 +30,4 @@ class BaseTextShadowNode {
 
 } // namespace react
 } // namespace facebook
+#endif

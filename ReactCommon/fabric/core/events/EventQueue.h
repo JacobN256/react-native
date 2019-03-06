@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef EVENTQUEUE_H
+#define EVENTQUEUE_H
 #include <memory>
 #include <mutex>
 #include <vector>
@@ -68,3 +69,4 @@ class EventQueue {
 
 } // namespace react
 } // namespace facebook
+#endif

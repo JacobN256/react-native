@@ -5,7 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 #pragma once
-
+#ifndef RAWEVENT_H
+#define RAWEVENT_H
 #include <memory>
 #include <string>
 
@@ -32,3 +33,4 @@ class RawEvent {
 
 } // namespace react
 } // namespace facebook
+#endif

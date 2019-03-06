@@ -6,6 +6,8 @@
  */
 #pragma once
 
+#ifndef YOGA_H
+#define YOGA_H
 #include <assert.h>
 #include <math.h>
 #include <stdarg.h>
@@ -429,4 +431,5 @@ extern void YGNodeSetChildren(
     YGNodeRef const owner,
     const std::vector<YGNodeRef>& children);
 
+#endif
 #endif

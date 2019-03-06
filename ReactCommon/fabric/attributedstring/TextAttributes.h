@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef TEXTATTRIBUTES_H
+#define TEXTATTRIBUTES_H
 #include <functional>
 #include <limits>
 
@@ -128,3 +129,4 @@ struct hash<facebook::react::TextAttributes> {
   }
 };
 } // namespace std
+#endif

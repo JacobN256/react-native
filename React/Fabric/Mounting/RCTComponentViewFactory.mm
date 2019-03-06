@@ -10,14 +10,14 @@
 #import <React/RCTAssert.h>
 #import <react/core/ReactPrimitives.h>
 
-#import "RCTActivityIndicatorViewComponentView.h"
+//#import "RCTActivityIndicatorViewComponentView.h"
 #import "RCTImageComponentView.h"
 #import "RCTParagraphComponentView.h"
 #import "RCTRootComponentView.h"
 #import "RCTScrollViewComponentView.h"
-#import "RCTSliderComponentView.h"
-#import "RCTSwitchComponentView.h"
-#import "RCTViewComponentView.h"
+//#import "RCTSliderComponentView.h"
+//#import "RCTSwitchComponentView.h"
+#import <React/RCTViewComponentView.h>
 
 using namespace facebook::react;
 
@@ -36,9 +36,9 @@ using namespace facebook::react;
   [componentViewFactory registerComponentViewClass:[RCTScrollViewComponentView class]];
   [componentViewFactory registerComponentViewClass:[RCTImageComponentView class]];
   [componentViewFactory registerComponentViewClass:[RCTParagraphComponentView class]];
-  [componentViewFactory registerComponentViewClass:[RCTActivityIndicatorViewComponentView class]];
-  [componentViewFactory registerComponentViewClass:[RCTSliderComponentView class]];
-  [componentViewFactory registerComponentViewClass:[RCTSwitchComponentView class]];
+//  [componentViewFactory registerComponentViewClass:[RCTActivityIndicatorViewComponentView class]];
+//  [componentViewFactory registerComponentViewClass:[RCTSliderComponentView class]];
+//  [componentViewFactory registerComponentViewClass:[RCTSwitchComponentView class]];
 
   return componentViewFactory;
 }

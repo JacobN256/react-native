@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#ifndef SIMPLETHREADCACHE_H
+#define SIMPLETHREADCACHE_H
 #include <functional>
 #include <memory>
 #include <mutex>
@@ -72,3 +74,4 @@ private:
 
 } // namespace react
 } // namespace facebook
+#endif

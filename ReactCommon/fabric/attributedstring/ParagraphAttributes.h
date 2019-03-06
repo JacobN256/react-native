@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef PARAGRAPHATTRIBUTES2_H
+#define PARAGRAPHATTRIBUTES2_H
 #include <limits>
 
 #include <folly/Hash.h>
@@ -85,3 +86,4 @@ struct hash<facebook::react::ParagraphAttributes> {
   }
 };
 } // namespace std
+#endif

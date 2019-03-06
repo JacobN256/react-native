@@ -5,8 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include "ScrollViewProps.h"
-
+#include <react/components/scrollview/ScrollViewProps.h>
 #include <react/components/scrollview/conversions.h>
 #include <react/debug/debugStringConvertibleUtils.h>
 #include <react/graphics/conversions.h>

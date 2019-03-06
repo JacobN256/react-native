@@ -5,6 +5,8 @@
  * file in the root directory of this source tree.
  */
 #pragma once
+#ifndef YGSTYLE_H
+#define YGSTYLE_H
 #include <algorithm>
 #include <array>
 #include <initializer_list>
@@ -73,3 +75,4 @@ bool operator==(const YGStyle& lhs, const YGStyle& rhs);
 inline bool operator!=(const YGStyle& lhs, const YGStyle& rhs) {
   return !(lhs == rhs);
 }
+#endif

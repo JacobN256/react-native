@@ -4,7 +4,8 @@
 // LICENSE file in the root directory of this source tree.
 
 #pragma once
-
+#ifndef SHADOWTREEDELEGATE_H
+#define SHADOWTREEDELEGATE_H
 #include <react/mounting/ShadowViewMutation.h>
 
 namespace facebook {
@@ -31,3 +32,4 @@ class ShadowTreeDelegate {
 
 } // namespace react
 } // namespace facebook
+#endif

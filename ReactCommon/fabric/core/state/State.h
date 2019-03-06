@@ -6,7 +6,8 @@
  */
 
 #pragma once
-
+#ifndef STATE_H
+#define STATE_H
 #include <react/core/StateCoordinator.h>
 
 namespace facebook {
@@ -46,3 +47,4 @@ class State {
 
 } // namespace react
 } // namespace facebook
+#endif
