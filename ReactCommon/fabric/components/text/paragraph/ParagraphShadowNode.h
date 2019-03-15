@@ -10,6 +10,7 @@
 #include <folly/Optional.h>
 #include <react/components/text/ParagraphMeasurementCache.h>
 #include <react/components/text/ParagraphProps.h>
+#include <react/components/text/ParagraphStateData.h>
 #include <react/components/text/TextShadowNode.h>
 #include <react/components/view/ConcreteViewShadowNode.h>
 #include <react/core/ConcreteShadowNode.h>
@@ -32,7 +33,8 @@ using ParagraphEventEmitter = ViewEventEmitter;
 class ParagraphShadowNode : public ConcreteViewShadowNode<
                                 ParagraphComponentName,
                                 ParagraphProps,
-                                ParagraphEventEmitter>,
+                                ParagraphEventEmitter,
+                                ParagraphStateData>,
                             public BaseTextShadowNode {
  public:
   using ConcreteViewShadowNode::ConcreteViewShadowNode;

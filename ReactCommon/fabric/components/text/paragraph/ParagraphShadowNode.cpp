@@ -50,11 +50,15 @@ void ParagraphShadowNode::updateLocalDataIfNeeded() {
   }
 
   auto localData = std::make_shared<ParagraphLocalData>();
-  localData->setAttributedString(std::move(attributedString));
+  // localData->setAttributedString(std::move(attributedString));
   localData->setTextLayoutManager(textLayoutManager_);
   setLocalData(localData);
+    
+  auto stateData = getState()->getData();
+  stateData.setAttributedString(std::move(attributedString));
+  stateData.setTextLayoutManager(textLayoutManager_);
 }
-
+    
 #pragma mark - LayoutableShadowNode
 
 Size ParagraphShadowNode::measure(LayoutConstraints layoutConstraints) const {

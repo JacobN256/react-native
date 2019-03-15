@@ -8,9 +8,11 @@
 #import "RCTParagraphComponentView.h"
 
 #import <react/components/text/ParagraphLocalData.h>
+#import <react/components/text/ParagraphStateData.h>
 #import <react/components/text/ParagraphProps.h>
 #import <react/components/text/ParagraphShadowNode.h>
 #import <react/core/LocalData.h>
+#import <react/core/State.h>
 #import <react/graphics/Geometry.h>
 #import <react/textlayoutmanager/RCTTextLayoutManager.h>
 #import <react/textlayoutmanager/TextLayoutManager.h>
@@ -20,6 +22,7 @@ using namespace facebook::react;
 
 @implementation RCTParagraphComponentView {
   SharedParagraphLocalData _paragraphLocalData;
+  SharedParagraphStateData _paragraphStateData;
   ParagraphAttributes _paragraphAttributes;
 }
 
@@ -62,6 +65,15 @@ using namespace facebook::react;
   [self setNeedsDisplay];
 }
 
+- (void)updateState:(facebook::react::State::Shared)state oldState:(facebook::react::State::Shared)oldState
+{
+  auto localState = std::static_pointer_cast<const ConcreteState<ParagraphStateData>>(state);
+  _paragraphStateData = std::make_shared<const ParagraphStateData>(localState->getData());
+    NSLog(@"watch: %s", _paragraphStateData->getAttributedString().getString().c_str());
+  assert(_paragraphStateData);
+  [self setNeedsDisplay];
+}
+
 - (void)prepareForRecycle
 {
   [super prepareForRecycle];
@@ -80,7 +92,7 @@ using namespace facebook::react;
 
   CGRect frame = RCTCGRectFromRect(_layoutMetrics.getContentFrame());
 
-  [nativeTextLayoutManager drawAttributedString:_paragraphLocalData->getAttributedString()
+  [nativeTextLayoutManager drawAttributedString:_paragraphStateData->getAttributedString()
                             paragraphAttributes:_paragraphAttributes
                                           frame:frame];
 }
@@ -98,7 +110,7 @@ using namespace facebook::react;
     return nil;
   }
 
-  return RCTNSStringFromString(_paragraphLocalData->getAttributedString().getString());
+  return RCTNSStringFromString(_paragraphStateData->getAttributedString().getString());
 }
 
 - (SharedTouchEventEmitter)touchEventEmitterAtPoint:(CGPoint)point
@@ -113,7 +125,7 @@ using namespace facebook::react;
   CGRect frame = RCTCGRectFromRect(_layoutMetrics.getContentFrame());
 
   SharedEventEmitter eventEmitter =
-      [nativeTextLayoutManager getEventEmitterWithAttributeString:_paragraphLocalData->getAttributedString()
+      [nativeTextLayoutManager getEventEmitterWithAttributeString:_paragraphStateData->getAttributedString()
                                               paragraphAttributes:_paragraphAttributes
                                                             frame:frame
                                                           atPoint:point];
