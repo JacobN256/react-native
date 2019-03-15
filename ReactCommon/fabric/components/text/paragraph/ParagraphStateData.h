@@ -8,7 +8,6 @@
 #pragma once
 
 #include <react/attributedstring/AttributedString.h>
-#include <react/core/State.h>
 #include <react/textlayoutmanager/TextLayoutManager.h>
 
 namespace facebook {
@@ -22,7 +21,7 @@ using SharedParagraphStateData = std::shared_ptr<const ParagraphStateData>;
  * LocalData for <Paragraph> component.
  * Represents what to render and how to render.
  */
-class ParagraphStateData : public StateData {
+class ParagraphStateData {
 public:
  /*
   * All content of <Paragraph> component represented as an `AttributedString`.
@@ -41,15 +40,7 @@ public:
 #ifdef ANDROID
  folly::dynamic getDynamic() const override;
 #endif
-    
-#pragma mark - DebugStringConvertible
- 
-// FIXME: this doesn't seem to be allowed- missing virtual?
-//#if RN_DEBUG_STRING_CONVERTIBLE
-//            std::string getDebugName() const override;
-//            SharedDebugStringConvertibleList getDebugProps() const override;
-//#endif
-    
+
 private:
  AttributedString attributedString_;
  SharedTextLayoutManager textLayoutManager_;

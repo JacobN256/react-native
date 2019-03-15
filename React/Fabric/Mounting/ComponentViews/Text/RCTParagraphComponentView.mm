@@ -7,7 +7,6 @@
 
 #import "RCTParagraphComponentView.h"
 
-#import <react/components/text/ParagraphLocalData.h>
 #import <react/components/text/ParagraphStateData.h>
 #import <react/components/text/ParagraphProps.h>
 #import <react/components/text/ParagraphShadowNode.h>
@@ -21,7 +20,6 @@
 using namespace facebook::react;
 
 @implementation RCTParagraphComponentView {
-  SharedParagraphLocalData _paragraphLocalData;
   SharedParagraphStateData _paragraphStateData;
   ParagraphAttributes _paragraphAttributes;
 }
@@ -58,18 +56,10 @@ using namespace facebook::react;
   _paragraphAttributes = paragraphProps->paragraphAttributes;
 }
 
-- (void)updateLocalData:(SharedLocalData)localData oldLocalData:(SharedLocalData)oldLocalData
-{
-  _paragraphLocalData = std::static_pointer_cast<const ParagraphLocalData>(localData);
-  assert(_paragraphLocalData);
-  [self setNeedsDisplay];
-}
-
 - (void)updateState:(facebook::react::State::Shared)state oldState:(facebook::react::State::Shared)oldState
 {
   auto localState = std::static_pointer_cast<const ConcreteState<ParagraphStateData>>(state);
   _paragraphStateData = std::make_shared<const ParagraphStateData>(localState->getData());
-    NSLog(@"watch: %s", _paragraphStateData->getAttributedString().getString().c_str());
   assert(_paragraphStateData);
   [self setNeedsDisplay];
 }
@@ -77,16 +67,16 @@ using namespace facebook::react;
 - (void)prepareForRecycle
 {
   [super prepareForRecycle];
-  _paragraphLocalData.reset();
+  _paragraphStateData.reset();
 }
 
 - (void)drawRect:(CGRect)rect
 {
-  if (!_paragraphLocalData) {
+  if (!_paragraphStateData) {
     return;
   }
 
-  SharedTextLayoutManager textLayoutManager = _paragraphLocalData->getTextLayoutManager();
+  SharedTextLayoutManager textLayoutManager = _paragraphStateData->getTextLayoutManager();
   RCTTextLayoutManager *nativeTextLayoutManager =
       (__bridge RCTTextLayoutManager *)textLayoutManager->getNativeTextLayoutManager();
 
@@ -106,7 +96,7 @@ using namespace facebook::react;
     return superAccessibilityLabel;
   }
 
-  if (!_paragraphLocalData) {
+  if (!_paragraphStateData) {
     return nil;
   }
 
@@ -115,11 +105,11 @@ using namespace facebook::react;
 
 - (SharedTouchEventEmitter)touchEventEmitterAtPoint:(CGPoint)point
 {
-  if (!_paragraphLocalData) {
+  if (!_paragraphStateData) {
     return _eventEmitter;
   }
 
-  SharedTextLayoutManager textLayoutManager = _paragraphLocalData->getTextLayoutManager();
+  SharedTextLayoutManager textLayoutManager = _paragraphStateData->getTextLayoutManager();
   RCTTextLayoutManager *nativeTextLayoutManager =
       (__bridge RCTTextLayoutManager *)textLayoutManager->getNativeTextLayoutManager();
   CGRect frame = RCTCGRectFromRect(_layoutMetrics.getContentFrame());

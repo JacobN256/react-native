@@ -6,7 +6,6 @@
  */
 
 #include "ParagraphShadowNode.h"
-#include "ParagraphLocalData.h"
 #include "ParagraphMeasurementCache.h"
 
 namespace facebook {
@@ -38,27 +37,24 @@ void ParagraphShadowNode::setMeasureCache(
   measureCache_ = cache;
 }
 
-void ParagraphShadowNode::updateLocalDataIfNeeded() {
+void ParagraphShadowNode::updateStateDataIfNeeded() {
   ensureUnsealed();
-
-  auto attributedString = getAttributedString();
-  auto currentLocalData =
-      std::static_pointer_cast<const ParagraphLocalData>(getLocalData());
-  if (currentLocalData &&
-      currentLocalData->getAttributedString() == attributedString) {
-    return;
-  }
-
-  auto localData = std::make_shared<ParagraphLocalData>();
-  // localData->setAttributedString(std::move(attributedString));
-  localData->setTextLayoutManager(textLayoutManager_);
-  setLocalData(localData);
     
+  auto attributedString = getAttributedString();
+
+// Todo: fixme
+//  auto currentLocalData =
+//      std::static_pointer_cast<const ParagraphLocalData>(getLocalData());
+//  if (currentLocalData &&
+//      currentLocalData->getAttributedString() == attributedString) {
+//    return;
+//  }
+
   auto stateData = getState()->getData();
   stateData.setAttributedString(std::move(attributedString));
   stateData.setTextLayoutManager(textLayoutManager_);
 }
-    
+
 #pragma mark - LayoutableShadowNode
 
 Size ParagraphShadowNode::measure(LayoutConstraints layoutConstraints) const {
@@ -87,7 +83,7 @@ Size ParagraphShadowNode::measure(LayoutConstraints layoutConstraints) const {
 }
 
 void ParagraphShadowNode::layout(LayoutContext layoutContext) {
-  updateLocalDataIfNeeded();
+  updateStateDataIfNeeded();
   ConcreteViewShadowNode::layout(layoutContext);
 }
 

@@ -47,7 +47,7 @@ class ParagraphShadowNode : public ConcreteViewShadowNode<
   /*
    * Associates a shared TextLayoutManager with the node.
    * `ParagraphShadowNode` uses the manager to measure text content
-   * and construct `ParagraphLocalData` objects.
+   * and construct `ParagraphStateData` objects.
    */
   void setTextLayoutManager(SharedTextLayoutManager textLayoutManager);
 
@@ -67,10 +67,10 @@ class ParagraphShadowNode : public ConcreteViewShadowNode<
 
  private:
   /*
-   * Creates a `LocalData` object (with `AttributedText` and
+   * Updates state object (with `AttributedText` and
    * `TextLayoutManager`) if needed.
    */
-  void updateLocalDataIfNeeded();
+  void updateStateDataIfNeeded();
 
   SharedTextLayoutManager textLayoutManager_;
   const ParagraphMeasurementCache *measureCache_;

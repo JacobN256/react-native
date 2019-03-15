@@ -11,46 +11,33 @@
 #include <react/debug/debugStringConvertibleUtils.h>
 
 namespace facebook {
-    namespace react {
-        
-        AttributedString ParagraphStateData::getAttributedString() const {
-            return attributedString_;
-        }
-        
-        void ParagraphStateData::setAttributedString(
-                                                     AttributedString attributedString) {
-            attributedString_ = attributedString;
-        }
-        
-        SharedTextLayoutManager ParagraphStateData::getTextLayoutManager() const {
-            return textLayoutManager_;
-        }
-        
-        void ParagraphStateData::setTextLayoutManager(
-                                                      SharedTextLayoutManager textLayoutManager) {
-            textLayoutManager_ = textLayoutManager;
-        }
-        
+namespace react {
+
+AttributedString ParagraphStateData::getAttributedString() const {
+  return attributedString_;
+}
+
+void ParagraphStateData::setAttributedString(
+                                             AttributedString attributedString) {
+  attributedString_ = attributedString;
+}
+
+SharedTextLayoutManager ParagraphStateData::getTextLayoutManager() const {
+  return textLayoutManager_;
+}
+
+void ParagraphStateData::setTextLayoutManager(
+                                              SharedTextLayoutManager textLayoutManager) {
+  textLayoutManager_ = textLayoutManager;
+}
+
 #ifdef ANDROID
-        
-        folly::dynamic ParagraphLocalData::getDynamic() const {
-            return toDynamic(*this);
-        }
-        
+
+folly::dynamic ParagraphLocalData::getDynamic() const {
+  return toDynamic(*this);
+}
+
 #endif
-        
-#pragma mark - DebugStringConvertible
-        
-#if RN_DEBUG_STRING_CONVERTIBLE
-        std::string ParagraphLocalData::getDebugName() const {
-            return "ParagraphLocalData";
-        }
-        
-        SharedDebugStringConvertibleList ParagraphLocalData::getDebugProps() const {
-            return {
-                debugStringConvertibleItem("attributedString", attributedString_, "")};
-        }
-#endif
-        
-    } // namespace react
+
+} // namespace react
 } // namespace facebook
