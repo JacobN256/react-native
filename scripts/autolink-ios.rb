@@ -18,7 +18,6 @@ def use_react_native! (options={})
   pod 'React-RCTNetwork', :path => "#{prefix}/Libraries/Network"
   pod 'React-RCTSettings', :path => "#{prefix}/Libraries/Settings"
   pod 'React-RCTText', :path => "#{prefix}/Libraries/Text"
-  pod 'React-RCTVibration', :path => "#{prefix}/Libraries/Vibration"
   pod 'React-RCTWebSocket', :path => "#{prefix}/Libraries/WebSocket"
   
   unless production
